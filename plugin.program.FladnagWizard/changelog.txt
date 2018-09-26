@@ -1,2 +1,0 @@
-v1.0.8
-Only shows builds for the currently installed version of Kodi

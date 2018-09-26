@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.program.FladnagWizard" name="Fladnag Wizard" version="1.0.0" provider-name="fladnag">
+<addon id="plugin.program.T2K" name="T2K Wizard" version="1.0.0" provider-name="T2K">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -9,8 +9,8 @@
   </extension>
   <extension point="xbmc.service" library="startup.py" start="startup" />
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">Fladnag Wizard</summary>
-    <description lang="en">Fladnag Wizard allows you to gain access to the latest Fladnag Custom Builds.</description>
+    <summary lang="en">T2K Wizard</summary>
+    <description lang="en">T2K Wizard allows you to gain access to the latest T2K Custom Builds.</description>
     <platform>all</platform>
   </extension>
 </addon>
