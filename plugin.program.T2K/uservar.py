@@ -5,21 +5,21 @@ import os, xbmc, xbmcaddon
 #########################################################
 ADDON_ID       = xbmcaddon.Addon().getAddonInfo('id')
 ADDONTITLE     = 'T2K Wizard'
-EXCLUDES       = [ADDON_ID]
+EXCLUDES       = [ADDON_ID, 'repository.T2K']
 # Text File with build info in it.
 BUILDFILE      = 'https://www.dropbox.com/s/tawj08ilsuxzgso/autobuilds.txt?dl=1'
 # How often you would list it to check for build updates in days
 # 0 being every startup of kodi
 UPDATECHECK    = 0
 # Text File with apk info in it.
-APKFILE        = ''
+APKFILE        = 'http://t2k.dynu.net/RSS-Feed-&-Addon-Messages/apks.txt'
 # Text File with Youtube Videos urls.  Leave as 'http://' to ignore
-YOUTUBETITLE   = 'Tutorial Videos'
-YOUTUBEFILE    = 'http://'
+YOUTUBETITLE   = 'T2K Youtube Tutorials'
+YOUTUBEFILE    = 'http://t2k.dynu.net/RSS-Feed-&-Addon-Messages/youtube.txt'
 # Text File for addon installer.  Leave as 'http://' to ignore
-ADDONFILE      = 'http://'
+ADDONFILE      = 'http://t2k.dynu.net/RSS-Feed-&-Addon-Messages/addons.txt'
 # Text File for advanced settings.  Leave as 'http://' to ignore
-ADVANCEDFILE   = 'http://'
+ADVANCEDFILE   = 'http://t2k.dynu.net/RSS-Feed-&-Addon-Messages/advanced.txt'
 
 # Dont need to edit just here for icons stored locally
 PATH           = xbmcaddon.Addon().getAddonInfo('path')
@@ -34,17 +34,17 @@ ART            = os.path.join(PATH, 'resources', 'art')
 # Example:  ICONMAINT     = os.path.join(ART, 'mainticon.png')
 #           ICONSETTINGS  = 'http://aftermathwizard.net/repo/wizard/settings.png'
 # Leave as http:// for default icon
-ICONBUILDS     = 'http://'
-ICONMAINT      = 'http://'
-ICONAPK        = 'http://'
-ICONADDONS     = 'http://'
-ICONYOUTUBE    = 'http://'
-ICONSAVE       = 'http://'
-ICONTRAKT      = 'http://'
-ICONREAL       = 'http://'
-ICONLOGIN      = 'http://'
-ICONCONTACT    = 'http://'
-ICONSETTINGS   = 'http://'
+ICONBUILDS     = 'http://t2k.dynu.net/RSS-Feed-&-Addon-Messages/icons/192x192.png'
+ICONMAINT      = 'http://t2k.dynu.net/RSS-Feed-&-Addon-Messages/icons/SEO_Maintenance-512.png'
+ICONAPK        = 'http://t2k.dynu.net/RSS-Feed-&-Addon-Messages/icons/71620be831143de5b84ce55e00046028_icon.png'
+ICONADDONS     = 'http://t2k.dynu.net/RSS-Feed-&-Addon-Messages/icons/addoninstaller.png'
+ICONYOUTUBE    = 'http://t2k.dynu.net/RSS-Feed-&-Addon-Messages/icons/logo-941916_960_720.png'
+ICONSAVE       = 'http://t2k.dynu.net/RSS-Feed-&-Addon-Messages/icons/538720-disk_512x512.png'
+ICONTRAKT      = 'http://t2k.dynu.net/RSS-Feed-&-Addon-Messages/icons/RvHrUFj.png'
+ICONREAL       = 'http://t2k.dynu.net/RSS-Feed-&-Addon-Messages/icons/realdebridlogo-e1418577058209.png'
+ICONLOGIN      = 'http://t2k.dynu.net/RSS-Feed-&-Addon-Messages/icons/login-system-icon-13.png'
+ICONCONTACT    = 'http://t2k.dynu.net/RSS-Feed-&-Addon-Messages/icons/Contacts-icon.png'
+ICONSETTINGS   = 'http://t2k.dynu.net/RSS-Feed-&-Addon-Messages/icons/iconlicious-misc-settings.png'
 # Hide the ====== seperators 'Yes' or 'No'
 HIDESPACERS    = 'No'
 # Character used in seperator
@@ -53,7 +53,7 @@ SPACER         = '='
 # You can edit these however you want, just make sure that you have a %s in each of the
 # THEME's so it grabs the text from the menu item
 COLOR1         = 'dodgerblue'
-COLOR2         = 'white'
+COLOR2         = 'red'
 # Primary menu items   / %s is the menu item and is required
 THEME1         = '[COLOR '+COLOR1+'][B][I]([COLOR '+COLOR2+']T2K[/COLOR])[/B][/COLOR] [COLOR '+COLOR2+']%s[/COLOR][/I]'
 # Build Names          / %s is the menu item and is required
@@ -69,9 +69,9 @@ THEME5         = '[COLOR '+COLOR1+']Current Theme:[/COLOR] [COLOR '+COLOR2+']%s[
 # Enable 'Contact' menu item 'Yes' hide or 'No' dont hide
 HIDECONTACT    = 'No'
 # You can add \n to do line breaks
-CONTACT        = 'Thank you for choosing T2K.\r\n\r\nContact us on facebook at https://www.facebook.com/groups/T.2.K.Support/'
+CONTACT        = 'Thank you for choosing T2K Wizard.\r\n\r\nContact us on facebook at https://www.facebook.com/groups/T.2.K.Support/'
 #Images used for the contact window.  http:// for default icon and fanart
-CONTACTICON    = 'http://'
+CONTACTICON    = 'http://t2k.dynu.net/RSS-Feed-&-Addon-Messages/icons/192x192.png'
 CONTACTFANART  = 'http://'
 #########################################################
 
@@ -88,27 +88,27 @@ WIZARDFILE     = 'https://www.dropbox.com/s/tawj08ilsuxzgso/autobuilds.txt?dl=1'
 ### AUTO INSTALL ########################################
 ########## REPO IF NOT INSTALLED ########################
 # Enable Auto Install 'Yes' or 'No'
-AUTOINSTALL    = 'No'
+AUTOINSTALL    = 'Yes'
 # Addon ID for the repository
-REPOID         = ''
+REPOID         = 'repository.T2K'
 # Url to Addons.xml file in your repo folder(this is so we can get the latest version)
-REPOADDONXML   = ''
+REPOADDONXML   = 'https://github.com/djwayne1985/repository.T2K/blob/master/zips/addons.xml'
 # Url to folder zip is located in
-REPOZIPURL     = ''
+REPOZIPURL     = 'https://github.com/djwayne1985/repository.T2K/tree/master/zips/repository.T2K'
 #########################################################
 
 #########################################################
 ### NOTIFICATION WINDOW##################################
 #########################################################
 # Enable Notification screen Yes or No
-ENABLE         = 'No'
+ENABLE         = 'yes'
 # Url to notification file
-NOTIFICATION   = ''
+NOTIFICATION   = 'http://t2k.dynu.net/RSS-Feed-&-Addon-Messages/notify.txt'
 # Use either 'Text' or 'Image'
-HEADERTYPE     = ''
-HEADERMESSAGE  = ''
+HEADERTYPE     = 'Text'
+HEADERMESSAGE  = 'T2K Wizard'
 # url to image if using Image 424x180
 HEADERIMAGE    = ''
 # Background for Notification Window
-BACKGROUND     = ''
+BACKGROUND     = 'http://t2k.dynu.net/RSS-Feed-&-Addon-Messages/icons/19491507489_bc92baf89b_b.jpg'
 #########################################################
