@@ -8,8 +8,8 @@
   </extension>
   <extension point="xbmc.service" library="startup.py" start="startup" />
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">T2K Wizard</summary>
-    <description lang="en">T2K Wizard allows you to gain access to the latest T2K Custom Builds.</description>
+    <summary lang="en">T2K</summary>
+    <description lang="en">T2K allows you to get access to the latest T2K Custom Builds.</description>
     <platform>all</platform>
   </extension>
 </addon>

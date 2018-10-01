@@ -17,7 +17,7 @@
 #  http://www.gnu.org/copyleft/gpl.html                                        #
 ################################################################################
 
-import zipfile, xbmcaddon, xbmc, uservar, sys, os, time, shutil
+import zipfile, xbmcaddon, xbmc, uservar, sys, os, time
 import wizard as wiz
 
 ADDON_ID       = uservar.ADDON_ID
@@ -36,7 +36,6 @@ KEEPSUPER      = wiz.getS('keepsuper')
 KEEPREPOS      = wiz.getS('keeprepos')
 KEEPWHITELIST  = wiz.getS('keepwhitelist')
 KODIV          = float(xbmc.getInfoLabel("System.BuildVersion")[:4])
-KODIVERSION    = xbmc.getInfoLabel("System.BuildVersion")
 LOGFILES       = ['xbmc.log', 'xbmc.old.log', 'kodi.log', 'kodi.old.log', 'spmc.log', 'spmc.old.log', 'tvmc.log', 'tvmc.old.log', 'Thumbs.db', '.gitignore', '.DS_Store']
 bad_files      = ['onechannelcache.db', 'saltscache.db', 'saltscache.db-shm', 'saltscache.db-wal', 'saltshd.lite.db', 'saltshd.lite.db-shm', 'saltshd.lite.db-wal', 'queue.db', 'commoncache.db', 'access.log', 'trakt.db', 'video_cache.db']
 

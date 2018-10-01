@@ -4,22 +4,22 @@ import os, xbmc, xbmcaddon
 ### User Edit Variables #################################
 #########################################################
 ADDON_ID       = xbmcaddon.Addon().getAddonInfo('id')
-ADDONTITLE     = 'T2K Wizard'
-EXCLUDES       = [ADDON_ID, 'repository.T2K']
+ADDONTITLE     = 'T2K'
+EXCLUDES       = [ADDON_ID]
 # Text File with build info in it.
-BUILDFILE      = 'https://www.dropbox.com/s/tawj08ilsuxzgso/autobuilds.txt?dl=1'
+BUILDFILE      = 'http://t2k-info.dynu.net/RSS-Feed-&-Addon-Messages/T2Kautobuilds.txt'
 # How often you would list it to check for build updates in days
 # 0 being every startup of kodi
 UPDATECHECK    = 0
 # Text File with apk info in it.
-APKFILE        = 'http://t2k.dynu.net/RSS-Feed-&-Addon-Messages/apks.txt'
+APKFILE        = 'http://t2k-info.dynu.net/RSS-Feed-&-Addon-Messages/apks.txt'
 # Text File with Youtube Videos urls.  Leave as 'http://' to ignore
 YOUTUBETITLE   = 'T2K Youtube Tutorials'
-YOUTUBEFILE    = 'http://t2k.dynu.net/RSS-Feed-&-Addon-Messages/youtube.txt'
+YOUTUBEFILE    = 'http://t2k-info.dynu.net/RSS-Feed-&-Addon-Messages/youtube.txt'
 # Text File for addon installer.  Leave as 'http://' to ignore
-ADDONFILE      = 'http://t2k.dynu.net/RSS-Feed-&-Addon-Messages/addons2.txt'
+ADDONFILE      = 'http://t2k-info.dynu.net/RSS-Feed-&-Addon-Messages/addons.txt'
 # Text File for advanced settings.  Leave as 'http://' to ignore
-ADVANCEDFILE   = 'http://t2k.dynu.net/RSS-Feed-&-Addon-Messages/advanced.txt'
+ADVANCEDFILE   = 'http://t2k-info.dynu.net/RSS-Feed-&-Addon-Messages/advanced.txt'
 
 # Dont need to edit just here for icons stored locally
 PATH           = xbmcaddon.Addon().getAddonInfo('path')
@@ -34,7 +34,7 @@ ART            = os.path.join(PATH, 'resources', 'art')
 # Example:  ICONMAINT     = os.path.join(ART, 'mainticon.png')
 #           ICONSETTINGS  = 'http://aftermathwizard.net/repo/wizard/settings.png'
 # Leave as http:// for default icon
-ICONBUILDS     = 'http://t2k.dynu.net/RSS-Feed-&-Addon-Messages/icons/192x192.png'
+ICONBUILDS     = 'icon256x256.png'
 ICONMAINT      = 'http://t2k.dynu.net/RSS-Feed-&-Addon-Messages/icons/SEO_Maintenance-512.png'
 ICONAPK        = 'http://t2k.dynu.net/RSS-Feed-&-Addon-Messages/icons/71620be831143de5b84ce55e00046028_icon.png'
 ICONADDONS     = 'http://t2k.dynu.net/RSS-Feed-&-Addon-Messages/icons/addoninstaller.png'
@@ -69,7 +69,7 @@ THEME5         = '[COLOR '+COLOR1+']Current Theme:[/COLOR] [COLOR '+COLOR2+']%s[
 # Enable 'Contact' menu item 'Yes' hide or 'No' dont hide
 HIDECONTACT    = 'No'
 # You can add \n to do line breaks
-CONTACT        = 'Thank you for choosing T2K Wizard.\r\n\r\nContact us on facebook at https://www.facebook.com/groups/T.2.K.Support/'
+CONTACT        = 'Thank you for choosing T2K.\r\n\r\nContact us on facebook at https://www.facebook.com/groups/T.2.K.Support/'
 #Images used for the contact window.  http:// for default icon and fanart
 CONTACTICON    = 'http://t2k.dynu.net/RSS-Feed-&-Addon-Messages/icons/192x192.png'
 CONTACTFANART  = 'http://'
@@ -81,7 +81,7 @@ CONTACTFANART  = 'http://'
 # Enable Auto Update 'Yes' or 'No'
 AUTOUPDATE     = 'Yes'
 # Url to wizard version
-WIZARDFILE     = 'https://www.dropbox.com/s/tawj08ilsuxzgso/autobuilds.txt?dl=1'
+WIZARDFILE     = 'https://www.dropbox.com/s/ymls4kg55z1c9b4/T2Kautobuilds.txt?dl=1'
 #########################################################
 
 #########################################################
@@ -101,14 +101,14 @@ REPOZIPURL     = 'https://github.com/djwayne1985/repository.T2K/tree/master/zips
 ### NOTIFICATION WINDOW##################################
 #########################################################
 # Enable Notification screen Yes or No
-ENABLE         = 'yes'
+ENABLE         = 'Yes'
 # Url to notification file
-NOTIFICATION   = 'http://t2k.dynu.net/RSS-Feed-&-Addon-Messages/notify.txt'
+NOTIFICATION   = 'http://t2k-info.dynu.net/RSS-Feed-&-Addon-Messages/notify.txt'
 # Use either 'Text' or 'Image'
 HEADERTYPE     = 'Text'
-HEADERMESSAGE  = 'T2K Wizard'
+HEADERMESSAGE  = 'T2K'
 # url to image if using Image 424x180
 HEADERIMAGE    = ''
 # Background for Notification Window
-BACKGROUND     = ''
+BACKGROUND     = 'https://c1.staticflickr.com/1/368/19491507489_bc92baf89b_b.jpg'
 #########################################################
