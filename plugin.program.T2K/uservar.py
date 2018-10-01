@@ -17,7 +17,7 @@ APKFILE        = 'http://t2k-info.dynu.net/RSS-Feed-&-Addon-Messages/apks.txt'
 YOUTUBETITLE   = 'T2K Youtube Tutorials'
 YOUTUBEFILE    = 'http://t2k-info.dynu.net/RSS-Feed-&-Addon-Messages/youtube.txt'
 # Text File for addon installer.  Leave as 'http://' to ignore
-ADDONFILE      = 'http://t2k-info.dynu.net/RSS-Feed-&-Addon-Messages/addons.txt'
+ADDONFILE      = 'http://t2k-info.dynu.net/RSS-Feed-&-Addon-Messages/addons2.txt'
 # Text File for advanced settings.  Leave as 'http://' to ignore
 ADVANCEDFILE   = 'http://t2k-info.dynu.net/RSS-Feed-&-Addon-Messages/advanced.txt'
 
