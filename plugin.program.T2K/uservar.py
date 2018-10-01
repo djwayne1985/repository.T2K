@@ -17,7 +17,7 @@ APKFILE        = 'http://t2k.dynu.net/RSS-Feed-&-Addon-Messages/apks.txt'
 YOUTUBETITLE   = 'T2K Youtube Tutorials'
 YOUTUBEFILE    = 'http://t2k.dynu.net/RSS-Feed-&-Addon-Messages/youtube.txt'
 # Text File for addon installer.  Leave as 'http://' to ignore
-ADDONFILE      = 'http://t2k.dynu.net/RSS-Feed-&-Addon-Messages/addons.txt'
+ADDONFILE      = 'http://t2k.dynu.net/RSS-Feed-&-Addon-Messages/addons2.txt'
 # Text File for advanced settings.  Leave as 'http://' to ignore
 ADVANCEDFILE   = 'http://t2k.dynu.net/RSS-Feed-&-Addon-Messages/advanced.txt'
 
@@ -53,7 +53,7 @@ SPACER         = '='
 # You can edit these however you want, just make sure that you have a %s in each of the
 # THEME's so it grabs the text from the menu item
 COLOR1         = 'dodgerblue'
-COLOR2         = 'red'
+COLOR2         = 'white'
 # Primary menu items   / %s is the menu item and is required
 THEME1         = '[COLOR '+COLOR1+'][B][I]([COLOR '+COLOR2+']T2K[/COLOR])[/B][/COLOR] [COLOR '+COLOR2+']%s[/COLOR][/I]'
 # Build Names          / %s is the menu item and is required
@@ -110,5 +110,5 @@ HEADERMESSAGE  = 'T2K Wizard'
 # url to image if using Image 424x180
 HEADERIMAGE    = ''
 # Background for Notification Window
-BACKGROUND     = 'http://t2k.dynu.net/RSS-Feed-&-Addon-Messages/icons/19491507489_bc92baf89b_b.jpg'
+BACKGROUND     = ''
 #########################################################
