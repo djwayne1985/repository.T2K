@@ -12,7 +12,7 @@ BUILDFILE      = 'http://t2k-info.dynu.net/RSS-Feed-&-Addon-Messages/T2Kautobuil
 # 0 being every startup of kodi
 UPDATECHECK    = 0
 # Text File with apk info in it.
-APKFILE        = 'http://t2k-info.dynu.net/RSS-Feed-&-Addon-Messages/apks.txt'
+APKFILE        = 'http://t2k-info.dynu.net/RSS-Feed-&-Addon-Messages/mainapk.txt'
 # Text File with Youtube Videos urls.  Leave as 'http://' to ignore
 YOUTUBETITLE   = 'T2K Youtube Tutorials'
 YOUTUBEFILE    = 'http://t2k-info.dynu.net/RSS-Feed-&-Addon-Messages/youtube.txt'
