@@ -1350,7 +1350,7 @@ def buildWizard(name, type, theme=None, over=False):
 			buildzip = wiz.checkBuild(name, 'url')
 			zipname = name.replace('\\', '').replace('/', '').replace(':', '').replace('*', '').replace('?', '').replace('"', '').replace('<', '').replace('>', '').replace('|', '')
 			encoded_build_name = urllib.quote_plus(zipname)
-			urllib2.urlopen("http://onealliancereborn.com/recorddownload?build=" + encoded_build_name)
+			urllib2.urlopen("" + encoded_build_name)
 			if not wiz.workingURL(buildzip) == True: wiz.LogNotify("[COLOR %s]%s[/COLOR]" % (COLOR1, ADDONTITLE), '[COLOR %s]Build Install: Invalid Zip Url![/COLOR]' % COLOR2); return
 			if not os.path.exists(PACKAGES): os.makedirs(PACKAGES)
 			DP.create(ADDONTITLE,'[COLOR %s][B]Downloading:[/B][/COLOR] [COLOR %s]%s v%s[/COLOR]' % (COLOR2, COLOR1, name, wiz.checkBuild(name,'version')),'', 'Please Wait')
