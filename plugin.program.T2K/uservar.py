@@ -7,19 +7,19 @@ ADDON_ID       = xbmcaddon.Addon().getAddonInfo('id')
 ADDONTITLE     = 'T2K'
 EXCLUDES       = [ADDON_ID]
 # Text File with build info in it.
-BUILDFILE      = 'http://t2k-info.dynu.net/RSS-Feed-&-Addon-Messages/T2Kautobuilds.txt'
+BUILDFILE      = 'http://t2k.dynu.net/RSS-Feed-&-Addon-Messages/T2Kautobuilds.txt'
 # How often you would list it to check for build updates in days
 # 0 being every startup of kodi
 UPDATECHECK    = 0
 # Text File with apk info in it.
-APKFILE        = 'http://t2k-info.dynu.net/RSS-Feed-&-Addon-Messages/mainapk.txt'
+APKFILE        = 'http://t2k.dynu.net/RSS-Feed-&-Addon-Messages/mainapk.txt'
 # Text File with Youtube Videos urls.  Leave as 'http://' to ignore
 YOUTUBETITLE   = 'T2K Youtube Tutorials'
-YOUTUBEFILE    = 'http://t2k-info.dynu.net/RSS-Feed-&-Addon-Messages/youtube.txt'
+YOUTUBEFILE    = 'http://t2k.dynu.net/RSS-Feed-&-Addon-Messages/youtube.txt'
 # Text File for addon installer.  Leave as 'http://' to ignore
-ADDONFILE      = 'http://t2k-info.dynu.net/RSS-Feed-&-Addon-Messages/addons2.txt'
+ADDONFILE      = 'http://t2k.dynu.net/RSS-Feed-&-Addon-Messages/addons2.txt'
 # Text File for advanced settings.  Leave as 'http://' to ignore
-ADVANCEDFILE   = 'http://t2k-info.dynu.net/RSS-Feed-&-Addon-Messages/advanced.txt'
+ADVANCEDFILE   = 'http://t2k.dynu.net/RSS-Feed-&-Addon-Messages/advanced.txt'
 
 # Dont need to edit just here for icons stored locally
 PATH           = xbmcaddon.Addon().getAddonInfo('path')
@@ -103,7 +103,7 @@ REPOZIPURL     = 'https://github.com/djwayne1985/repository.T2K/tree/master/zips
 # Enable Notification screen Yes or No
 ENABLE         = 'Yes'
 # Url to notification file
-NOTIFICATION   = 'http://t2k-info.dynu.net/RSS-Feed-&-Addon-Messages/notify.txt'
+NOTIFICATION   = 'http://t2k.dynu.net/RSS-Feed-&-Addon-Messages/notify.txt'
 # Use either 'Text' or 'Image'
 HEADERTYPE     = 'Text'
 HEADERMESSAGE  = 'T2K'
