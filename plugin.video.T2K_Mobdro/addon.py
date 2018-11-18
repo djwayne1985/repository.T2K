@@ -59,7 +59,7 @@ if not os.path.exists(USER_DATA_DIR):
 
 COOKIE_FILE = os.path.join(USER_DATA_DIR, "lwp_cookies.dat")
 CACHE_FILE = os.path.join(USER_DATA_DIR, "cache")
-expire_after = timedelta(hours=2)
+expire_after = timedelta(hours=12)
 
 user_agent = "Mozilla/5.0 (Linux; Android 5.1.1; AFTT Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.109 Mobile Safari/537.36"
 auth_url = a2b_hex("68747470733a2f2f6170692e6d6f6264726f2e746f2f7574696c732f61757468").decode("utf-8")
@@ -78,9 +78,9 @@ auth_token_time = int(addon.getSetting("auth_token_time") or "0")
 auth_token = addon.getSetting("auth_token")
 
 current_time = int(time.time())
-if current_time - auth_token_time > 7200:
+if current_time - auth_token_time > 72000:
     with s.cache_disabled():
-        r = s.post(auth_url, data={"signature": app_signature}, timeout=10)
+        r = s.post(auth_url, data={"signature": app_signature}, timeout=100)
 
     if r.content.strip():
         auth_token = r.json().get("token")
