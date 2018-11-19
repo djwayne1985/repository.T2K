@@ -7,7 +7,7 @@ ADDON_ID       = xbmcaddon.Addon().getAddonInfo('id')
 ADDONTITLE     = 'T2K'
 EXCLUDES       = [ADDON_ID]
 # Text File with build info in it.
-BUILDFILE      = 'http://t2k-cloud.co.uk:32768/builds%20version%20txt%20file/T2Kautobuilds.txt'
+BUILDFILE      = 'http://t2k.dynu.net/Kodi%20Stuff/T2Kautobuilds.txt'
 # How often you would list it to check for build updates in days
 # 0 being every startup of kodi
 UPDATECHECK    = 0
