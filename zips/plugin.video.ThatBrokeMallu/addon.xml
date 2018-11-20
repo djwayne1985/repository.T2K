@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.ThatBrokeMallu"
+       name="ThatBrokeMallu"
+       version="0.0.1"
+       provider-name="A Broke MALLU">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.requests"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">FREE Malayalam LIVE TV, Movies, Sports and others</summary>
+    <language>en</language>
+    <description lang="en">This addon provides access to entertainment in various languages. English and Malayalam to be precise.
+ThatBrokeMallu is and always will be free and not open-source. None of its code and resources may be sold or redistributed for any commercial purposes.
+ThatBrokeMallu and its developer [B]DO NOT[/B] host, create, or distribute any of the content displayed in the addon, it simply scrapes ad financed public websites.</description>
+     <platform>all</platform>
+  </extension>
+</addon>
