@@ -77,7 +77,7 @@ def iptvplatinumtest():
 		
 def autoiptv():
 	import re
-	open = OPEN_URL('http://autoiptv.net/playlist.php')
+	open = OPEN_URL('https://freeiptv.io/m3u/1juge_normal.php')
 	regex = re.compile('#EXTINF:.+?\,(.+?)\n(.+?)\n', re.MULTILINE|re.DOTALL).findall(open)
 	for name,url in regex:
 		addDir('[B][COLOR white]%s[/COLOR][/B]'%name,url,10,icon,fanart,'')		
