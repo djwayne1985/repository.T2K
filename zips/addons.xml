@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
+<addon id="plugin.program.aptoide" version="2018.01.08" name="[COLOR darkorange]Aptoide[/COLOR] for Kodi" provider-name="aenemapy">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.module.requests" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="main.py">
+		<provides>video executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+        <description>Install/Download Apk from Aptoide APK Store</description>
+
+		<summary lang="en">Aptoide APK Store</summary>
+		<platform>all</platform>
+		<forum>-</forum>
+		<website>-</website>
+		<source>-</source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>-</news>
+	</extension>
+</addon>
+
 <addon id="plugin.program.T2K" name="T2K Wizard" version="1.0.9" provider-name="T2K">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -252,6 +276,73 @@
   </extension>
 </addon>
 
+<addon
+  id="plugin.video.SportsDevil"
+  version="2018.09.20"
+  name="SportsDevil"
+  provider-name="SportsDevil">
+  <requires>
+   <import addon="xbmc.python" version="2.14.0"/>
+   <import addon="script.module.dateutil" />
+   <import addon="script.module.simplejson" />
+   <import addon="script.module.six" />
+   <import addon="script.module.requests" />
+   <import addon="plugin.video.f4mTester" />
+   <import addon="script.module.slproxy" version="0.0.5"/>
+  </requires>
+  <extension
+    point="xbmc.python.pluginsource"
+    library="default.py">
+   <provides>video</provides>
+  </extension>
+  <!-- <extension point="xbmc.service" library="service/streamlink_proxy.py" /> -->
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">SportsDevil</summary>
+    <description lang="en">[I]There can only be one.[/I][CR][CR]Unofficial Kodi Addon.</description>
+    <disclaimer lang="en">There can only be one.</disclaimer>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.spotitube" name="Youtube Music" version="2.0.9" provider-name="realvito (inspired by L0RE)">
+	<requires>
+		<import addon="xbmc.python" version="2.20.0"/>
+		<import addon="plugin.video.youtube" version="5.3.7"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video audio</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de">Musik über Youtube abspielen</summary>
+		<summary lang="en">Play Music via Youtube</summary>
+		<description lang="de">@realvito[CR]Musik aus verschiedenen Quellen z.B. Billboard, iTunes, Spotify etc. auswählen und über Youtube abspielen.[CR][CR]Für mehr Informationen zu allen Neuerungen siehe - CHANGELOG.[CR]     TEST IT AND LIKE IT</description>
+		<description lang="en">@realvito[CR]Choose Music from different sources e.g. Billboard, iTunes, Spotify etc. and play it via Youtube.[CR][CR]For more information about all new features see - CHANGELOG.[CR]     TEST IT AND LIKE IT</description>
+		<disclaimer lang="de">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		<forum>http://www.kodinerds.net/index.php/Thread/47087-Release-YoutubeMusic-patched/</forum>
+		<website></website>
+		<email></email>
+		<source>https://github.com/kodinerds/repo/tree/master/plugin.video.spotitube</source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>[B][COLOR orangered]Version 2.0.9  (25.02.2018)[/COLOR][/B] by realvito[CR]
+- fixed: Beatport - text errors in genres and Video-Images are not displayed
+- removed: Beatport - subgenres, since no more available
+- fixed: Billboard-Archive because of webpage changes
+- added: German-DJ-Playlist (on special request !)
+- fixed: Hypem - "Popular: Last Week" and "Time-Machine" listing (html > json)
+- added: "https://spotifycharts.com" under the rubric "SPOTIFY - International" with *VIRAL top 50* and *TOP Streams* of many countries
+- changed: new Addon-fanart.jpg
+		</news>
+	</extension>
+</addon>
+
 <addon id="plugin.video.T2K1ClickMovie" name="T2K 1 Click Movie" version="1.0.2" provider-name="T2K">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
@@ -475,6 +566,22 @@
     <description lang="en">Speed Tester powered by speedtest.net</description>
     <platform>all</platform>
   </extension>
+</addon>
+
+<addon id="script.video.F4mProxy" name="F4mProxy" version="2.8.7" provider-name="Shani">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.requests"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib"/>
+		<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Proxy for f4m</summary>
+		<description lang="en">Use this addon to play F4m v1 and v2 streams</description>
+	</extension>
 </addon>
 
 <addon id="skin.aeon.nox.lkmod" version="9.9.0" name="Aeon Nox LKMod" provider-name="BigNoid">
