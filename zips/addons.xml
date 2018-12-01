@@ -39,7 +39,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.FladnagCartoons" name="Fladnag Cartoons" version="1.0.8" provider-name="Fladnag">
+<addon id="plugin.video.FladnagCartoons" name="Fladnag Cartoons" version="1.0.9" provider-name="Fladnag">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.universalscrapers" version="1.0.0" />
@@ -68,7 +68,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.FladnagCollections" name="Fladnag Collections" version="1.1.0" provider-name="Fladnag">
+<addon id="plugin.video.FladnagCollections" name="Fladnag Collections" version="1.1.1" provider-name="Fladnag">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.universalscrapers" version="1.0.0" />
@@ -97,7 +97,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.FladnagKidsBoxsets" name="Fladnag's Kids BoxSets" version="1.0.7" provider-name="Fladnag">
+<addon id="plugin.video.FladnagKidsBoxsets" name="Fladnag's Kids BoxSets" version="1.0.8" provider-name="Fladnag">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.universalscrapers" version="1.0.0" />
@@ -126,7 +126,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.FladnagMovies" name="Fladnag Movies" version="1.1.0" provider-name="Fladnag">
+<addon id="plugin.video.FladnagMovies" name="Fladnag Movies" version="1.1.1" provider-name="Fladnag">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.universalscrapers" version="1.0.0" />
@@ -155,7 +155,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.FladnagSports" name="Fladnag Sports" version="1.1.0" provider-name="Fladnag">
+<addon id="plugin.video.FladnagSports" name="Fladnag Sports" version="1.1.1" provider-name="Fladnag">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.universalscrapers" version="1.0.0" />
@@ -184,7 +184,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.FladnagTVShows" name="Fladnag TV Shows" version="1.1.0" provider-name="Fladnag">
+<addon id="plugin.video.FladnagTVShows" name="Fladnag TV Shows" version="1.1.1" provider-name="Fladnag">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.universalscrapers" version="1.0.0" />
@@ -343,7 +343,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.T2K1ClickMovie" name="T2K 1 Click Movie" version="1.0.2" provider-name="T2K">
+<addon id="plugin.video.T2K1ClickMovie" name="T2K 1 Click Movie" version="1.0.3" provider-name="T2K">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.universalscrapers" version="1.0.0" />
