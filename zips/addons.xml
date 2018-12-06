@@ -696,6 +696,40 @@
 </addon>
 
 <addon
+	id="skin.unity.mod.krypt"
+	version="1.0.1"
+	name="T2K Unity Mod Krypt"
+	provider-name="T2K Team">
+	<requires>
+		<import addon="xbmc.gui" version="5.12.0"/>
+		<import addon="script.skinshortcuts" version="1.0.8"/>
+		<import addon="script.skin.helper.service" version="1.0.60"/>
+	</requires>
+	<extension
+		point="xbmc.gui.skin"
+		debugging="false"
+		effectslowdown="1.0">
+		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
+		<res width="1920" height="1200" aspect="16:10" default="false" folder="xml" />
+		<res width="1920" height="1280" aspect="3:2" default="false" folder="xml" />
+		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
+		<res width="2040" height="1080" aspect="17:9" default="false" folder="xml" />
+		<res width="2560" height="1080" aspect="21:9" default="false" folder="xml" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_AU">A new skin for Kodi 17.6 krypton by T2K Team</summary>
+		<summary lang="en_GB">A new skin for Kodi 17.6 krypton by T2K Team</summary>
+		<summary lang="en_NZ">A new skin for Kodi 17.6 krypton by T2K Team</summary>
+		<summary lang="en_US">A new skin for Kodi 17.6 krypton by T2K Team</summary>
+		<description lang="en_AU">T2K Unity Mod Krypt is an adaptation of Confluence based on a material design.</description>
+		<description lang="en_GB">T2K Unity Mod Krypt is an adaptation of Confluence based on a material design.</description>
+		<description lang="en_NZ">T2K Unity Mod Krypt is an adaptation of Confluence based on a material design.</description>
+		<description lang="en_US">T2K Unity Mod Krypt is an adaptation of Confluence based on a material design.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon
 	id="t2k.skin.unity.mod.18"
 	version="1.0.2"
 	name="T2K Leia Unity Mod"
