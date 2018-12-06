@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
 	id="t2k.skin.unity.mod.18"
-	version="1.0.0"
-	name="Unity Mod"
-	provider-name="Eddage, Bumpaneer">
+	version="1.0.1"
+	name="T2K Unity Mod"
+	provider-name="T2K Team">
 	<requires>
 		<import addon="xbmc.gui" version="5.13.0"/>
 		<import addon="script.skinshortcuts" version="1.0.8"/>
