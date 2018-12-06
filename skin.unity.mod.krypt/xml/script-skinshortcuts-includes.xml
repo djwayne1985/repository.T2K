@@ -1,0 +1,2179 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<includes>
+	<include name="skinshortcuts-mainmenu">
+		<item id="1">
+			<property name="id">$NUMBER[1]</property>
+			<label>[B]Live TV[/B]</label>
+			<label2>Custom item</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">b-livetv-b</property>
+			<property name="defaultID" />
+			<property name="widgetLayout">Square</property>
+			<onclick>noop</onclick>
+			<property name="path">noop</property>
+			<property name="list">noop</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="submenuVisibility">b-livetv-b</property>
+			<property name="group">mainmenu</property>
+			<property name="hasSubmenu">True</property>
+		</item>
+		<item id="2">
+			<property name="id">$NUMBER[2]</property>
+			<label>[B]Sports[/B]</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://E%3a%5cPortableApps%5cKodi17.6Portable%5cApp%5cKodi%5cportable_data%5caddons%5cplugin.video.SportsDevil%5cicon.png/</thumb>
+			<property name="labelID">plugin.video.SportsDevil</property>
+			<property name="defaultID">plugin.video.SportsDevil</property>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.SportsDevil",return)</property>
+			<property name="widgetLayout">Square</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.SportsDevil",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.SportsDevil",return)</property>
+			<property name="list">plugin://plugin.video.SportsDevil</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="submenuVisibility">plugin-video-sportsdevil</property>
+			<property name="group">mainmenu</property>
+			<property name="hasSubmenu">True</property>
+		</item>
+		<item id="3">
+			<property name="id">$NUMBER[3]</property>
+			<label>[B]Kids[/B]</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://E%3a%5cPortableApps%5cKodi17.6Portable%5cApp%5cKodi%5cportable_data%5caddons%5cscript.bkr.artwork%5cresources%5cmedia%5cDefault%5cboxsets31.png/</thumb>
+			<property name="labelID">b-kids-b</property>
+			<property name="defaultID" />
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.bkr/?action=animationNavigator",return)</property>
+			<property name="widgetLayout">Square</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.bkr/?action=animationNavigator",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.bkr/?action=animationNavigator",return)</property>
+			<property name="list">plugin://plugin.video.bkr/?action=animationNavigator</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="submenuVisibility">b-kids-b</property>
+			<property name="group">mainmenu</property>
+			<property name="hasSubmenu">True</property>
+		</item>
+		<item id="4">
+			<property name="id">$NUMBER[4]</property>
+			<label>[B]Movies[/B]</label>
+			<label2>Custom item</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://https%3a%2f%2fteamdna.pw%2fWOW%2f%2fARTWORK%2ficon.png/</thumb>
+			<property name="labelID">plugin.video.FladnagMovies</property>
+			<property name="defaultID" />
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2Fmain.xml&amp;name=%5BB%5D%5BCOLOR+gold%5DW%5BB%5D%5BCOLOR%5DO%5BCOLOR+gold%5DW%5B%2FCOLOR%5D%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2FARTWORK%2Ficon.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2FARTWORK%2Ffanart.jpg&amp;description=No+information+available",return)</property>
+			<property name="widgetLayout">Square</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.FladnagMovies",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.FladnagMovies",return)</property>
+			<property name="list">plugin://plugin.video.FladnagMovies</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="submenuVisibility">plugin-video-fladnagmovies</property>
+			<property name="group">mainmenu</property>
+			<property name="hasSubmenu">True</property>
+		</item>
+		<item id="5">
+			<property name="id">$NUMBER[5]</property>
+			<label>[B]TV Shows[/B]</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://E%3a%5cPortableApps%5cKodi17.6Portable%5cApp%5cKodi%5cportable_data%5caddons%5cplugin.video.FladnagTVShows%5cicon.png/</thumb>
+			<property name="labelID">plugin.video.FladnagTVShows</property>
+			<property name="defaultID">plugin.video.FladnagTVShows</property>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.FladnagTVShows",return)</property>
+			<property name="widgetLayout">Square</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.FladnagTVShows",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.FladnagTVShows",return)</property>
+			<property name="list">plugin://plugin.video.FladnagTVShows</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="submenuVisibility">plugin-video-fladnagtvshows</property>
+			<property name="group">mainmenu</property>
+			<property name="hasSubmenu">True</property>
+		</item>
+		<item id="6">
+			<property name="id">$NUMBER[6]</property>
+			<label>$LOCALIZE[342]</label>
+			<label2>Common menu item</label2>
+			<icon>DefaultMovies.png</icon>
+			<thumb />
+			<property name="labelID">movies</property>
+			<property name="defaultID">movies</property>
+			<property name="widgetLayout">Square</property>
+			<visible>[Library.HasContent(Movies)] + [Library.HasContent(Movies)]</visible>
+			<onclick>ActivateWindow(Videos,videodb://movies/titles/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://movies/titles/,return)</property>
+			<property name="list">videodb://movies/titles/</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="submenuVisibility">movies</property>
+			<property name="group">mainmenu</property>
+			<property name="hasSubmenu">True</property>
+		</item>
+		<item id="7">
+			<property name="id">$NUMBER[7]</property>
+			<label>$LOCALIZE[20343]</label>
+			<label2>Common menu item</label2>
+			<icon>DefaultTVShows.png</icon>
+			<thumb />
+			<property name="labelID">tvshows</property>
+			<property name="defaultID">tvshows</property>
+			<property name="widgetLayout">Square</property>
+			<visible>[Library.HasContent(TVShows)] + [Library.HasContent(TVShows)]</visible>
+			<onclick>ActivateWindow(Videos,videodb://tvshows/titles/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://tvshows/titles/,return)</property>
+			<property name="list">videodb://tvshows/titles/</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="submenuVisibility">tvshows</property>
+			<property name="group">mainmenu</property>
+			<property name="hasSubmenu">True</property>
+		</item>
+		<item id="8">
+			<property name="id">$NUMBER[8]</property>
+			<label>[B]Programs[/B]</label>
+			<label2>Common menu item</label2>
+			<icon>DefaultProgram.png</icon>
+			<thumb />
+			<property name="labelID">b-programs-b</property>
+			<property name="defaultID">programs</property>
+			<property name="widgetLayout">Square</property>
+			<onclick>ActivateWindow(Programs,Addons,return)</onclick>
+			<property name="path">ActivateWindow(Programs,Addons,return)</property>
+			<property name="list">Addons</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="submenuVisibility">b-programs-b</property>
+			<property name="group">mainmenu</property>
+			<property name="hasSubmenu">True</property>
+		</item>
+		<item id="9">
+			<property name="id">$NUMBER[9]</property>
+			<label>[B]System[/B]</label>
+			<label2>Common menu item</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">b-system-b</property>
+			<property name="defaultID">settings</property>
+			<property name="widgetLayout">Square</property>
+			<onclick>ActivateWindow(Settings)</onclick>
+			<property name="path">ActivateWindow(Settings)</property>
+			<property name="list">Settings</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="submenuVisibility">b-system-b</property>
+			<property name="group">mainmenu</property>
+			<property name="hasSubmenu">True</property>
+		</item>
+	</include>
+	<include />
+	<include name="skinshortcuts-submenu">
+		<item id="1">
+			<property name="id">$NUMBER[1]</property>
+			<property name="mainmenuid">1</property>
+			<label>[COLOR fuchsia][B]D[/COLOR]N[B][COLOR fuchsia]A[/B][/COLOR] [B]LIVE[/B]</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://https%3a%2f%2fteamdna.pw%2fDNA%2fARTWORK%2fICON%2flive.png/</thumb>
+			<property name="labelID">colorfuchsia-b-d-color-n-b-colorfuchsia-a-b-color-b-live-b</property>
+			<property name="defaultID" />
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FDNA%2FDNALIVE%2Fdnalmain.xml&amp;name=%5BCOLOR+fuchsia%5D%5BB%5DD%5B%2FCOLOR%5DN%5BB%5D%5BCOLOR+fuchsia%5DA%5B%2FB%5D%5B%2FCOLOR%5D+%5BB%5DLIVE%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FICON%2Flive.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FFANART%2Flive.jpg&amp;description=No+information+available",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FDNA%2FDNALIVE%2Fdnalmain.xml&amp;name=%5BCOLOR+fuchsia%5D%5BB%5DD%5B%2FCOLOR%5DN%5BB%5D%5BCOLOR+fuchsia%5DA%5B%2FB%5D%5B%2FCOLOR%5D+%5BB%5DLIVE%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FICON%2Flive.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FFANART%2Flive.jpg&amp;description=No+information+available",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FDNA%2FDNALIVE%2Fdnalmain.xml&amp;name=%5BCOLOR+fuchsia%5D%5BB%5DD%5B%2FCOLOR%5DN%5BB%5D%5BCOLOR+fuchsia%5DA%5B%2FB%5D%5B%2FCOLOR%5D+%5BB%5DLIVE%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FICON%2Flive.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FFANART%2Flive.jpg&amp;description=No+information+available",return)</property>
+			<property name="list">plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FDNA%2FDNALIVE%2Fdnalmain.xml&amp;name=%5BCOLOR+fuchsia%5D%5BB%5DD%5B%2FCOLOR%5DN%5BB%5D%5BCOLOR+fuchsia%5DA%5B%2FB%5D%5B%2FCOLOR%5D+%5BB%5DLIVE%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FICON%2Flive.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FFANART%2Flive.jpg&amp;description=No+information+available</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),b-livetv-b)</visible>
+			<property name="group">b-livetv-b</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="2">
+			<property name="id">$NUMBER[2]</property>
+			<property name="mainmenuid">1</property>
+			<label>[B]T2K IPTV Kingdom[/B]</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://D%3a%5cPortableApps%5cKodi17.6Portable%5cApp%5cKodi%5cportable_data%5caddons%5cplugin.video.T2KIPTV%5cicon.png/</thumb>
+			<property name="labelID">plugin.video.T2KIPTV</property>
+			<property name="defaultID">plugin.video.T2KIPTV</property>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.T2KIPTV",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.T2KIPTV",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.T2KIPTV",return)</property>
+			<property name="list">plugin://plugin.video.T2KIPTV</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),b-livetv-b)</visible>
+			<property name="group">b-livetv-b</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="1">
+			<property name="id">$NUMBER[1]</property>
+			<property name="mainmenuid">2</property>
+			<label>[B]Fladnag Sports[/B]</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://E%3a%5cPortableApps%5cKodi17.6Portable%5cApp%5cKodi%5cportable_data%5caddons%5cplugin.video.FladnagSports%5cicon.png/</thumb>
+			<property name="labelID">plugin.video.FladnagSports</property>
+			<property name="defaultID">plugin.video.FladnagSports</property>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.FladnagSports",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.FladnagSports",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.FladnagSports",return)</property>
+			<property name="list">plugin://plugin.video.FladnagSports</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),plugin-video-sportsdevil)</visible>
+			<property name="group">plugin.video.SportsDevil</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="2">
+			<property name="id">$NUMBER[2]</property>
+			<property name="mainmenuid">2</property>
+			<label>[COLOR gold][B]W[COLOR]O[/COLOR]W Just Sports[/B][/COLOR]</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://https%3a%2f%2fteamdna.pw%2fWOW%2f%2fARTWORK%2fjustsports.png/</thumb>
+			<property name="labelID">colorgold-b-w-color-o-color-wjustsports-b-color</property>
+			<property name="defaultID" />
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2FJust%2Fjustsportsmain.xml&amp;name=%5BCOLOR+gold%5D%5BB%5DW%5BCOLOR%5DO%5B%2FCOLOR%5DW+Just+Sports%5B%2FB%5D%5B%2FCOLOR%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2FARTWORK%2Fjustsports.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2FARTWORK%2Fjustsports.jpg&amp;description=No+information+available",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2FJust%2Fjustsportsmain.xml&amp;name=%5BCOLOR+gold%5D%5BB%5DW%5BCOLOR%5DO%5B%2FCOLOR%5DW+Just+Sports%5B%2FB%5D%5B%2FCOLOR%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2FARTWORK%2Fjustsports.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2FARTWORK%2Fjustsports.jpg&amp;description=No+information+available",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2FJust%2Fjustsportsmain.xml&amp;name=%5BCOLOR+gold%5D%5BB%5DW%5BCOLOR%5DO%5B%2FCOLOR%5DW+Just+Sports%5B%2FB%5D%5B%2FCOLOR%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2FARTWORK%2Fjustsports.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2FARTWORK%2Fjustsports.jpg&amp;description=No+information+available",return)</property>
+			<property name="list">plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2FJust%2Fjustsportsmain.xml&amp;name=%5BCOLOR+gold%5D%5BB%5DW%5BCOLOR%5DO%5B%2FCOLOR%5DW+Just+Sports%5B%2FB%5D%5B%2FCOLOR%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2FARTWORK%2Fjustsports.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2FARTWORK%2Fjustsports.jpg&amp;description=No+information+available</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),plugin-video-sportsdevil)</visible>
+			<property name="group">plugin.video.SportsDevil</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="3">
+			<property name="id">$NUMBER[3]</property>
+			<property name="mainmenuid">2</property>
+			<label>[COLOR fuchsia][B]D[/COLOR]N[B][COLOR fuchsia]A[/B][/COLOR] [B]SPORTS[/B]</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://https%3a%2f%2fteamdna.pw%2fDNA%2fARTWORK%2fICON%2fsports.png/</thumb>
+			<property name="labelID">colorfuchsia-b-d-color-n-b-colorfuchsia-a-b-color-b-sports-b</property>
+			<property name="defaultID" />
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FDNA%2FITNOTG%2Fitnotgmain.xml&amp;name=%5BCOLOR+fuchsia%5D%5BB%5DD%5B%2FCOLOR%5DN%5BB%5D%5BCOLOR+fuchsia%5DA%5B%2FB%5D%5B%2FCOLOR%5D+%5BB%5DSPORTS%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FICON%2Fsports.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FFANART%2Fsports.jpg&amp;description=No+information+available",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FDNA%2FITNOTG%2Fitnotgmain.xml&amp;name=%5BCOLOR+fuchsia%5D%5BB%5DD%5B%2FCOLOR%5DN%5BB%5D%5BCOLOR+fuchsia%5DA%5B%2FB%5D%5B%2FCOLOR%5D+%5BB%5DSPORTS%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FICON%2Fsports.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FFANART%2Fsports.jpg&amp;description=No+information+available",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FDNA%2FITNOTG%2Fitnotgmain.xml&amp;name=%5BCOLOR+fuchsia%5D%5BB%5DD%5B%2FCOLOR%5DN%5BB%5D%5BCOLOR+fuchsia%5DA%5B%2FB%5D%5B%2FCOLOR%5D+%5BB%5DSPORTS%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FICON%2Fsports.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FFANART%2Fsports.jpg&amp;description=No+information+available",return)</property>
+			<property name="list">plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FDNA%2FITNOTG%2Fitnotgmain.xml&amp;name=%5BCOLOR+fuchsia%5D%5BB%5DD%5B%2FCOLOR%5DN%5BB%5D%5BCOLOR+fuchsia%5DA%5B%2FB%5D%5B%2FCOLOR%5D+%5BB%5DSPORTS%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FICON%2Fsports.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FFANART%2Fsports.jpg&amp;description=No+information+available</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),plugin-video-sportsdevil)</visible>
+			<property name="group">plugin.video.SportsDevil</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="4">
+			<property name="id">$NUMBER[4]</property>
+			<property name="mainmenuid">2</property>
+			<label>[COLORgold][B]Sports Catchup[/B][/COLOR]</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fcoots.co%2fbckodi%2fwumpafruit%2fimages%2ficon.jpg/</thumb>
+			<property name="labelID">colorgold-b-sportscatchup-b-color</property>
+			<property name="defaultID" />
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fcoots.co%2Fbckodi%2Fwumpafruit%2Fxml%2Fsportingevents.xml&amp;name=%5BCOLORgold%5DSports+Catchup%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fcoots.co%2Fbckodi%2Fwumpafruit%2Fimages%2Ficon.jpg&amp;fanart=http%3A%2F%2Fcoots.co%2Fbckodi%2Fwumpafruit%2Fimages%2Ffanart.jpg&amp;description=No+information+available",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fcoots.co%2Fbckodi%2Fwumpafruit%2Fxml%2Fsportingevents.xml&amp;name=%5BCOLORgold%5DSports+Catchup%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fcoots.co%2Fbckodi%2Fwumpafruit%2Fimages%2Ficon.jpg&amp;fanart=http%3A%2F%2Fcoots.co%2Fbckodi%2Fwumpafruit%2Fimages%2Ffanart.jpg&amp;description=No+information+available",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fcoots.co%2Fbckodi%2Fwumpafruit%2Fxml%2Fsportingevents.xml&amp;name=%5BCOLORgold%5DSports+Catchup%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fcoots.co%2Fbckodi%2Fwumpafruit%2Fimages%2Ficon.jpg&amp;fanart=http%3A%2F%2Fcoots.co%2Fbckodi%2Fwumpafruit%2Fimages%2Ffanart.jpg&amp;description=No+information+available",return)</property>
+			<property name="list">plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fcoots.co%2Fbckodi%2Fwumpafruit%2Fxml%2Fsportingevents.xml&amp;name=%5BCOLORgold%5DSports+Catchup%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fcoots.co%2Fbckodi%2Fwumpafruit%2Fimages%2Ficon.jpg&amp;fanart=http%3A%2F%2Fcoots.co%2Fbckodi%2Fwumpafruit%2Fimages%2Ffanart.jpg&amp;description=No+information+available</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),plugin-video-sportsdevil)</visible>
+			<property name="group">plugin.video.SportsDevil</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="1">
+			<property name="id">$NUMBER[1]</property>
+			<property name="mainmenuid">3</property>
+			<label>[B]Fladnag Cartoons[/B]</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://E%3a%5cPortableApps%5cKodi17.6Portable%5cApp%5cKodi%5cportable_data%5caddons%5cplugin.video.FladnagCartoons%5cicon.png/</thumb>
+			<property name="labelID">plugin.video.FladnagCartoons</property>
+			<property name="defaultID">plugin.video.FladnagCartoons</property>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.FladnagCartoons",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.FladnagCartoons",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.FladnagCartoons",return)</property>
+			<property name="list">plugin://plugin.video.FladnagCartoons</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),b-kids-b)</visible>
+			<property name="group">b-kids-b</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="2">
+			<property name="id">$NUMBER[2]</property>
+			<property name="mainmenuid">3</property>
+			<label>[B]Fladnag's Kids BoxSets[/B]</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://E%3a%5cPortableApps%5cKodi17.6Portable%5cApp%5cKodi%5cportable_data%5caddons%5cplugin.video.FladnagKidsBoxsets%5cicon.png/</thumb>
+			<property name="labelID">plugin.video.FladnagKidsBoxsets</property>
+			<property name="defaultID">plugin.video.FladnagKidsBoxsets</property>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.FladnagKidsBoxsets",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.FladnagKidsBoxsets",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.FladnagKidsBoxsets",return)</property>
+			<property name="list">plugin://plugin.video.FladnagKidsBoxsets</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),b-kids-b)</visible>
+			<property name="group">b-kids-b</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="3">
+			<property name="id">$NUMBER[3]</property>
+			<property name="mainmenuid">3</property>
+			<label>[COLOR fuchsia][B]D[/COLOR]N[B][COLOR fuchsia]A[/B][/COLOR] [B]KIDS[/B]</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://https%3a%2f%2fteamdna.pw%2fDNA%2fARTWORK%2fICON%2fkids.png/</thumb>
+			<property name="labelID">colorfuchsia-b-d-color-n-b-colorfuchsia-a-b-color-b-kids-b</property>
+			<property name="defaultID" />
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FDNA%2FILN%2Filnmain.xml&amp;name=%5BCOLOR+fuchsia%5D%5BB%5DD%5B%2FCOLOR%5DN%5BB%5D%5BCOLOR+fuchsia%5DA%5B%2FB%5D%5B%2FCOLOR%5D+%5BB%5DKIDS%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FICON%2Fkids.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FFANART%2Fkids.jpg&amp;description=No+information+available",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FDNA%2FILN%2Filnmain.xml&amp;name=%5BCOLOR+fuchsia%5D%5BB%5DD%5B%2FCOLOR%5DN%5BB%5D%5BCOLOR+fuchsia%5DA%5B%2FB%5D%5B%2FCOLOR%5D+%5BB%5DKIDS%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FICON%2Fkids.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FFANART%2Fkids.jpg&amp;description=No+information+available",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FDNA%2FILN%2Filnmain.xml&amp;name=%5BCOLOR+fuchsia%5D%5BB%5DD%5B%2FCOLOR%5DN%5BB%5D%5BCOLOR+fuchsia%5DA%5B%2FB%5D%5B%2FCOLOR%5D+%5BB%5DKIDS%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FICON%2Fkids.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FFANART%2Fkids.jpg&amp;description=No+information+available",return)</property>
+			<property name="list">plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FDNA%2FILN%2Filnmain.xml&amp;name=%5BCOLOR+fuchsia%5D%5BB%5DD%5B%2FCOLOR%5DN%5BB%5D%5BCOLOR+fuchsia%5DA%5B%2FB%5D%5B%2FCOLOR%5D+%5BB%5DKIDS%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FICON%2Fkids.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FFANART%2Fkids.jpg&amp;description=No+information+available</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),b-kids-b)</visible>
+			<property name="group">b-kids-b</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="4">
+			<property name="id">$NUMBER[4]</property>
+			<property name="mainmenuid">3</property>
+			<label>[B]Kids Stuff[/B]</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fuk1.xyz%2fHOB%2fmedia%2fKids.png/</thumb>
+			<property name="labelID">b-kidsstuff-b</property>
+			<property name="defaultID" />
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fuk1.xyz%2FHOB%2Fxml%2Fkids.xml&amp;name=Kids+Stuff&amp;iconimage=http%3A%2F%2Fuk1.xyz%2FHOB%2Fmedia%2FKids.png&amp;fanart=E%3A%5CPortableApps%5CKodi17.6Portable%5CApp%5CKodi%5Cportable_data%5Caddons%5Cplugin.video.ds%5Cfanart.jpg&amp;description=No+information+available",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fuk1.xyz%2FHOB%2Fxml%2Fkids.xml&amp;name=Kids+Stuff&amp;iconimage=http%3A%2F%2Fuk1.xyz%2FHOB%2Fmedia%2FKids.png&amp;fanart=special://home/addons%5Cplugin.video.ds%5Cfanart.jpg&amp;description=No+information+available",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fuk1.xyz%2FHOB%2Fxml%2Fkids.xml&amp;name=Kids+Stuff&amp;iconimage=http%3A%2F%2Fuk1.xyz%2FHOB%2Fmedia%2FKids.png&amp;fanart=special://home/addons%5Cplugin.video.ds%5Cfanart.jpg&amp;description=No+information+available",return)</property>
+			<property name="list">plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fuk1.xyz%2FHOB%2Fxml%2Fkids.xml&amp;name=Kids+Stuff&amp;iconimage=http%3A%2F%2Fuk1.xyz%2FHOB%2Fmedia%2FKids.png&amp;fanart=special://home/addons%5Cplugin.video.ds%5Cfanart.jpg&amp;description=No+information+available</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),b-kids-b)</visible>
+			<property name="group">b-kids-b</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="5">
+			<property name="id">$NUMBER[5]</property>
+			<property name="mainmenuid">3</property>
+			<label>[COLOR yellow][B]kidz[/B][/COLOR]</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fuk1.site%2faddons%2fartwork%2fkidzicon.png/</thumb>
+			<property name="labelID">coloryellow-b-kidz-b-color</property>
+			<property name="defaultID" />
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fuk1.site%2Faddons%2FKidz%2Fkidzmain.xml&amp;name=%5BCOLOR+yellow%5D%5BB%5Dkidz%5B%2FB%5D%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fuk1.site%2Faddons%2Fartwork%2Fkidzicon.png&amp;fanart=http%3A%2F%2Fuk1.site%2Faddons%2Fartwork%2Fkidzfanart.jpg&amp;description=No+information+available",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fuk1.site%2Faddons%2FKidz%2Fkidzmain.xml&amp;name=%5BCOLOR+yellow%5D%5BB%5Dkidz%5B%2FB%5D%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fuk1.site%2Faddons%2Fartwork%2Fkidzicon.png&amp;fanart=http%3A%2F%2Fuk1.site%2Faddons%2Fartwork%2Fkidzfanart.jpg&amp;description=No+information+available",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fuk1.site%2Faddons%2FKidz%2Fkidzmain.xml&amp;name=%5BCOLOR+yellow%5D%5BB%5Dkidz%5B%2FB%5D%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fuk1.site%2Faddons%2Fartwork%2Fkidzicon.png&amp;fanart=http%3A%2F%2Fuk1.site%2Faddons%2Fartwork%2Fkidzfanart.jpg&amp;description=No+information+available",return)</property>
+			<property name="list">plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fuk1.site%2Faddons%2FKidz%2Fkidzmain.xml&amp;name=%5BCOLOR+yellow%5D%5BB%5Dkidz%5B%2FB%5D%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fuk1.site%2Faddons%2Fartwork%2Fkidzicon.png&amp;fanart=http%3A%2F%2Fuk1.site%2Faddons%2Fartwork%2Fkidzfanart.jpg&amp;description=No+information+available</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),b-kids-b)</visible>
+			<property name="group">b-kids-b</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="1">
+			<property name="id">$NUMBER[1]</property>
+			<property name="mainmenuid">4</property>
+			<label>[B][COLOR gold]W[B][COLOR]O[COLOR gold]W[/COLOR][/B]</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://https%3a%2f%2fteamdna.pw%2fWOW%2f%2fARTWORK%2ficon.png/</thumb>
+			<property name="labelID">b-colorgold-w-b-color-o-colorgold-w-color-b</property>
+			<property name="defaultID" />
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2Fmain.xml&amp;name=%5BB%5D%5BCOLOR+gold%5DW%5BB%5D%5BCOLOR%5DO%5BCOLOR+gold%5DW%5B%2FCOLOR%5D%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2FARTWORK%2Ficon.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2FARTWORK%2Ffanart.jpg&amp;description=No+information+available",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2Fmain.xml&amp;name=%5BB%5D%5BCOLOR+gold%5DW%5BB%5D%5BCOLOR%5DO%5BCOLOR+gold%5DW%5B%2FCOLOR%5D%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2FARTWORK%2Ficon.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2FARTWORK%2Ffanart.jpg&amp;description=No+information+available",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2Fmain.xml&amp;name=%5BB%5D%5BCOLOR+gold%5DW%5BB%5D%5BCOLOR%5DO%5BCOLOR+gold%5DW%5B%2FCOLOR%5D%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2FARTWORK%2Ficon.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2FARTWORK%2Ffanart.jpg&amp;description=No+information+available",return)</property>
+			<property name="list">plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2Fmain.xml&amp;name=%5BB%5D%5BCOLOR+gold%5DW%5BB%5D%5BCOLOR%5DO%5BCOLOR+gold%5DW%5B%2FCOLOR%5D%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2FARTWORK%2Ficon.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2FARTWORK%2Ffanart.jpg&amp;description=No+information+available</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),plugin-video-fladnagmovies)</visible>
+			<property name="group">plugin.video.FladnagMovies</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="2">
+			<property name="id">$NUMBER[2]</property>
+			<property name="mainmenuid">4</property>
+			<label>[B]DNA Movies[/B]</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://https%3a%2f%2fteamdna.pw%2fDNA%2fARTWORK%2fICON%2fektos.png/</thumb>
+			<property name="labelID">b-dnamovies-b</property>
+			<property name="defaultID" />
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FDNA%2FEKTOS%2Fmovies.xml&amp;name=%5BB%5DMovies%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FICON%2Fektos.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FFANART%2Fektos.jpg&amp;description=No+information+available",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FDNA%2FEKTOS%2Fmovies.xml&amp;name=%5BB%5DMovies%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FICON%2Fektos.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FFANART%2Fektos.jpg&amp;description=No+information+available",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FDNA%2FEKTOS%2Fmovies.xml&amp;name=%5BB%5DMovies%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FICON%2Fektos.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FFANART%2Fektos.jpg&amp;description=No+information+available",return)</property>
+			<property name="list">plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FDNA%2FEKTOS%2Fmovies.xml&amp;name=%5BB%5DMovies%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FICON%2Fektos.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FFANART%2Fektos.jpg&amp;description=No+information+available</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),plugin-video-fladnagmovies)</visible>
+			<property name="group">plugin.video.FladnagMovies</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="3">
+			<property name="id">$NUMBER[3]</property>
+			<property name="mainmenuid">4</property>
+			<label>[B][COLOR deepskyblue]H[COLOR white]OUSE OF BLU[COLOR deepskyblue]E[/COLOR][/B]</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://E%3a%5cPortableApps%5cKodi17.6Portable%5cApp%5cKodi%5cportable_data%5caddons%5cplugin.video.ds%5cicon.png/</thumb>
+			<property name="labelID">b-colordeepskyblue-h-colorwhite-ouseofblu-colordeepskyblue-e-color-b</property>
+			<property name="defaultID" />
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fuk1.xyz%2FHOB%2Fxml%2Fmain.xml&amp;name=%5BB%5D%5BCOLOR+deepskyblue%5DH%5BCOLOR+white%5DOUSE+OF+BLU%5BCOLOR+deepskyblue%5DE%5B%2FCOLOR%5D%5B%2FB%5D&amp;iconimage=E%3A%5CPortableApps%5CKodi17.6Portable%5CApp%5CKodi%5Cportable_data%5Caddons%5Cplugin.video.ds%5Cicon.png&amp;fanart=E%3A%5CPortableApps%5CKodi17.6Portable%5CApp%5CKodi%5Cportable_data%5Caddons%5Cplugin.video.ds%5Cfanart.jpg&amp;description=No+information+available",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fuk1.xyz%2FHOB%2Fxml%2Fmain.xml&amp;name=%5BB%5D%5BCOLOR+deepskyblue%5DH%5BCOLOR+white%5DOUSE+OF+BLU%5BCOLOR+deepskyblue%5DE%5B%2FCOLOR%5D%5B%2FB%5D&amp;iconimage=special://home/addons%5Cplugin.video.ds%5Cicon.png&amp;fanart=special://home/addons%5Cplugin.video.ds%5Cfanart.jpg&amp;description=No+information+available",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fuk1.xyz%2FHOB%2Fxml%2Fmain.xml&amp;name=%5BB%5D%5BCOLOR+deepskyblue%5DH%5BCOLOR+white%5DOUSE+OF+BLU%5BCOLOR+deepskyblue%5DE%5B%2FCOLOR%5D%5B%2FB%5D&amp;iconimage=special://home/addons%5Cplugin.video.ds%5Cicon.png&amp;fanart=special://home/addons%5Cplugin.video.ds%5Cfanart.jpg&amp;description=No+information+available",return)</property>
+			<property name="list">plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fuk1.xyz%2FHOB%2Fxml%2Fmain.xml&amp;name=%5BB%5D%5BCOLOR+deepskyblue%5DH%5BCOLOR+white%5DOUSE+OF+BLU%5BCOLOR+deepskyblue%5DE%5B%2FCOLOR%5D%5B%2FB%5D&amp;iconimage=special://home/addons%5Cplugin.video.ds%5Cicon.png&amp;fanart=special://home/addons%5Cplugin.video.ds%5Cfanart.jpg&amp;description=No+information+available</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),plugin-video-fladnagmovies)</visible>
+			<property name="group">plugin.video.FladnagMovies</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="4">
+			<property name="id">$NUMBER[4]</property>
+			<property name="mainmenuid">4</property>
+			<label>[B][COLOR darkgoldenrod]O[COLOR white]NE CLIC[COLOR darkgoldenrod]K[/COLOR][/B]</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fuk1.site%2faddons%2fartwork%2foneclickfanart.jpg/</thumb>
+			<property name="labelID">b-colordarkgoldenrod-o-colorwhite-neclic-colordarkgoldenrod-k-color-b</property>
+			<property name="defaultID" />
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fukodi1.com%2Foneclickds%2Fmain.xml&amp;name=%5BB%5D%5BCOLOR+darkgoldenrod%5DO%5BCOLOR+white%5DNE+CLIC%5BCOLOR+darkgoldenrod%5DK%5B%2FCOLOR%5D%5B%2FB%5D&amp;iconimage=http%3A%2F%2Fuk1.site%2Faddons%2Fartwork%2Foneclickfanart.jpg&amp;fanart=http%3A%2F%2Fuk1.site%2Faddons%2Fartwork%2Foneclickicon.png&amp;description=No+information+available",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fukodi1.com%2Foneclickds%2Fmain.xml&amp;name=%5BB%5D%5BCOLOR+darkgoldenrod%5DO%5BCOLOR+white%5DNE+CLIC%5BCOLOR+darkgoldenrod%5DK%5B%2FCOLOR%5D%5B%2FB%5D&amp;iconimage=http%3A%2F%2Fuk1.site%2Faddons%2Fartwork%2Foneclickfanart.jpg&amp;fanart=http%3A%2F%2Fuk1.site%2Faddons%2Fartwork%2Foneclickicon.png&amp;description=No+information+available",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fukodi1.com%2Foneclickds%2Fmain.xml&amp;name=%5BB%5D%5BCOLOR+darkgoldenrod%5DO%5BCOLOR+white%5DNE+CLIC%5BCOLOR+darkgoldenrod%5DK%5B%2FCOLOR%5D%5B%2FB%5D&amp;iconimage=http%3A%2F%2Fuk1.site%2Faddons%2Fartwork%2Foneclickfanart.jpg&amp;fanart=http%3A%2F%2Fuk1.site%2Faddons%2Fartwork%2Foneclickicon.png&amp;description=No+information+available",return)</property>
+			<property name="list">plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fukodi1.com%2Foneclickds%2Fmain.xml&amp;name=%5BB%5D%5BCOLOR+darkgoldenrod%5DO%5BCOLOR+white%5DNE+CLIC%5BCOLOR+darkgoldenrod%5DK%5B%2FCOLOR%5D%5B%2FB%5D&amp;iconimage=http%3A%2F%2Fuk1.site%2Faddons%2Fartwork%2Foneclickfanart.jpg&amp;fanart=http%3A%2F%2Fuk1.site%2Faddons%2Fartwork%2Foneclickicon.png&amp;description=No+information+available</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),plugin-video-fladnagmovies)</visible>
+			<property name="group">plugin.video.FladnagMovies</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="5">
+			<property name="id">$NUMBER[5]</property>
+			<property name="mainmenuid">4</property>
+			<label>[B]Uranus Movies[/B]</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://E%3a%5cPortableApps%5cKodi17.6Portable%5cApp%5cKodi%5cportable_data%5caddons%5cscript.uranus.artwork%5cresources%5cmedia%5cDefault%5cmovies.png/</thumb>
+			<property name="labelID">b-uranusmovies-b</property>
+			<property name="defaultID" />
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.uranus/?action=movieNavigator",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.uranus/?action=movieNavigator",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.uranus/?action=movieNavigator",return)</property>
+			<property name="list">plugin://plugin.video.uranus/?action=movieNavigator</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),plugin-video-fladnagmovies)</visible>
+			<property name="group">plugin.video.FladnagMovies</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="1">
+			<property name="id">$NUMBER[1]</property>
+			<property name="mainmenuid">5</property>
+			<label>[B]DNA TV Shows[/B]</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://https%3a%2f%2fteamdna.pw%2fDNA%2fARTWORK%2fICON%2fektos.png/</thumb>
+			<property name="labelID">b-dnatvshows-b</property>
+			<property name="defaultID" />
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FDNA%2FEKTOS%2Ftvshow.xml&amp;name=%5BB%5DTV+Shows%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FICON%2Fektos.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FFANART%2Fektos.jpg&amp;description=No+information+available",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FDNA%2FEKTOS%2Ftvshow.xml&amp;name=%5BB%5DTV+Shows%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FICON%2Fektos.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FFANART%2Fektos.jpg&amp;description=No+information+available",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FDNA%2FEKTOS%2Ftvshow.xml&amp;name=%5BB%5DTV+Shows%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FICON%2Fektos.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FFANART%2Fektos.jpg&amp;description=No+information+available",return)</property>
+			<property name="list">plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FDNA%2FEKTOS%2Ftvshow.xml&amp;name=%5BB%5DTV+Shows%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FICON%2Fektos.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FFANART%2Fektos.jpg&amp;description=No+information+available</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),plugin-video-fladnagtvshows)</visible>
+			<property name="group">plugin.video.FladnagTVShows</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="2">
+			<property name="id">$NUMBER[2]</property>
+			<property name="mainmenuid">5</property>
+			<label>[B]Blues TV Shows[/B]</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fuk1.xyz%2fHOB%2fmedia%2fBluestv.png/</thumb>
+			<property name="labelID">b-bluestvshows-b</property>
+			<property name="defaultID" />
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fuk1.xyz%2FHOB%2Fxml%2Ftvshows.xml&amp;name=TV+Shows&amp;iconimage=http%3A%2F%2Fuk1.xyz%2FHOB%2Fmedia%2FBluestv.png&amp;fanart=E%3A%5CPortableApps%5CKodi17.6Portable%5CApp%5CKodi%5Cportable_data%5Caddons%5Cplugin.video.ds%5Cfanart.jpg&amp;description=No+information+available",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fuk1.xyz%2FHOB%2Fxml%2Ftvshows.xml&amp;name=TV+Shows&amp;iconimage=http%3A%2F%2Fuk1.xyz%2FHOB%2Fmedia%2FBluestv.png&amp;fanart=special://home/addons%5Cplugin.video.ds%5Cfanart.jpg&amp;description=No+information+available",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fuk1.xyz%2FHOB%2Fxml%2Ftvshows.xml&amp;name=TV+Shows&amp;iconimage=http%3A%2F%2Fuk1.xyz%2FHOB%2Fmedia%2FBluestv.png&amp;fanart=special://home/addons%5Cplugin.video.ds%5Cfanart.jpg&amp;description=No+information+available",return)</property>
+			<property name="list">plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fuk1.xyz%2FHOB%2Fxml%2Ftvshows.xml&amp;name=TV+Shows&amp;iconimage=http%3A%2F%2Fuk1.xyz%2FHOB%2Fmedia%2FBluestv.png&amp;fanart=special://home/addons%5Cplugin.video.ds%5Cfanart.jpg&amp;description=No+information+available</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),plugin-video-fladnagtvshows)</visible>
+			<property name="group">plugin.video.FladnagTVShows</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="3">
+			<property name="id">$NUMBER[3]</property>
+			<property name="mainmenuid">5</property>
+			<label>[B]UranusTV Shows[/B]</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://E%3a%5cPortableApps%5cKodi17.6Portable%5cApp%5cKodi%5cportable_data%5caddons%5cscript.uranus.artwork%5cresources%5cmedia%5cDefault%5ctvshows.png/</thumb>
+			<property name="labelID">b-uranustvshows-b</property>
+			<property name="defaultID" />
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.uranus/?action=tvNavigator",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.uranus/?action=tvNavigator",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.uranus/?action=tvNavigator",return)</property>
+			<property name="list">plugin://plugin.video.uranus/?action=tvNavigator</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),plugin-video-fladnagtvshows)</visible>
+			<property name="group">plugin.video.FladnagTVShows</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="1">
+			<property name="id">$NUMBER[1]</property>
+			<property name="mainmenuid">6</property>
+			<label>$LOCALIZE[31328]</label>
+			<label2>$ADDON[script.skinshortcuts 32014]</label2>
+			<icon>DefaultRecentlyAddedMovies.png</icon>
+			<thumb />
+			<property name="labelID">31328</property>
+			<property name="defaultID">31328</property>
+			<onclick>ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</property>
+			<property name="list">videodb://recentlyaddedmovies/</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
+			<property name="group">movies</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="2">
+			<property name="id">$NUMBER[2]</property>
+			<property name="mainmenuid">6</property>
+			<label>$LOCALIZE[20434]</label>
+			<label2>$LOCALIZE[342]</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">20434</property>
+			<property name="defaultID">20434</property>
+			<visible>[Library.HasContent(MovieSets)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
+			<onclick>ActivateWindow(Videos,videodb://movies/sets/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://movies/sets/,return)</property>
+			<property name="list">videodb://movies/sets/</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="group">movies</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="3">
+			<property name="id">$NUMBER[3]</property>
+			<property name="mainmenuid">6</property>
+			<label>$LOCALIZE[369]</label>
+			<label2>$LOCALIZE[342]</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">369</property>
+			<property name="defaultID">369</property>
+			<visible>[Library.HasContent(Movies)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
+			<onclick>ActivateWindow(Videos,videodb://movies/titles/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://movies/titles/,return)</property>
+			<property name="list">videodb://movies/titles/</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="group">movies</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="4">
+			<property name="id">$NUMBER[4]</property>
+			<property name="mainmenuid">6</property>
+			<label>$LOCALIZE[135]</label>
+			<label2>$LOCALIZE[342]</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">135</property>
+			<property name="defaultID">135</property>
+			<visible>[Library.HasContent(Movies)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
+			<onclick>ActivateWindow(Videos,videodb://movies/genres/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://movies/genres/,return)</property>
+			<property name="list">videodb://movies/genres/</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="group">movies</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="5">
+			<property name="id">$NUMBER[5]</property>
+			<property name="mainmenuid">6</property>
+			<label>$LOCALIZE[652]</label>
+			<label2>$LOCALIZE[342]</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">652</property>
+			<property name="defaultID">652</property>
+			<visible>[Library.HasContent(Movies)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
+			<onclick>ActivateWindow(Videos,videodb://movies/years/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://movies/years/,return)</property>
+			<property name="list">videodb://movies/years/</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="group">movies</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="6">
+			<property name="id">$NUMBER[6]</property>
+			<property name="mainmenuid">6</property>
+			<label>$LOCALIZE[344]</label>
+			<label2>$LOCALIZE[342]</label2>
+			<icon>DefaultActor.png</icon>
+			<thumb />
+			<property name="labelID">344</property>
+			<property name="defaultID">344</property>
+			<visible>[Library.HasContent(Movies)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
+			<onclick>ActivateWindow(Videos,videodb://movies/actors/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://movies/actors/,return)</property>
+			<property name="list">videodb://movies/actors/</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="group">movies</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="1">
+			<property name="id">$NUMBER[1]</property>
+			<property name="mainmenuid">7</property>
+			<label>$LOCALIZE[31328]</label>
+			<label2>$ADDON[script.skinshortcuts 32014]</label2>
+			<icon>DefaultRecentlyAddedEpisodes.png</icon>
+			<thumb />
+			<property name="labelID">31328</property>
+			<property name="defaultID">31328</property>
+			<onclick>ActivateWindow(Videos,videodb://recentlyaddedepisodes/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://recentlyaddedepisodes/,return)</property>
+			<property name="list">videodb://recentlyaddedepisodes/</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),tvshows)</visible>
+			<property name="group">tvshows</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="2">
+			<property name="id">$NUMBER[2]</property>
+			<property name="mainmenuid">7</property>
+			<label>$LOCALIZE[369]</label>
+			<label2>$LOCALIZE[20343]</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">369</property>
+			<property name="defaultID">369</property>
+			<visible>[Library.HasContent(TVShows)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),tvshows)</visible>
+			<onclick>ActivateWindow(Videos,videodb://tvshows/titles/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://tvshows/titles/,return)</property>
+			<property name="list">videodb://tvshows/titles/</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="group">tvshows</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="3">
+			<property name="id">$NUMBER[3]</property>
+			<property name="mainmenuid">7</property>
+			<label>$LOCALIZE[135]</label>
+			<label2>$LOCALIZE[20343]</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">135</property>
+			<property name="defaultID">135</property>
+			<visible>[Library.HasContent(TVShows)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),tvshows)</visible>
+			<onclick>ActivateWindow(Videos,videodb://tvshows/genres/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://tvshows/genres/,return)</property>
+			<property name="list">videodb://tvshows/genres/</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="group">tvshows</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="4">
+			<property name="id">$NUMBER[4]</property>
+			<property name="mainmenuid">7</property>
+			<label>$LOCALIZE[652]</label>
+			<label2>$LOCALIZE[20343]</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">652</property>
+			<property name="defaultID">652</property>
+			<visible>[Library.HasContent(TVShows)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),tvshows)</visible>
+			<onclick>ActivateWindow(Videos,videodb://tvshows/years/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://tvshows/years/,return)</property>
+			<property name="list">videodb://tvshows/years/</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="group">tvshows</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="5">
+			<property name="id">$NUMBER[5]</property>
+			<property name="mainmenuid">7</property>
+			<label>$LOCALIZE[344]</label>
+			<label2>$LOCALIZE[20343]</label2>
+			<icon>DefaultActor.png</icon>
+			<thumb />
+			<property name="labelID">344</property>
+			<property name="defaultID">344</property>
+			<visible>[Library.HasContent(TVShows)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),tvshows)</visible>
+			<onclick>ActivateWindow(Videos,videodb://tvshows/actors/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://tvshows/actors/,return)</property>
+			<property name="list">videodb://tvshows/actors/</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="group">tvshows</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="1">
+			<property name="id">$NUMBER[1]</property>
+			<property name="mainmenuid">8</property>
+			<label>[B]Video add-ons[/B]</label>
+			<label2>Videos</label2>
+			<icon>DefaultAddonVideo.png</icon>
+			<thumb />
+			<property name="labelID">b-videoadd-ons-b</property>
+			<property name="defaultID">1037</property>
+			<property name="translatedPath">ActivateWindow(Videos,Addons,return)</property>
+			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
+			<property name="path">ActivateWindow(Videos,Addons,return)</property>
+			<property name="list">Addons</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),b-programs-b)</visible>
+			<property name="group">b-programs-b</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="2">
+			<property name="id">$NUMBER[2]</property>
+			<property name="mainmenuid">8</property>
+			<label>[B]Music add-ons[/B]</label>
+			<label2>Music</label2>
+			<icon>DefaultAddonMusic.png</icon>
+			<thumb />
+			<property name="labelID">b-musicadd-ons-b</property>
+			<property name="defaultID">1038</property>
+			<property name="translatedPath">ActivateWindow(MusicLibrary,Addons,return)</property>
+			<onclick>ActivateWindow(Music,Addons,return)</onclick>
+			<property name="path">ActivateWindow(Music,Addons,return)</property>
+			<property name="list">Addons</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),b-programs-b)</visible>
+			<property name="group">b-programs-b</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="3">
+			<property name="id">$NUMBER[3]</property>
+			<property name="mainmenuid">8</property>
+			<label>[B]Picture add-ons[/B]</label>
+			<label2>Pictures</label2>
+			<icon>DefaultAddonPicture.png</icon>
+			<thumb />
+			<property name="labelID">b-pictureadd-ons-b</property>
+			<property name="defaultID">1039</property>
+			<property name="translatedPath">ActivateWindow(Pictures,Addons,return)</property>
+			<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
+			<property name="path">ActivateWindow(Pictures,Addons,return)</property>
+			<property name="list">Addons</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),b-programs-b)</visible>
+			<property name="group">b-programs-b</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="1">
+			<property name="id">$NUMBER[1]</property>
+			<property name="mainmenuid">9</property>
+			<label>[COLORyellow][B]T [/COLOR]2K[/B] [COLORorange][B]W[/COLOR]izard[/B]</label>
+			<label2>Program</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://E%3a%5cPortableApps%5cKodi17.6Portable%5cApp%5cKodi%5cportable_data%5caddons%5cplugin.program.T2K%5cicon.png/</thumb>
+			<property name="labelID">plugin.program.T2K</property>
+			<property name="defaultID">plugin.program.T2K</property>
+			<property name="translatedPath">ActivateWindow(Programs,"plugin://plugin.program.T2K",return)</property>
+			<onclick>ActivateWindow(Programs,"plugin://plugin.program.T2K",return)</onclick>
+			<property name="path">ActivateWindow(Programs,"plugin://plugin.program.T2K",return)</property>
+			<property name="list">plugin://plugin.program.T2K</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),b-system-b)</visible>
+			<property name="group">b-system-b</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="2">
+			<property name="id">$NUMBER[2]</property>
+			<property name="mainmenuid">9</property>
+			<label>[COLOR darkorange][B]Aptoide[/COLOR] for Kodi[/B]</label>
+			<label2>Program</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://E%3a%5cPortableApps%5cKodi17.6Portable%5cApp%5cKodi%5cportable_data%5caddons%5cplugin.program.aptoide%5cicon.png/</thumb>
+			<property name="labelID">plugin.program.aptoide</property>
+			<property name="defaultID">plugin.program.aptoide</property>
+			<property name="translatedPath">ActivateWindow(Programs,"plugin://plugin.program.aptoide",return)</property>
+			<onclick>ActivateWindow(Programs,"plugin://plugin.program.aptoide",return)</onclick>
+			<property name="path">ActivateWindow(Programs,"plugin://plugin.program.aptoide",return)</property>
+			<property name="list">plugin://plugin.program.aptoide</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),b-system-b)</visible>
+			<property name="group">b-system-b</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="3">
+			<property name="id">$NUMBER[3]</property>
+			<property name="mainmenuid">9</property>
+			<label>[B]Skin[/B]</label>
+			<label2>Common menu item</label2>
+			<icon>DefaultFolder.png</icon>
+			<thumb />
+			<property name="labelID">b-skin-b</property>
+			<property name="defaultID">166</property>
+			<onclick>ActivateWindow(SkinSettings)</onclick>
+			<property name="path">ActivateWindow(SkinSettings)</property>
+			<property name="list">SkinSettings</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),b-system-b)</visible>
+			<property name="group">b-system-b</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="4">
+			<property name="id">$NUMBER[4]</property>
+			<property name="mainmenuid">9</property>
+			<label>[B]File manager[/B]</label>
+			<label2>Common menu item</label2>
+			<icon>DefaultFolder.png</icon>
+			<thumb />
+			<property name="labelID">b-filemanager-b</property>
+			<property name="defaultID">7</property>
+			<onclick>ActivateWindow(FileManager)</onclick>
+			<property name="path">ActivateWindow(FileManager)</property>
+			<property name="list">FileManager</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),b-system-b)</visible>
+			<property name="group">b-system-b</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="5">
+			<property name="id">$NUMBER[5]</property>
+			<property name="mainmenuid">9</property>
+			<label>[B]Favourites[/B]</label>
+			<label2>Common menu item</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">b-favourites-b</property>
+			<property name="defaultID">1036</property>
+			<property name="translatedPath">ActivateWindow(Favourites)</property>
+			<onclick>ActivateWindow(Favourites)</onclick>
+			<property name="path">ActivateWindow(Favourites)</property>
+			<property name="list">Favourites</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),b-system-b)</visible>
+			<property name="group">b-system-b</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="6">
+			<property name="id">$NUMBER[6]</property>
+			<property name="mainmenuid">9</property>
+			<label>[B]Profiles[/B]</label>
+			<label2>Common menu item</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">b-profiles-b</property>
+			<property name="defaultID">13200</property>
+			<onclick>ActivateWindow(Profiles)</onclick>
+			<property name="path">ActivateWindow(Profiles)</property>
+			<property name="list">Profiles</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),b-system-b)</visible>
+			<property name="group">b-system-b</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="7">
+			<property name="id">$NUMBER[7]</property>
+			<property name="mainmenuid">9</property>
+			<label>[B]System info[/B]</label>
+			<label2>Common menu item</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">b-systeminfo-b</property>
+			<property name="defaultID">130</property>
+			<onclick>ActivateWindow(SystemInfo)</onclick>
+			<property name="path">ActivateWindow(SystemInfo)</property>
+			<property name="list">SystemInfo</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),b-system-b)</visible>
+			<property name="group">b-system-b</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="8">
+			<property name="id">$NUMBER[8]</property>
+			<property name="mainmenuid">9</property>
+			<label>[B]Events[/B]</label>
+			<label2>Common menu item</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">b-events-b</property>
+			<property name="defaultID">14111</property>
+			<visible>[[system.getbool(eventlog.enabled)] + [system.getbool(eventlog.enabled)]] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),b-system-b)</visible>
+			<onclick>ActivateWindow(EventLog,events://,return)</onclick>
+			<property name="path">ActivateWindow(EventLog,events://,return)</property>
+			<property name="list">events://</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="group">b-system-b</property>
+			<property name="isSubmenu">True</property>
+		</item>
+	</include>
+	<include name="skinshortcuts-template-submenu">
+		<include condition="String.IsEqual(System.ProfileName,Master user)">skinshortcuts-template-submenu-Master user</include>
+	</include>
+	<include name="skinshortcuts-template-submenu-Master user">
+		<control id="9901" type="fixedlist">
+			<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),b-livetv-b)</visible>
+			<left>285</left>
+			<top>107</top>
+			<width>1350</width>
+			<height>60</height>
+			<onup>9000</onup>
+			<ondown>9002</ondown>
+			<itemgap>0</itemgap>
+			<focusposition>2</focusposition>
+			<movement>2</movement>
+			<orientation>Horizontal</orientation>
+			<animation easing="out" effect="slide" end="0,-97" start="0,0" time="200" tween="quadratic">Hidden</animation>
+			<animation condition="String.IsEqual(Container(9901).NumItems,2) | String.IsEqual(Container(9901).NumItems,4)" effect="slide" end="-135,0" start="0,0" time="0">conditional</animation>
+			<animation delay="250" effect="slide" end="0,0" start="0,-97" time="200" tween="quadratic">Visible</animation>
+			<itemlayout height="60" width="270">
+				<control type="image">
+					<height>60</height>
+					<width>270</width>
+					<texture colordiffuse="tertiary">backgrounds/white.png</texture>
+				</control>
+				<control type="label">
+					<height>60</height>
+					<width>270</width>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>button</font>
+					<textcolor>text.primary</textcolor>
+					<info>ListItem.Label</info>
+				</control>
+			</itemlayout>
+			<focusedlayout height="60" width="270">
+				<control type="image">
+					<height>60</height>
+					<width>270</width>
+					<texture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
+					<visible>Control.HasFocus(9901)</visible>
+				</control>
+				<control type="label">
+					<height>60</height>
+					<width>270</width>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>button</font>
+					<textcolor>white</textcolor>
+					<info>ListItem.Label</info>
+					<visible>Control.HasFocus(9901)</visible>
+				</control>
+				<control type="image">
+					<height>60</height>
+					<width>270</width>
+					<texture colordiffuse="tertiary">backgrounds/white.png</texture>
+					<visible>!Control.HasFocus(9901)</visible>
+				</control>
+				<control type="label">
+					<height>60</height>
+					<width>270</width>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>button</font>
+					<textcolor>text.primary</textcolor>
+					<info>ListItem.Label</info>
+					<visible>!Control.HasFocus(9901)</visible>
+				</control>
+			</focusedlayout>
+			<content>
+				<item id="1">
+					<property name="id">$NUMBER[1]</property>
+					<property name="mainmenuid">1</property>
+					<label>[COLOR fuchsia][B]D[/COLOR]N[B][COLOR fuchsia]A[/B][/COLOR] [B]LIVE[/B]</label>
+					<label2>Video Add-On</label2>
+					<icon>DefaultShortcut.png</icon>
+					<thumb>image://https%3a%2f%2fteamdna.pw%2fDNA%2fARTWORK%2fICON%2flive.png/</thumb>
+					<property name="labelID">colorfuchsia-b-d-color-n-b-colorfuchsia-a-b-color-b-live-b</property>
+					<property name="defaultID" />
+					<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FDNA%2FDNALIVE%2Fdnalmain.xml&amp;name=%5BCOLOR+fuchsia%5D%5BB%5DD%5B%2FCOLOR%5DN%5BB%5D%5BCOLOR+fuchsia%5DA%5B%2FB%5D%5B%2FCOLOR%5D+%5BB%5DLIVE%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FICON%2Flive.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FFANART%2Flive.jpg&amp;description=No+information+available",return)</property>
+					<onclick>ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FDNA%2FDNALIVE%2Fdnalmain.xml&amp;name=%5BCOLOR+fuchsia%5D%5BB%5DD%5B%2FCOLOR%5DN%5BB%5D%5BCOLOR+fuchsia%5DA%5B%2FB%5D%5B%2FCOLOR%5D+%5BB%5DLIVE%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FICON%2Flive.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FFANART%2Flive.jpg&amp;description=No+information+available",return)</onclick>
+					<property name="path">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FDNA%2FDNALIVE%2Fdnalmain.xml&amp;name=%5BCOLOR+fuchsia%5D%5BB%5DD%5B%2FCOLOR%5DN%5BB%5D%5BCOLOR+fuchsia%5DA%5B%2FB%5D%5B%2FCOLOR%5D+%5BB%5DLIVE%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FICON%2Flive.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FFANART%2Flive.jpg&amp;description=No+information+available",return)</property>
+					<property name="list">plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FDNA%2FDNALIVE%2Fdnalmain.xml&amp;name=%5BCOLOR+fuchsia%5D%5BB%5DD%5B%2FCOLOR%5DN%5BB%5D%5BCOLOR+fuchsia%5DA%5B%2FB%5D%5B%2FCOLOR%5D+%5BB%5DLIVE%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FICON%2Flive.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FFANART%2Flive.jpg&amp;description=No+information+available</property>
+					<property name="group">b-livetv-b</property>
+					<property name="isSubmenu">True</property>
+				</item>
+				<item id="2">
+					<property name="id">$NUMBER[2]</property>
+					<property name="mainmenuid">1</property>
+					<label>[B]T2K IPTV Kingdom[/B]</label>
+					<label2>Video Add-On</label2>
+					<icon>DefaultShortcut.png</icon>
+					<thumb>image://D%3a%5cPortableApps%5cKodi17.6Portable%5cApp%5cKodi%5cportable_data%5caddons%5cplugin.video.T2KIPTV%5cicon.png/</thumb>
+					<property name="labelID">plugin.video.T2KIPTV</property>
+					<property name="defaultID">plugin.video.T2KIPTV</property>
+					<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.T2KIPTV",return)</property>
+					<onclick>ActivateWindow(Videos,"plugin://plugin.video.T2KIPTV",return)</onclick>
+					<property name="path">ActivateWindow(Videos,"plugin://plugin.video.T2KIPTV",return)</property>
+					<property name="list">plugin://plugin.video.T2KIPTV</property>
+					<property name="group">b-livetv-b</property>
+					<property name="isSubmenu">True</property>
+				</item>
+			</content>
+		</control>
+		<control type="group">
+			<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),b-livetv-b)</visible>
+			<animation delay="250" effect="slide" end="0,0" start="0,-97" time="200" tween="quadratic">Visible</animation>
+			<animation easing="out" effect="slide" end="0,-97" start="0,0" time="200" tween="quadratic">Hidden</animation>
+			<include>HomeSubMenuArrows</include>
+		</control>
+		<control id="9901" type="fixedlist">
+			<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),plugin-video-sportsdevil)</visible>
+			<left>285</left>
+			<top>107</top>
+			<width>1350</width>
+			<height>60</height>
+			<onup>9000</onup>
+			<ondown>9002</ondown>
+			<itemgap>0</itemgap>
+			<focusposition>2</focusposition>
+			<movement>2</movement>
+			<orientation>Horizontal</orientation>
+			<animation easing="out" effect="slide" end="0,-97" start="0,0" time="200" tween="quadratic">Hidden</animation>
+			<animation condition="String.IsEqual(Container(9901).NumItems,2) | String.IsEqual(Container(9901).NumItems,4)" effect="slide" end="-135,0" start="0,0" time="0">conditional</animation>
+			<animation delay="250" effect="slide" end="0,0" start="0,-97" time="200" tween="quadratic">Visible</animation>
+			<itemlayout height="60" width="270">
+				<control type="image">
+					<height>60</height>
+					<width>270</width>
+					<texture colordiffuse="tertiary">backgrounds/white.png</texture>
+				</control>
+				<control type="label">
+					<height>60</height>
+					<width>270</width>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>button</font>
+					<textcolor>text.primary</textcolor>
+					<info>ListItem.Label</info>
+				</control>
+			</itemlayout>
+			<focusedlayout height="60" width="270">
+				<control type="image">
+					<height>60</height>
+					<width>270</width>
+					<texture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
+					<visible>Control.HasFocus(9901)</visible>
+				</control>
+				<control type="label">
+					<height>60</height>
+					<width>270</width>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>button</font>
+					<textcolor>white</textcolor>
+					<info>ListItem.Label</info>
+					<visible>Control.HasFocus(9901)</visible>
+				</control>
+				<control type="image">
+					<height>60</height>
+					<width>270</width>
+					<texture colordiffuse="tertiary">backgrounds/white.png</texture>
+					<visible>!Control.HasFocus(9901)</visible>
+				</control>
+				<control type="label">
+					<height>60</height>
+					<width>270</width>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>button</font>
+					<textcolor>text.primary</textcolor>
+					<info>ListItem.Label</info>
+					<visible>!Control.HasFocus(9901)</visible>
+				</control>
+			</focusedlayout>
+			<content>
+				<item id="1">
+					<property name="id">$NUMBER[1]</property>
+					<property name="mainmenuid">2</property>
+					<label>[B]Fladnag Sports[/B]</label>
+					<label2>Video Add-On</label2>
+					<icon>DefaultShortcut.png</icon>
+					<thumb>image://E%3a%5cPortableApps%5cKodi17.6Portable%5cApp%5cKodi%5cportable_data%5caddons%5cplugin.video.FladnagSports%5cicon.png/</thumb>
+					<property name="labelID">plugin.video.FladnagSports</property>
+					<property name="defaultID">plugin.video.FladnagSports</property>
+					<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.FladnagSports",return)</property>
+					<onclick>ActivateWindow(Videos,"plugin://plugin.video.FladnagSports",return)</onclick>
+					<property name="path">ActivateWindow(Videos,"plugin://plugin.video.FladnagSports",return)</property>
+					<property name="list">plugin://plugin.video.FladnagSports</property>
+					<property name="group">plugin.video.SportsDevil</property>
+					<property name="isSubmenu">True</property>
+				</item>
+				<item id="2">
+					<property name="id">$NUMBER[2]</property>
+					<property name="mainmenuid">2</property>
+					<label>[COLOR gold][B]W[COLOR]O[/COLOR]W Just Sports[/B][/COLOR]</label>
+					<label2>Video Add-On</label2>
+					<icon>DefaultShortcut.png</icon>
+					<thumb>image://https%3a%2f%2fteamdna.pw%2fWOW%2f%2fARTWORK%2fjustsports.png/</thumb>
+					<property name="labelID">colorgold-b-w-color-o-color-wjustsports-b-color</property>
+					<property name="defaultID" />
+					<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2FJust%2Fjustsportsmain.xml&amp;name=%5BCOLOR+gold%5D%5BB%5DW%5BCOLOR%5DO%5B%2FCOLOR%5DW+Just+Sports%5B%2FB%5D%5B%2FCOLOR%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2FARTWORK%2Fjustsports.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2FARTWORK%2Fjustsports.jpg&amp;description=No+information+available",return)</property>
+					<onclick>ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2FJust%2Fjustsportsmain.xml&amp;name=%5BCOLOR+gold%5D%5BB%5DW%5BCOLOR%5DO%5B%2FCOLOR%5DW+Just+Sports%5B%2FB%5D%5B%2FCOLOR%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2FARTWORK%2Fjustsports.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2FARTWORK%2Fjustsports.jpg&amp;description=No+information+available",return)</onclick>
+					<property name="path">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2FJust%2Fjustsportsmain.xml&amp;name=%5BCOLOR+gold%5D%5BB%5DW%5BCOLOR%5DO%5B%2FCOLOR%5DW+Just+Sports%5B%2FB%5D%5B%2FCOLOR%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2FARTWORK%2Fjustsports.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2FARTWORK%2Fjustsports.jpg&amp;description=No+information+available",return)</property>
+					<property name="list">plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2FJust%2Fjustsportsmain.xml&amp;name=%5BCOLOR+gold%5D%5BB%5DW%5BCOLOR%5DO%5B%2FCOLOR%5DW+Just+Sports%5B%2FB%5D%5B%2FCOLOR%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2FARTWORK%2Fjustsports.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2FARTWORK%2Fjustsports.jpg&amp;description=No+information+available</property>
+					<property name="group">plugin.video.SportsDevil</property>
+					<property name="isSubmenu">True</property>
+				</item>
+				<item id="3">
+					<property name="id">$NUMBER[3]</property>
+					<property name="mainmenuid">2</property>
+					<label>[COLOR fuchsia][B]D[/COLOR]N[B][COLOR fuchsia]A[/B][/COLOR] [B]SPORTS[/B]</label>
+					<label2>Video Add-On</label2>
+					<icon>DefaultShortcut.png</icon>
+					<thumb>image://https%3a%2f%2fteamdna.pw%2fDNA%2fARTWORK%2fICON%2fsports.png/</thumb>
+					<property name="labelID">colorfuchsia-b-d-color-n-b-colorfuchsia-a-b-color-b-sports-b</property>
+					<property name="defaultID" />
+					<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FDNA%2FITNOTG%2Fitnotgmain.xml&amp;name=%5BCOLOR+fuchsia%5D%5BB%5DD%5B%2FCOLOR%5DN%5BB%5D%5BCOLOR+fuchsia%5DA%5B%2FB%5D%5B%2FCOLOR%5D+%5BB%5DSPORTS%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FICON%2Fsports.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FFANART%2Fsports.jpg&amp;description=No+information+available",return)</property>
+					<onclick>ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FDNA%2FITNOTG%2Fitnotgmain.xml&amp;name=%5BCOLOR+fuchsia%5D%5BB%5DD%5B%2FCOLOR%5DN%5BB%5D%5BCOLOR+fuchsia%5DA%5B%2FB%5D%5B%2FCOLOR%5D+%5BB%5DSPORTS%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FICON%2Fsports.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FFANART%2Fsports.jpg&amp;description=No+information+available",return)</onclick>
+					<property name="path">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FDNA%2FITNOTG%2Fitnotgmain.xml&amp;name=%5BCOLOR+fuchsia%5D%5BB%5DD%5B%2FCOLOR%5DN%5BB%5D%5BCOLOR+fuchsia%5DA%5B%2FB%5D%5B%2FCOLOR%5D+%5BB%5DSPORTS%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FICON%2Fsports.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FFANART%2Fsports.jpg&amp;description=No+information+available",return)</property>
+					<property name="list">plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FDNA%2FITNOTG%2Fitnotgmain.xml&amp;name=%5BCOLOR+fuchsia%5D%5BB%5DD%5B%2FCOLOR%5DN%5BB%5D%5BCOLOR+fuchsia%5DA%5B%2FB%5D%5B%2FCOLOR%5D+%5BB%5DSPORTS%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FICON%2Fsports.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FFANART%2Fsports.jpg&amp;description=No+information+available</property>
+					<property name="group">plugin.video.SportsDevil</property>
+					<property name="isSubmenu">True</property>
+				</item>
+				<item id="4">
+					<property name="id">$NUMBER[4]</property>
+					<property name="mainmenuid">2</property>
+					<label>[COLORgold][B]Sports Catchup[/B][/COLOR]</label>
+					<label2>Video Add-On</label2>
+					<icon>DefaultShortcut.png</icon>
+					<thumb>image://http%3a%2f%2fcoots.co%2fbckodi%2fwumpafruit%2fimages%2ficon.jpg/</thumb>
+					<property name="labelID">colorgold-b-sportscatchup-b-color</property>
+					<property name="defaultID" />
+					<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fcoots.co%2Fbckodi%2Fwumpafruit%2Fxml%2Fsportingevents.xml&amp;name=%5BCOLORgold%5DSports+Catchup%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fcoots.co%2Fbckodi%2Fwumpafruit%2Fimages%2Ficon.jpg&amp;fanart=http%3A%2F%2Fcoots.co%2Fbckodi%2Fwumpafruit%2Fimages%2Ffanart.jpg&amp;description=No+information+available",return)</property>
+					<onclick>ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fcoots.co%2Fbckodi%2Fwumpafruit%2Fxml%2Fsportingevents.xml&amp;name=%5BCOLORgold%5DSports+Catchup%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fcoots.co%2Fbckodi%2Fwumpafruit%2Fimages%2Ficon.jpg&amp;fanart=http%3A%2F%2Fcoots.co%2Fbckodi%2Fwumpafruit%2Fimages%2Ffanart.jpg&amp;description=No+information+available",return)</onclick>
+					<property name="path">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fcoots.co%2Fbckodi%2Fwumpafruit%2Fxml%2Fsportingevents.xml&amp;name=%5BCOLORgold%5DSports+Catchup%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fcoots.co%2Fbckodi%2Fwumpafruit%2Fimages%2Ficon.jpg&amp;fanart=http%3A%2F%2Fcoots.co%2Fbckodi%2Fwumpafruit%2Fimages%2Ffanart.jpg&amp;description=No+information+available",return)</property>
+					<property name="list">plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fcoots.co%2Fbckodi%2Fwumpafruit%2Fxml%2Fsportingevents.xml&amp;name=%5BCOLORgold%5DSports+Catchup%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fcoots.co%2Fbckodi%2Fwumpafruit%2Fimages%2Ficon.jpg&amp;fanart=http%3A%2F%2Fcoots.co%2Fbckodi%2Fwumpafruit%2Fimages%2Ffanart.jpg&amp;description=No+information+available</property>
+					<property name="group">plugin.video.SportsDevil</property>
+					<property name="isSubmenu">True</property>
+				</item>
+			</content>
+		</control>
+		<control type="group">
+			<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),plugin-video-sportsdevil)</visible>
+			<animation delay="250" effect="slide" end="0,0" start="0,-97" time="200" tween="quadratic">Visible</animation>
+			<animation easing="out" effect="slide" end="0,-97" start="0,0" time="200" tween="quadratic">Hidden</animation>
+			<include>HomeSubMenuArrows</include>
+		</control>
+		<control id="9901" type="fixedlist">
+			<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),b-kids-b)</visible>
+			<left>285</left>
+			<top>107</top>
+			<width>1350</width>
+			<height>60</height>
+			<onup>9000</onup>
+			<ondown>9002</ondown>
+			<itemgap>0</itemgap>
+			<focusposition>2</focusposition>
+			<movement>2</movement>
+			<orientation>Horizontal</orientation>
+			<animation easing="out" effect="slide" end="0,-97" start="0,0" time="200" tween="quadratic">Hidden</animation>
+			<animation condition="String.IsEqual(Container(9901).NumItems,2) | String.IsEqual(Container(9901).NumItems,4)" effect="slide" end="-135,0" start="0,0" time="0">conditional</animation>
+			<animation delay="250" effect="slide" end="0,0" start="0,-97" time="200" tween="quadratic">Visible</animation>
+			<itemlayout height="60" width="270">
+				<control type="image">
+					<height>60</height>
+					<width>270</width>
+					<texture colordiffuse="tertiary">backgrounds/white.png</texture>
+				</control>
+				<control type="label">
+					<height>60</height>
+					<width>270</width>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>button</font>
+					<textcolor>text.primary</textcolor>
+					<info>ListItem.Label</info>
+				</control>
+			</itemlayout>
+			<focusedlayout height="60" width="270">
+				<control type="image">
+					<height>60</height>
+					<width>270</width>
+					<texture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
+					<visible>Control.HasFocus(9901)</visible>
+				</control>
+				<control type="label">
+					<height>60</height>
+					<width>270</width>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>button</font>
+					<textcolor>white</textcolor>
+					<info>ListItem.Label</info>
+					<visible>Control.HasFocus(9901)</visible>
+				</control>
+				<control type="image">
+					<height>60</height>
+					<width>270</width>
+					<texture colordiffuse="tertiary">backgrounds/white.png</texture>
+					<visible>!Control.HasFocus(9901)</visible>
+				</control>
+				<control type="label">
+					<height>60</height>
+					<width>270</width>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>button</font>
+					<textcolor>text.primary</textcolor>
+					<info>ListItem.Label</info>
+					<visible>!Control.HasFocus(9901)</visible>
+				</control>
+			</focusedlayout>
+			<content>
+				<item id="1">
+					<property name="id">$NUMBER[1]</property>
+					<property name="mainmenuid">3</property>
+					<label>[B]Fladnag Cartoons[/B]</label>
+					<label2>Video Add-On</label2>
+					<icon>DefaultShortcut.png</icon>
+					<thumb>image://E%3a%5cPortableApps%5cKodi17.6Portable%5cApp%5cKodi%5cportable_data%5caddons%5cplugin.video.FladnagCartoons%5cicon.png/</thumb>
+					<property name="labelID">plugin.video.FladnagCartoons</property>
+					<property name="defaultID">plugin.video.FladnagCartoons</property>
+					<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.FladnagCartoons",return)</property>
+					<onclick>ActivateWindow(Videos,"plugin://plugin.video.FladnagCartoons",return)</onclick>
+					<property name="path">ActivateWindow(Videos,"plugin://plugin.video.FladnagCartoons",return)</property>
+					<property name="list">plugin://plugin.video.FladnagCartoons</property>
+					<property name="group">b-kids-b</property>
+					<property name="isSubmenu">True</property>
+				</item>
+				<item id="2">
+					<property name="id">$NUMBER[2]</property>
+					<property name="mainmenuid">3</property>
+					<label>[B]Fladnag's Kids BoxSets[/B]</label>
+					<label2>Video Add-On</label2>
+					<icon>DefaultShortcut.png</icon>
+					<thumb>image://E%3a%5cPortableApps%5cKodi17.6Portable%5cApp%5cKodi%5cportable_data%5caddons%5cplugin.video.FladnagKidsBoxsets%5cicon.png/</thumb>
+					<property name="labelID">plugin.video.FladnagKidsBoxsets</property>
+					<property name="defaultID">plugin.video.FladnagKidsBoxsets</property>
+					<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.FladnagKidsBoxsets",return)</property>
+					<onclick>ActivateWindow(Videos,"plugin://plugin.video.FladnagKidsBoxsets",return)</onclick>
+					<property name="path">ActivateWindow(Videos,"plugin://plugin.video.FladnagKidsBoxsets",return)</property>
+					<property name="list">plugin://plugin.video.FladnagKidsBoxsets</property>
+					<property name="group">b-kids-b</property>
+					<property name="isSubmenu">True</property>
+				</item>
+				<item id="3">
+					<property name="id">$NUMBER[3]</property>
+					<property name="mainmenuid">3</property>
+					<label>[COLOR fuchsia][B]D[/COLOR]N[B][COLOR fuchsia]A[/B][/COLOR] [B]KIDS[/B]</label>
+					<label2>Video Add-On</label2>
+					<icon>DefaultShortcut.png</icon>
+					<thumb>image://https%3a%2f%2fteamdna.pw%2fDNA%2fARTWORK%2fICON%2fkids.png/</thumb>
+					<property name="labelID">colorfuchsia-b-d-color-n-b-colorfuchsia-a-b-color-b-kids-b</property>
+					<property name="defaultID" />
+					<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FDNA%2FILN%2Filnmain.xml&amp;name=%5BCOLOR+fuchsia%5D%5BB%5DD%5B%2FCOLOR%5DN%5BB%5D%5BCOLOR+fuchsia%5DA%5B%2FB%5D%5B%2FCOLOR%5D+%5BB%5DKIDS%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FICON%2Fkids.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FFANART%2Fkids.jpg&amp;description=No+information+available",return)</property>
+					<onclick>ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FDNA%2FILN%2Filnmain.xml&amp;name=%5BCOLOR+fuchsia%5D%5BB%5DD%5B%2FCOLOR%5DN%5BB%5D%5BCOLOR+fuchsia%5DA%5B%2FB%5D%5B%2FCOLOR%5D+%5BB%5DKIDS%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FICON%2Fkids.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FFANART%2Fkids.jpg&amp;description=No+information+available",return)</onclick>
+					<property name="path">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FDNA%2FILN%2Filnmain.xml&amp;name=%5BCOLOR+fuchsia%5D%5BB%5DD%5B%2FCOLOR%5DN%5BB%5D%5BCOLOR+fuchsia%5DA%5B%2FB%5D%5B%2FCOLOR%5D+%5BB%5DKIDS%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FICON%2Fkids.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FFANART%2Fkids.jpg&amp;description=No+information+available",return)</property>
+					<property name="list">plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FDNA%2FILN%2Filnmain.xml&amp;name=%5BCOLOR+fuchsia%5D%5BB%5DD%5B%2FCOLOR%5DN%5BB%5D%5BCOLOR+fuchsia%5DA%5B%2FB%5D%5B%2FCOLOR%5D+%5BB%5DKIDS%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FICON%2Fkids.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FFANART%2Fkids.jpg&amp;description=No+information+available</property>
+					<property name="group">b-kids-b</property>
+					<property name="isSubmenu">True</property>
+				</item>
+				<item id="4">
+					<property name="id">$NUMBER[4]</property>
+					<property name="mainmenuid">3</property>
+					<label>[B]Kids Stuff[/B]</label>
+					<label2>Video Add-On</label2>
+					<icon>DefaultShortcut.png</icon>
+					<thumb>image://http%3a%2f%2fuk1.xyz%2fHOB%2fmedia%2fKids.png/</thumb>
+					<property name="labelID">b-kidsstuff-b</property>
+					<property name="defaultID" />
+					<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fuk1.xyz%2FHOB%2Fxml%2Fkids.xml&amp;name=Kids+Stuff&amp;iconimage=http%3A%2F%2Fuk1.xyz%2FHOB%2Fmedia%2FKids.png&amp;fanart=E%3A%5CPortableApps%5CKodi17.6Portable%5CApp%5CKodi%5Cportable_data%5Caddons%5Cplugin.video.ds%5Cfanart.jpg&amp;description=No+information+available",return)</property>
+					<onclick>ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fuk1.xyz%2FHOB%2Fxml%2Fkids.xml&amp;name=Kids+Stuff&amp;iconimage=http%3A%2F%2Fuk1.xyz%2FHOB%2Fmedia%2FKids.png&amp;fanart=special://home/addons%5Cplugin.video.ds%5Cfanart.jpg&amp;description=No+information+available",return)</onclick>
+					<property name="path">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fuk1.xyz%2FHOB%2Fxml%2Fkids.xml&amp;name=Kids+Stuff&amp;iconimage=http%3A%2F%2Fuk1.xyz%2FHOB%2Fmedia%2FKids.png&amp;fanart=special://home/addons%5Cplugin.video.ds%5Cfanart.jpg&amp;description=No+information+available",return)</property>
+					<property name="list">plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fuk1.xyz%2FHOB%2Fxml%2Fkids.xml&amp;name=Kids+Stuff&amp;iconimage=http%3A%2F%2Fuk1.xyz%2FHOB%2Fmedia%2FKids.png&amp;fanart=special://home/addons%5Cplugin.video.ds%5Cfanart.jpg&amp;description=No+information+available</property>
+					<property name="group">b-kids-b</property>
+					<property name="isSubmenu">True</property>
+				</item>
+				<item id="5">
+					<property name="id">$NUMBER[5]</property>
+					<property name="mainmenuid">3</property>
+					<label>[COLOR yellow][B]kidz[/B][/COLOR]</label>
+					<label2>Video Add-On</label2>
+					<icon>DefaultShortcut.png</icon>
+					<thumb>image://http%3a%2f%2fuk1.site%2faddons%2fartwork%2fkidzicon.png/</thumb>
+					<property name="labelID">coloryellow-b-kidz-b-color</property>
+					<property name="defaultID" />
+					<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fuk1.site%2Faddons%2FKidz%2Fkidzmain.xml&amp;name=%5BCOLOR+yellow%5D%5BB%5Dkidz%5B%2FB%5D%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fuk1.site%2Faddons%2Fartwork%2Fkidzicon.png&amp;fanart=http%3A%2F%2Fuk1.site%2Faddons%2Fartwork%2Fkidzfanart.jpg&amp;description=No+information+available",return)</property>
+					<onclick>ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fuk1.site%2Faddons%2FKidz%2Fkidzmain.xml&amp;name=%5BCOLOR+yellow%5D%5BB%5Dkidz%5B%2FB%5D%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fuk1.site%2Faddons%2Fartwork%2Fkidzicon.png&amp;fanart=http%3A%2F%2Fuk1.site%2Faddons%2Fartwork%2Fkidzfanart.jpg&amp;description=No+information+available",return)</onclick>
+					<property name="path">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fuk1.site%2Faddons%2FKidz%2Fkidzmain.xml&amp;name=%5BCOLOR+yellow%5D%5BB%5Dkidz%5B%2FB%5D%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fuk1.site%2Faddons%2Fartwork%2Fkidzicon.png&amp;fanart=http%3A%2F%2Fuk1.site%2Faddons%2Fartwork%2Fkidzfanart.jpg&amp;description=No+information+available",return)</property>
+					<property name="list">plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fuk1.site%2Faddons%2FKidz%2Fkidzmain.xml&amp;name=%5BCOLOR+yellow%5D%5BB%5Dkidz%5B%2FB%5D%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fuk1.site%2Faddons%2Fartwork%2Fkidzicon.png&amp;fanart=http%3A%2F%2Fuk1.site%2Faddons%2Fartwork%2Fkidzfanart.jpg&amp;description=No+information+available</property>
+					<property name="group">b-kids-b</property>
+					<property name="isSubmenu">True</property>
+				</item>
+			</content>
+		</control>
+		<control type="group">
+			<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),b-kids-b)</visible>
+			<animation delay="250" effect="slide" end="0,0" start="0,-97" time="200" tween="quadratic">Visible</animation>
+			<animation easing="out" effect="slide" end="0,-97" start="0,0" time="200" tween="quadratic">Hidden</animation>
+			<include>HomeSubMenuArrows</include>
+		</control>
+		<control id="9901" type="fixedlist">
+			<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),plugin-video-fladnagmovies)</visible>
+			<left>285</left>
+			<top>107</top>
+			<width>1350</width>
+			<height>60</height>
+			<onup>9000</onup>
+			<ondown>9002</ondown>
+			<itemgap>0</itemgap>
+			<focusposition>2</focusposition>
+			<movement>2</movement>
+			<orientation>Horizontal</orientation>
+			<animation easing="out" effect="slide" end="0,-97" start="0,0" time="200" tween="quadratic">Hidden</animation>
+			<animation condition="String.IsEqual(Container(9901).NumItems,2) | String.IsEqual(Container(9901).NumItems,4)" effect="slide" end="-135,0" start="0,0" time="0">conditional</animation>
+			<animation delay="250" effect="slide" end="0,0" start="0,-97" time="200" tween="quadratic">Visible</animation>
+			<itemlayout height="60" width="270">
+				<control type="image">
+					<height>60</height>
+					<width>270</width>
+					<texture colordiffuse="tertiary">backgrounds/white.png</texture>
+				</control>
+				<control type="label">
+					<height>60</height>
+					<width>270</width>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>button</font>
+					<textcolor>text.primary</textcolor>
+					<info>ListItem.Label</info>
+				</control>
+			</itemlayout>
+			<focusedlayout height="60" width="270">
+				<control type="image">
+					<height>60</height>
+					<width>270</width>
+					<texture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
+					<visible>Control.HasFocus(9901)</visible>
+				</control>
+				<control type="label">
+					<height>60</height>
+					<width>270</width>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>button</font>
+					<textcolor>white</textcolor>
+					<info>ListItem.Label</info>
+					<visible>Control.HasFocus(9901)</visible>
+				</control>
+				<control type="image">
+					<height>60</height>
+					<width>270</width>
+					<texture colordiffuse="tertiary">backgrounds/white.png</texture>
+					<visible>!Control.HasFocus(9901)</visible>
+				</control>
+				<control type="label">
+					<height>60</height>
+					<width>270</width>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>button</font>
+					<textcolor>text.primary</textcolor>
+					<info>ListItem.Label</info>
+					<visible>!Control.HasFocus(9901)</visible>
+				</control>
+			</focusedlayout>
+			<content>
+				<item id="1">
+					<property name="id">$NUMBER[1]</property>
+					<property name="mainmenuid">4</property>
+					<label>[B][COLOR gold]W[B][COLOR]O[COLOR gold]W[/COLOR][/B]</label>
+					<label2>Video Add-On</label2>
+					<icon>DefaultShortcut.png</icon>
+					<thumb>image://https%3a%2f%2fteamdna.pw%2fWOW%2f%2fARTWORK%2ficon.png/</thumb>
+					<property name="labelID">b-colorgold-w-b-color-o-colorgold-w-color-b</property>
+					<property name="defaultID" />
+					<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2Fmain.xml&amp;name=%5BB%5D%5BCOLOR+gold%5DW%5BB%5D%5BCOLOR%5DO%5BCOLOR+gold%5DW%5B%2FCOLOR%5D%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2FARTWORK%2Ficon.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2FARTWORK%2Ffanart.jpg&amp;description=No+information+available",return)</property>
+					<onclick>ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2Fmain.xml&amp;name=%5BB%5D%5BCOLOR+gold%5DW%5BB%5D%5BCOLOR%5DO%5BCOLOR+gold%5DW%5B%2FCOLOR%5D%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2FARTWORK%2Ficon.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2FARTWORK%2Ffanart.jpg&amp;description=No+information+available",return)</onclick>
+					<property name="path">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2Fmain.xml&amp;name=%5BB%5D%5BCOLOR+gold%5DW%5BB%5D%5BCOLOR%5DO%5BCOLOR+gold%5DW%5B%2FCOLOR%5D%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2FARTWORK%2Ficon.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2FARTWORK%2Ffanart.jpg&amp;description=No+information+available",return)</property>
+					<property name="list">plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2Fmain.xml&amp;name=%5BB%5D%5BCOLOR+gold%5DW%5BB%5D%5BCOLOR%5DO%5BCOLOR+gold%5DW%5B%2FCOLOR%5D%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2FARTWORK%2Ficon.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FWOW%2F%2FARTWORK%2Ffanart.jpg&amp;description=No+information+available</property>
+					<property name="group">plugin.video.FladnagMovies</property>
+					<property name="isSubmenu">True</property>
+				</item>
+				<item id="2">
+					<property name="id">$NUMBER[2]</property>
+					<property name="mainmenuid">4</property>
+					<label>[B]DNA Movies[/B]</label>
+					<label2>Video Add-On</label2>
+					<icon>DefaultShortcut.png</icon>
+					<thumb>image://https%3a%2f%2fteamdna.pw%2fDNA%2fARTWORK%2fICON%2fektos.png/</thumb>
+					<property name="labelID">b-dnamovies-b</property>
+					<property name="defaultID" />
+					<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FDNA%2FEKTOS%2Fmovies.xml&amp;name=%5BB%5DMovies%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FICON%2Fektos.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FFANART%2Fektos.jpg&amp;description=No+information+available",return)</property>
+					<onclick>ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FDNA%2FEKTOS%2Fmovies.xml&amp;name=%5BB%5DMovies%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FICON%2Fektos.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FFANART%2Fektos.jpg&amp;description=No+information+available",return)</onclick>
+					<property name="path">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FDNA%2FEKTOS%2Fmovies.xml&amp;name=%5BB%5DMovies%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FICON%2Fektos.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FFANART%2Fektos.jpg&amp;description=No+information+available",return)</property>
+					<property name="list">plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FDNA%2FEKTOS%2Fmovies.xml&amp;name=%5BB%5DMovies%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FICON%2Fektos.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FFANART%2Fektos.jpg&amp;description=No+information+available</property>
+					<property name="group">plugin.video.FladnagMovies</property>
+					<property name="isSubmenu">True</property>
+				</item>
+				<item id="3">
+					<property name="id">$NUMBER[3]</property>
+					<property name="mainmenuid">4</property>
+					<label>[B][COLOR deepskyblue]H[COLOR white]OUSE OF BLU[COLOR deepskyblue]E[/COLOR][/B]</label>
+					<label2>Video Add-On</label2>
+					<icon>DefaultShortcut.png</icon>
+					<thumb>image://E%3a%5cPortableApps%5cKodi17.6Portable%5cApp%5cKodi%5cportable_data%5caddons%5cplugin.video.ds%5cicon.png/</thumb>
+					<property name="labelID">b-colordeepskyblue-h-colorwhite-ouseofblu-colordeepskyblue-e-color-b</property>
+					<property name="defaultID" />
+					<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fuk1.xyz%2FHOB%2Fxml%2Fmain.xml&amp;name=%5BB%5D%5BCOLOR+deepskyblue%5DH%5BCOLOR+white%5DOUSE+OF+BLU%5BCOLOR+deepskyblue%5DE%5B%2FCOLOR%5D%5B%2FB%5D&amp;iconimage=E%3A%5CPortableApps%5CKodi17.6Portable%5CApp%5CKodi%5Cportable_data%5Caddons%5Cplugin.video.ds%5Cicon.png&amp;fanart=E%3A%5CPortableApps%5CKodi17.6Portable%5CApp%5CKodi%5Cportable_data%5Caddons%5Cplugin.video.ds%5Cfanart.jpg&amp;description=No+information+available",return)</property>
+					<onclick>ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fuk1.xyz%2FHOB%2Fxml%2Fmain.xml&amp;name=%5BB%5D%5BCOLOR+deepskyblue%5DH%5BCOLOR+white%5DOUSE+OF+BLU%5BCOLOR+deepskyblue%5DE%5B%2FCOLOR%5D%5B%2FB%5D&amp;iconimage=special://home/addons%5Cplugin.video.ds%5Cicon.png&amp;fanart=special://home/addons%5Cplugin.video.ds%5Cfanart.jpg&amp;description=No+information+available",return)</onclick>
+					<property name="path">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fuk1.xyz%2FHOB%2Fxml%2Fmain.xml&amp;name=%5BB%5D%5BCOLOR+deepskyblue%5DH%5BCOLOR+white%5DOUSE+OF+BLU%5BCOLOR+deepskyblue%5DE%5B%2FCOLOR%5D%5B%2FB%5D&amp;iconimage=special://home/addons%5Cplugin.video.ds%5Cicon.png&amp;fanart=special://home/addons%5Cplugin.video.ds%5Cfanart.jpg&amp;description=No+information+available",return)</property>
+					<property name="list">plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fuk1.xyz%2FHOB%2Fxml%2Fmain.xml&amp;name=%5BB%5D%5BCOLOR+deepskyblue%5DH%5BCOLOR+white%5DOUSE+OF+BLU%5BCOLOR+deepskyblue%5DE%5B%2FCOLOR%5D%5B%2FB%5D&amp;iconimage=special://home/addons%5Cplugin.video.ds%5Cicon.png&amp;fanart=special://home/addons%5Cplugin.video.ds%5Cfanart.jpg&amp;description=No+information+available</property>
+					<property name="group">plugin.video.FladnagMovies</property>
+					<property name="isSubmenu">True</property>
+				</item>
+				<item id="4">
+					<property name="id">$NUMBER[4]</property>
+					<property name="mainmenuid">4</property>
+					<label>[B][COLOR darkgoldenrod]O[COLOR white]NE CLIC[COLOR darkgoldenrod]K[/COLOR][/B]</label>
+					<label2>Video Add-On</label2>
+					<icon>DefaultShortcut.png</icon>
+					<thumb>image://http%3a%2f%2fuk1.site%2faddons%2fartwork%2foneclickfanart.jpg/</thumb>
+					<property name="labelID">b-colordarkgoldenrod-o-colorwhite-neclic-colordarkgoldenrod-k-color-b</property>
+					<property name="defaultID" />
+					<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fukodi1.com%2Foneclickds%2Fmain.xml&amp;name=%5BB%5D%5BCOLOR+darkgoldenrod%5DO%5BCOLOR+white%5DNE+CLIC%5BCOLOR+darkgoldenrod%5DK%5B%2FCOLOR%5D%5B%2FB%5D&amp;iconimage=http%3A%2F%2Fuk1.site%2Faddons%2Fartwork%2Foneclickfanart.jpg&amp;fanart=http%3A%2F%2Fuk1.site%2Faddons%2Fartwork%2Foneclickicon.png&amp;description=No+information+available",return)</property>
+					<onclick>ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fukodi1.com%2Foneclickds%2Fmain.xml&amp;name=%5BB%5D%5BCOLOR+darkgoldenrod%5DO%5BCOLOR+white%5DNE+CLIC%5BCOLOR+darkgoldenrod%5DK%5B%2FCOLOR%5D%5B%2FB%5D&amp;iconimage=http%3A%2F%2Fuk1.site%2Faddons%2Fartwork%2Foneclickfanart.jpg&amp;fanart=http%3A%2F%2Fuk1.site%2Faddons%2Fartwork%2Foneclickicon.png&amp;description=No+information+available",return)</onclick>
+					<property name="path">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fukodi1.com%2Foneclickds%2Fmain.xml&amp;name=%5BB%5D%5BCOLOR+darkgoldenrod%5DO%5BCOLOR+white%5DNE+CLIC%5BCOLOR+darkgoldenrod%5DK%5B%2FCOLOR%5D%5B%2FB%5D&amp;iconimage=http%3A%2F%2Fuk1.site%2Faddons%2Fartwork%2Foneclickfanart.jpg&amp;fanart=http%3A%2F%2Fuk1.site%2Faddons%2Fartwork%2Foneclickicon.png&amp;description=No+information+available",return)</property>
+					<property name="list">plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fukodi1.com%2Foneclickds%2Fmain.xml&amp;name=%5BB%5D%5BCOLOR+darkgoldenrod%5DO%5BCOLOR+white%5DNE+CLIC%5BCOLOR+darkgoldenrod%5DK%5B%2FCOLOR%5D%5B%2FB%5D&amp;iconimage=http%3A%2F%2Fuk1.site%2Faddons%2Fartwork%2Foneclickfanart.jpg&amp;fanart=http%3A%2F%2Fuk1.site%2Faddons%2Fartwork%2Foneclickicon.png&amp;description=No+information+available</property>
+					<property name="group">plugin.video.FladnagMovies</property>
+					<property name="isSubmenu">True</property>
+				</item>
+				<item id="5">
+					<property name="id">$NUMBER[5]</property>
+					<property name="mainmenuid">4</property>
+					<label>[B]Uranus Movies[/B]</label>
+					<label2>Video Add-On</label2>
+					<icon>DefaultShortcut.png</icon>
+					<thumb>image://E%3a%5cPortableApps%5cKodi17.6Portable%5cApp%5cKodi%5cportable_data%5caddons%5cscript.uranus.artwork%5cresources%5cmedia%5cDefault%5cmovies.png/</thumb>
+					<property name="labelID">b-uranusmovies-b</property>
+					<property name="defaultID" />
+					<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.uranus/?action=movieNavigator",return)</property>
+					<onclick>ActivateWindow(Videos,"plugin://plugin.video.uranus/?action=movieNavigator",return)</onclick>
+					<property name="path">ActivateWindow(Videos,"plugin://plugin.video.uranus/?action=movieNavigator",return)</property>
+					<property name="list">plugin://plugin.video.uranus/?action=movieNavigator</property>
+					<property name="group">plugin.video.FladnagMovies</property>
+					<property name="isSubmenu">True</property>
+				</item>
+			</content>
+		</control>
+		<control type="group">
+			<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),plugin-video-fladnagmovies)</visible>
+			<animation delay="250" effect="slide" end="0,0" start="0,-97" time="200" tween="quadratic">Visible</animation>
+			<animation easing="out" effect="slide" end="0,-97" start="0,0" time="200" tween="quadratic">Hidden</animation>
+			<include>HomeSubMenuArrows</include>
+		</control>
+		<control id="9901" type="fixedlist">
+			<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),plugin-video-fladnagtvshows)</visible>
+			<left>285</left>
+			<top>107</top>
+			<width>1350</width>
+			<height>60</height>
+			<onup>9000</onup>
+			<ondown>9002</ondown>
+			<itemgap>0</itemgap>
+			<focusposition>2</focusposition>
+			<movement>2</movement>
+			<orientation>Horizontal</orientation>
+			<animation easing="out" effect="slide" end="0,-97" start="0,0" time="200" tween="quadratic">Hidden</animation>
+			<animation condition="String.IsEqual(Container(9901).NumItems,2) | String.IsEqual(Container(9901).NumItems,4)" effect="slide" end="-135,0" start="0,0" time="0">conditional</animation>
+			<animation delay="250" effect="slide" end="0,0" start="0,-97" time="200" tween="quadratic">Visible</animation>
+			<itemlayout height="60" width="270">
+				<control type="image">
+					<height>60</height>
+					<width>270</width>
+					<texture colordiffuse="tertiary">backgrounds/white.png</texture>
+				</control>
+				<control type="label">
+					<height>60</height>
+					<width>270</width>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>button</font>
+					<textcolor>text.primary</textcolor>
+					<info>ListItem.Label</info>
+				</control>
+			</itemlayout>
+			<focusedlayout height="60" width="270">
+				<control type="image">
+					<height>60</height>
+					<width>270</width>
+					<texture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
+					<visible>Control.HasFocus(9901)</visible>
+				</control>
+				<control type="label">
+					<height>60</height>
+					<width>270</width>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>button</font>
+					<textcolor>white</textcolor>
+					<info>ListItem.Label</info>
+					<visible>Control.HasFocus(9901)</visible>
+				</control>
+				<control type="image">
+					<height>60</height>
+					<width>270</width>
+					<texture colordiffuse="tertiary">backgrounds/white.png</texture>
+					<visible>!Control.HasFocus(9901)</visible>
+				</control>
+				<control type="label">
+					<height>60</height>
+					<width>270</width>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>button</font>
+					<textcolor>text.primary</textcolor>
+					<info>ListItem.Label</info>
+					<visible>!Control.HasFocus(9901)</visible>
+				</control>
+			</focusedlayout>
+			<content>
+				<item id="1">
+					<property name="id">$NUMBER[1]</property>
+					<property name="mainmenuid">5</property>
+					<label>[B]DNA TV Shows[/B]</label>
+					<label2>Video Add-On</label2>
+					<icon>DefaultShortcut.png</icon>
+					<thumb>image://https%3a%2f%2fteamdna.pw%2fDNA%2fARTWORK%2fICON%2fektos.png/</thumb>
+					<property name="labelID">b-dnatvshows-b</property>
+					<property name="defaultID" />
+					<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FDNA%2FEKTOS%2Ftvshow.xml&amp;name=%5BB%5DTV+Shows%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FICON%2Fektos.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FFANART%2Fektos.jpg&amp;description=No+information+available",return)</property>
+					<onclick>ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FDNA%2FEKTOS%2Ftvshow.xml&amp;name=%5BB%5DTV+Shows%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FICON%2Fektos.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FFANART%2Fektos.jpg&amp;description=No+information+available",return)</onclick>
+					<property name="path">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FDNA%2FEKTOS%2Ftvshow.xml&amp;name=%5BB%5DTV+Shows%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FICON%2Fektos.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FFANART%2Fektos.jpg&amp;description=No+information+available",return)</property>
+					<property name="list">plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fteamdna.pw%2FDNA%2FEKTOS%2Ftvshow.xml&amp;name=%5BB%5DTV+Shows%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FICON%2Fektos.png&amp;fanart=https%3A%2F%2Fteamdna.pw%2FDNA%2FARTWORK%2FFANART%2Fektos.jpg&amp;description=No+information+available</property>
+					<property name="group">plugin.video.FladnagTVShows</property>
+					<property name="isSubmenu">True</property>
+				</item>
+				<item id="2">
+					<property name="id">$NUMBER[2]</property>
+					<property name="mainmenuid">5</property>
+					<label>[B]Blues TV Shows[/B]</label>
+					<label2>Video Add-On</label2>
+					<icon>DefaultShortcut.png</icon>
+					<thumb>image://http%3a%2f%2fuk1.xyz%2fHOB%2fmedia%2fBluestv.png/</thumb>
+					<property name="labelID">b-bluestvshows-b</property>
+					<property name="defaultID" />
+					<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fuk1.xyz%2FHOB%2Fxml%2Ftvshows.xml&amp;name=TV+Shows&amp;iconimage=http%3A%2F%2Fuk1.xyz%2FHOB%2Fmedia%2FBluestv.png&amp;fanart=E%3A%5CPortableApps%5CKodi17.6Portable%5CApp%5CKodi%5Cportable_data%5Caddons%5Cplugin.video.ds%5Cfanart.jpg&amp;description=No+information+available",return)</property>
+					<onclick>ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fuk1.xyz%2FHOB%2Fxml%2Ftvshows.xml&amp;name=TV+Shows&amp;iconimage=http%3A%2F%2Fuk1.xyz%2FHOB%2Fmedia%2FBluestv.png&amp;fanart=special://home/addons%5Cplugin.video.ds%5Cfanart.jpg&amp;description=No+information+available",return)</onclick>
+					<property name="path">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fuk1.xyz%2FHOB%2Fxml%2Ftvshows.xml&amp;name=TV+Shows&amp;iconimage=http%3A%2F%2Fuk1.xyz%2FHOB%2Fmedia%2FBluestv.png&amp;fanart=special://home/addons%5Cplugin.video.ds%5Cfanart.jpg&amp;description=No+information+available",return)</property>
+					<property name="list">plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fuk1.xyz%2FHOB%2Fxml%2Ftvshows.xml&amp;name=TV+Shows&amp;iconimage=http%3A%2F%2Fuk1.xyz%2FHOB%2Fmedia%2FBluestv.png&amp;fanart=special://home/addons%5Cplugin.video.ds%5Cfanart.jpg&amp;description=No+information+available</property>
+					<property name="group">plugin.video.FladnagTVShows</property>
+					<property name="isSubmenu">True</property>
+				</item>
+				<item id="3">
+					<property name="id">$NUMBER[3]</property>
+					<property name="mainmenuid">5</property>
+					<label>[B]UranusTV Shows[/B]</label>
+					<label2>Video Add-On</label2>
+					<icon>DefaultShortcut.png</icon>
+					<thumb>image://E%3a%5cPortableApps%5cKodi17.6Portable%5cApp%5cKodi%5cportable_data%5caddons%5cscript.uranus.artwork%5cresources%5cmedia%5cDefault%5ctvshows.png/</thumb>
+					<property name="labelID">b-uranustvshows-b</property>
+					<property name="defaultID" />
+					<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.uranus/?action=tvNavigator",return)</property>
+					<onclick>ActivateWindow(Videos,"plugin://plugin.video.uranus/?action=tvNavigator",return)</onclick>
+					<property name="path">ActivateWindow(Videos,"plugin://plugin.video.uranus/?action=tvNavigator",return)</property>
+					<property name="list">plugin://plugin.video.uranus/?action=tvNavigator</property>
+					<property name="group">plugin.video.FladnagTVShows</property>
+					<property name="isSubmenu">True</property>
+				</item>
+			</content>
+		</control>
+		<control type="group">
+			<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),plugin-video-fladnagtvshows)</visible>
+			<animation delay="250" effect="slide" end="0,0" start="0,-97" time="200" tween="quadratic">Visible</animation>
+			<animation easing="out" effect="slide" end="0,-97" start="0,0" time="200" tween="quadratic">Hidden</animation>
+			<include>HomeSubMenuArrows</include>
+		</control>
+		<control id="9901" type="fixedlist">
+			<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
+			<left>285</left>
+			<top>107</top>
+			<width>1350</width>
+			<height>60</height>
+			<onup>9000</onup>
+			<ondown>9002</ondown>
+			<itemgap>0</itemgap>
+			<focusposition>2</focusposition>
+			<movement>2</movement>
+			<orientation>Horizontal</orientation>
+			<animation easing="out" effect="slide" end="0,-97" start="0,0" time="200" tween="quadratic">Hidden</animation>
+			<animation condition="String.IsEqual(Container(9901).NumItems,2) | String.IsEqual(Container(9901).NumItems,4)" effect="slide" end="-135,0" start="0,0" time="0">conditional</animation>
+			<animation delay="250" effect="slide" end="0,0" start="0,-97" time="200" tween="quadratic">Visible</animation>
+			<itemlayout height="60" width="270">
+				<control type="image">
+					<height>60</height>
+					<width>270</width>
+					<texture colordiffuse="tertiary">backgrounds/white.png</texture>
+				</control>
+				<control type="label">
+					<height>60</height>
+					<width>270</width>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>button</font>
+					<textcolor>text.primary</textcolor>
+					<info>ListItem.Label</info>
+				</control>
+			</itemlayout>
+			<focusedlayout height="60" width="270">
+				<control type="image">
+					<height>60</height>
+					<width>270</width>
+					<texture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
+					<visible>Control.HasFocus(9901)</visible>
+				</control>
+				<control type="label">
+					<height>60</height>
+					<width>270</width>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>button</font>
+					<textcolor>white</textcolor>
+					<info>ListItem.Label</info>
+					<visible>Control.HasFocus(9901)</visible>
+				</control>
+				<control type="image">
+					<height>60</height>
+					<width>270</width>
+					<texture colordiffuse="tertiary">backgrounds/white.png</texture>
+					<visible>!Control.HasFocus(9901)</visible>
+				</control>
+				<control type="label">
+					<height>60</height>
+					<width>270</width>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>button</font>
+					<textcolor>text.primary</textcolor>
+					<info>ListItem.Label</info>
+					<visible>!Control.HasFocus(9901)</visible>
+				</control>
+			</focusedlayout>
+			<content>
+				<item id="1">
+					<property name="id">$NUMBER[1]</property>
+					<property name="mainmenuid">6</property>
+					<label>$LOCALIZE[31328]</label>
+					<label2>$ADDON[script.skinshortcuts 32014]</label2>
+					<icon>DefaultRecentlyAddedMovies.png</icon>
+					<thumb />
+					<property name="labelID">31328</property>
+					<property name="defaultID">31328</property>
+					<onclick>ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</onclick>
+					<property name="path">ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</property>
+					<property name="list">videodb://recentlyaddedmovies/</property>
+					<property name="group">movies</property>
+					<property name="isSubmenu">True</property>
+				</item>
+				<item id="2">
+					<property name="id">$NUMBER[2]</property>
+					<property name="mainmenuid">6</property>
+					<label>$LOCALIZE[20434]</label>
+					<label2>$LOCALIZE[342]</label2>
+					<icon>DefaultShortcut.png</icon>
+					<thumb />
+					<property name="labelID">20434</property>
+					<property name="defaultID">20434</property>
+					<visible>Library.HasContent(MovieSets)</visible>
+					<onclick>ActivateWindow(Videos,videodb://movies/sets/,return)</onclick>
+					<property name="path">ActivateWindow(Videos,videodb://movies/sets/,return)</property>
+					<property name="list">videodb://movies/sets/</property>
+					<property name="group">movies</property>
+					<property name="isSubmenu">True</property>
+				</item>
+				<item id="3">
+					<property name="id">$NUMBER[3]</property>
+					<property name="mainmenuid">6</property>
+					<label>$LOCALIZE[369]</label>
+					<label2>$LOCALIZE[342]</label2>
+					<icon>DefaultShortcut.png</icon>
+					<thumb />
+					<property name="labelID">369</property>
+					<property name="defaultID">369</property>
+					<visible>Library.HasContent(Movies)</visible>
+					<onclick>ActivateWindow(Videos,videodb://movies/titles/,return)</onclick>
+					<property name="path">ActivateWindow(Videos,videodb://movies/titles/,return)</property>
+					<property name="list">videodb://movies/titles/</property>
+					<property name="group">movies</property>
+					<property name="isSubmenu">True</property>
+				</item>
+				<item id="4">
+					<property name="id">$NUMBER[4]</property>
+					<property name="mainmenuid">6</property>
+					<label>$LOCALIZE[135]</label>
+					<label2>$LOCALIZE[342]</label2>
+					<icon>DefaultShortcut.png</icon>
+					<thumb />
+					<property name="labelID">135</property>
+					<property name="defaultID">135</property>
+					<visible>Library.HasContent(Movies)</visible>
+					<onclick>ActivateWindow(Videos,videodb://movies/genres/,return)</onclick>
+					<property name="path">ActivateWindow(Videos,videodb://movies/genres/,return)</property>
+					<property name="list">videodb://movies/genres/</property>
+					<property name="group">movies</property>
+					<property name="isSubmenu">True</property>
+				</item>
+				<item id="5">
+					<property name="id">$NUMBER[5]</property>
+					<property name="mainmenuid">6</property>
+					<label>$LOCALIZE[652]</label>
+					<label2>$LOCALIZE[342]</label2>
+					<icon>DefaultShortcut.png</icon>
+					<thumb />
+					<property name="labelID">652</property>
+					<property name="defaultID">652</property>
+					<visible>Library.HasContent(Movies)</visible>
+					<onclick>ActivateWindow(Videos,videodb://movies/years/,return)</onclick>
+					<property name="path">ActivateWindow(Videos,videodb://movies/years/,return)</property>
+					<property name="list">videodb://movies/years/</property>
+					<property name="group">movies</property>
+					<property name="isSubmenu">True</property>
+				</item>
+				<item id="6">
+					<property name="id">$NUMBER[6]</property>
+					<property name="mainmenuid">6</property>
+					<label>$LOCALIZE[344]</label>
+					<label2>$LOCALIZE[342]</label2>
+					<icon>DefaultActor.png</icon>
+					<thumb />
+					<property name="labelID">344</property>
+					<property name="defaultID">344</property>
+					<visible>Library.HasContent(Movies)</visible>
+					<onclick>ActivateWindow(Videos,videodb://movies/actors/,return)</onclick>
+					<property name="path">ActivateWindow(Videos,videodb://movies/actors/,return)</property>
+					<property name="list">videodb://movies/actors/</property>
+					<property name="group">movies</property>
+					<property name="isSubmenu">True</property>
+				</item>
+			</content>
+		</control>
+		<control type="group">
+			<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
+			<animation delay="250" effect="slide" end="0,0" start="0,-97" time="200" tween="quadratic">Visible</animation>
+			<animation easing="out" effect="slide" end="0,-97" start="0,0" time="200" tween="quadratic">Hidden</animation>
+			<include>HomeSubMenuArrows</include>
+		</control>
+		<control id="9901" type="fixedlist">
+			<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),tvshows)</visible>
+			<left>285</left>
+			<top>107</top>
+			<width>1350</width>
+			<height>60</height>
+			<onup>9000</onup>
+			<ondown>9002</ondown>
+			<itemgap>0</itemgap>
+			<focusposition>2</focusposition>
+			<movement>2</movement>
+			<orientation>Horizontal</orientation>
+			<animation easing="out" effect="slide" end="0,-97" start="0,0" time="200" tween="quadratic">Hidden</animation>
+			<animation condition="String.IsEqual(Container(9901).NumItems,2) | String.IsEqual(Container(9901).NumItems,4)" effect="slide" end="-135,0" start="0,0" time="0">conditional</animation>
+			<animation delay="250" effect="slide" end="0,0" start="0,-97" time="200" tween="quadratic">Visible</animation>
+			<itemlayout height="60" width="270">
+				<control type="image">
+					<height>60</height>
+					<width>270</width>
+					<texture colordiffuse="tertiary">backgrounds/white.png</texture>
+				</control>
+				<control type="label">
+					<height>60</height>
+					<width>270</width>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>button</font>
+					<textcolor>text.primary</textcolor>
+					<info>ListItem.Label</info>
+				</control>
+			</itemlayout>
+			<focusedlayout height="60" width="270">
+				<control type="image">
+					<height>60</height>
+					<width>270</width>
+					<texture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
+					<visible>Control.HasFocus(9901)</visible>
+				</control>
+				<control type="label">
+					<height>60</height>
+					<width>270</width>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>button</font>
+					<textcolor>white</textcolor>
+					<info>ListItem.Label</info>
+					<visible>Control.HasFocus(9901)</visible>
+				</control>
+				<control type="image">
+					<height>60</height>
+					<width>270</width>
+					<texture colordiffuse="tertiary">backgrounds/white.png</texture>
+					<visible>!Control.HasFocus(9901)</visible>
+				</control>
+				<control type="label">
+					<height>60</height>
+					<width>270</width>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>button</font>
+					<textcolor>text.primary</textcolor>
+					<info>ListItem.Label</info>
+					<visible>!Control.HasFocus(9901)</visible>
+				</control>
+			</focusedlayout>
+			<content>
+				<item id="1">
+					<property name="id">$NUMBER[1]</property>
+					<property name="mainmenuid">7</property>
+					<label>$LOCALIZE[31328]</label>
+					<label2>$ADDON[script.skinshortcuts 32014]</label2>
+					<icon>DefaultRecentlyAddedEpisodes.png</icon>
+					<thumb />
+					<property name="labelID">31328</property>
+					<property name="defaultID">31328</property>
+					<onclick>ActivateWindow(Videos,videodb://recentlyaddedepisodes/,return)</onclick>
+					<property name="path">ActivateWindow(Videos,videodb://recentlyaddedepisodes/,return)</property>
+					<property name="list">videodb://recentlyaddedepisodes/</property>
+					<property name="group">tvshows</property>
+					<property name="isSubmenu">True</property>
+				</item>
+				<item id="2">
+					<property name="id">$NUMBER[2]</property>
+					<property name="mainmenuid">7</property>
+					<label>$LOCALIZE[369]</label>
+					<label2>$LOCALIZE[20343]</label2>
+					<icon>DefaultShortcut.png</icon>
+					<thumb />
+					<property name="labelID">369</property>
+					<property name="defaultID">369</property>
+					<visible>Library.HasContent(TVShows)</visible>
+					<onclick>ActivateWindow(Videos,videodb://tvshows/titles/,return)</onclick>
+					<property name="path">ActivateWindow(Videos,videodb://tvshows/titles/,return)</property>
+					<property name="list">videodb://tvshows/titles/</property>
+					<property name="group">tvshows</property>
+					<property name="isSubmenu">True</property>
+				</item>
+				<item id="3">
+					<property name="id">$NUMBER[3]</property>
+					<property name="mainmenuid">7</property>
+					<label>$LOCALIZE[135]</label>
+					<label2>$LOCALIZE[20343]</label2>
+					<icon>DefaultShortcut.png</icon>
+					<thumb />
+					<property name="labelID">135</property>
+					<property name="defaultID">135</property>
+					<visible>Library.HasContent(TVShows)</visible>
+					<onclick>ActivateWindow(Videos,videodb://tvshows/genres/,return)</onclick>
+					<property name="path">ActivateWindow(Videos,videodb://tvshows/genres/,return)</property>
+					<property name="list">videodb://tvshows/genres/</property>
+					<property name="group">tvshows</property>
+					<property name="isSubmenu">True</property>
+				</item>
+				<item id="4">
+					<property name="id">$NUMBER[4]</property>
+					<property name="mainmenuid">7</property>
+					<label>$LOCALIZE[652]</label>
+					<label2>$LOCALIZE[20343]</label2>
+					<icon>DefaultShortcut.png</icon>
+					<thumb />
+					<property name="labelID">652</property>
+					<property name="defaultID">652</property>
+					<visible>Library.HasContent(TVShows)</visible>
+					<onclick>ActivateWindow(Videos,videodb://tvshows/years/,return)</onclick>
+					<property name="path">ActivateWindow(Videos,videodb://tvshows/years/,return)</property>
+					<property name="list">videodb://tvshows/years/</property>
+					<property name="group">tvshows</property>
+					<property name="isSubmenu">True</property>
+				</item>
+				<item id="5">
+					<property name="id">$NUMBER[5]</property>
+					<property name="mainmenuid">7</property>
+					<label>$LOCALIZE[344]</label>
+					<label2>$LOCALIZE[20343]</label2>
+					<icon>DefaultActor.png</icon>
+					<thumb />
+					<property name="labelID">344</property>
+					<property name="defaultID">344</property>
+					<visible>Library.HasContent(TVShows)</visible>
+					<onclick>ActivateWindow(Videos,videodb://tvshows/actors/,return)</onclick>
+					<property name="path">ActivateWindow(Videos,videodb://tvshows/actors/,return)</property>
+					<property name="list">videodb://tvshows/actors/</property>
+					<property name="group">tvshows</property>
+					<property name="isSubmenu">True</property>
+				</item>
+			</content>
+		</control>
+		<control type="group">
+			<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),tvshows)</visible>
+			<animation delay="250" effect="slide" end="0,0" start="0,-97" time="200" tween="quadratic">Visible</animation>
+			<animation easing="out" effect="slide" end="0,-97" start="0,0" time="200" tween="quadratic">Hidden</animation>
+			<include>HomeSubMenuArrows</include>
+		</control>
+		<control id="9901" type="fixedlist">
+			<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),b-programs-b)</visible>
+			<left>285</left>
+			<top>107</top>
+			<width>1350</width>
+			<height>60</height>
+			<onup>9000</onup>
+			<ondown>9002</ondown>
+			<itemgap>0</itemgap>
+			<focusposition>2</focusposition>
+			<movement>2</movement>
+			<orientation>Horizontal</orientation>
+			<animation easing="out" effect="slide" end="0,-97" start="0,0" time="200" tween="quadratic">Hidden</animation>
+			<animation condition="String.IsEqual(Container(9901).NumItems,2) | String.IsEqual(Container(9901).NumItems,4)" effect="slide" end="-135,0" start="0,0" time="0">conditional</animation>
+			<animation delay="250" effect="slide" end="0,0" start="0,-97" time="200" tween="quadratic">Visible</animation>
+			<itemlayout height="60" width="270">
+				<control type="image">
+					<height>60</height>
+					<width>270</width>
+					<texture colordiffuse="tertiary">backgrounds/white.png</texture>
+				</control>
+				<control type="label">
+					<height>60</height>
+					<width>270</width>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>button</font>
+					<textcolor>text.primary</textcolor>
+					<info>ListItem.Label</info>
+				</control>
+			</itemlayout>
+			<focusedlayout height="60" width="270">
+				<control type="image">
+					<height>60</height>
+					<width>270</width>
+					<texture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
+					<visible>Control.HasFocus(9901)</visible>
+				</control>
+				<control type="label">
+					<height>60</height>
+					<width>270</width>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>button</font>
+					<textcolor>white</textcolor>
+					<info>ListItem.Label</info>
+					<visible>Control.HasFocus(9901)</visible>
+				</control>
+				<control type="image">
+					<height>60</height>
+					<width>270</width>
+					<texture colordiffuse="tertiary">backgrounds/white.png</texture>
+					<visible>!Control.HasFocus(9901)</visible>
+				</control>
+				<control type="label">
+					<height>60</height>
+					<width>270</width>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>button</font>
+					<textcolor>text.primary</textcolor>
+					<info>ListItem.Label</info>
+					<visible>!Control.HasFocus(9901)</visible>
+				</control>
+			</focusedlayout>
+			<content>
+				<item id="1">
+					<property name="id">$NUMBER[1]</property>
+					<property name="mainmenuid">8</property>
+					<label>[B]Video add-ons[/B]</label>
+					<label2>Videos</label2>
+					<icon>DefaultAddonVideo.png</icon>
+					<thumb />
+					<property name="labelID">b-videoadd-ons-b</property>
+					<property name="defaultID">1037</property>
+					<property name="translatedPath">ActivateWindow(Videos,Addons,return)</property>
+					<onclick>ActivateWindow(Videos,Addons,return)</onclick>
+					<property name="path">ActivateWindow(Videos,Addons,return)</property>
+					<property name="list">Addons</property>
+					<property name="group">b-programs-b</property>
+					<property name="isSubmenu">True</property>
+				</item>
+				<item id="2">
+					<property name="id">$NUMBER[2]</property>
+					<property name="mainmenuid">8</property>
+					<label>[B]Music add-ons[/B]</label>
+					<label2>Music</label2>
+					<icon>DefaultAddonMusic.png</icon>
+					<thumb />
+					<property name="labelID">b-musicadd-ons-b</property>
+					<property name="defaultID">1038</property>
+					<property name="translatedPath">ActivateWindow(MusicLibrary,Addons,return)</property>
+					<onclick>ActivateWindow(Music,Addons,return)</onclick>
+					<property name="path">ActivateWindow(Music,Addons,return)</property>
+					<property name="list">Addons</property>
+					<property name="group">b-programs-b</property>
+					<property name="isSubmenu">True</property>
+				</item>
+				<item id="3">
+					<property name="id">$NUMBER[3]</property>
+					<property name="mainmenuid">8</property>
+					<label>[B]Picture add-ons[/B]</label>
+					<label2>Pictures</label2>
+					<icon>DefaultAddonPicture.png</icon>
+					<thumb />
+					<property name="labelID">b-pictureadd-ons-b</property>
+					<property name="defaultID">1039</property>
+					<property name="translatedPath">ActivateWindow(Pictures,Addons,return)</property>
+					<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
+					<property name="path">ActivateWindow(Pictures,Addons,return)</property>
+					<property name="list">Addons</property>
+					<property name="group">b-programs-b</property>
+					<property name="isSubmenu">True</property>
+				</item>
+			</content>
+		</control>
+		<control type="group">
+			<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),b-programs-b)</visible>
+			<animation delay="250" effect="slide" end="0,0" start="0,-97" time="200" tween="quadratic">Visible</animation>
+			<animation easing="out" effect="slide" end="0,-97" start="0,0" time="200" tween="quadratic">Hidden</animation>
+			<include>HomeSubMenuArrows</include>
+		</control>
+		<control id="9901" type="fixedlist">
+			<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),b-system-b)</visible>
+			<left>285</left>
+			<top>107</top>
+			<width>1350</width>
+			<height>60</height>
+			<onup>9000</onup>
+			<ondown>9002</ondown>
+			<itemgap>0</itemgap>
+			<focusposition>2</focusposition>
+			<movement>2</movement>
+			<orientation>Horizontal</orientation>
+			<animation easing="out" effect="slide" end="0,-97" start="0,0" time="200" tween="quadratic">Hidden</animation>
+			<animation condition="String.IsEqual(Container(9901).NumItems,2) | String.IsEqual(Container(9901).NumItems,4)" effect="slide" end="-135,0" start="0,0" time="0">conditional</animation>
+			<animation delay="250" effect="slide" end="0,0" start="0,-97" time="200" tween="quadratic">Visible</animation>
+			<itemlayout height="60" width="270">
+				<control type="image">
+					<height>60</height>
+					<width>270</width>
+					<texture colordiffuse="tertiary">backgrounds/white.png</texture>
+				</control>
+				<control type="label">
+					<height>60</height>
+					<width>270</width>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>button</font>
+					<textcolor>text.primary</textcolor>
+					<info>ListItem.Label</info>
+				</control>
+			</itemlayout>
+			<focusedlayout height="60" width="270">
+				<control type="image">
+					<height>60</height>
+					<width>270</width>
+					<texture colordiffuse="$VAR[Colour.500]">backgrounds/white.png</texture>
+					<visible>Control.HasFocus(9901)</visible>
+				</control>
+				<control type="label">
+					<height>60</height>
+					<width>270</width>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>button</font>
+					<textcolor>white</textcolor>
+					<info>ListItem.Label</info>
+					<visible>Control.HasFocus(9901)</visible>
+				</control>
+				<control type="image">
+					<height>60</height>
+					<width>270</width>
+					<texture colordiffuse="tertiary">backgrounds/white.png</texture>
+					<visible>!Control.HasFocus(9901)</visible>
+				</control>
+				<control type="label">
+					<height>60</height>
+					<width>270</width>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>button</font>
+					<textcolor>text.primary</textcolor>
+					<info>ListItem.Label</info>
+					<visible>!Control.HasFocus(9901)</visible>
+				</control>
+			</focusedlayout>
+			<content>
+				<item id="1">
+					<property name="id">$NUMBER[1]</property>
+					<property name="mainmenuid">9</property>
+					<label>[COLORyellow][B]T [/COLOR]2K[/B] [COLORorange][B]W[/COLOR]izard[/B]</label>
+					<label2>Program</label2>
+					<icon>DefaultShortcut.png</icon>
+					<thumb>image://E%3a%5cPortableApps%5cKodi17.6Portable%5cApp%5cKodi%5cportable_data%5caddons%5cplugin.program.T2K%5cicon.png/</thumb>
+					<property name="labelID">plugin.program.T2K</property>
+					<property name="defaultID">plugin.program.T2K</property>
+					<property name="translatedPath">ActivateWindow(Programs,"plugin://plugin.program.T2K",return)</property>
+					<onclick>ActivateWindow(Programs,"plugin://plugin.program.T2K",return)</onclick>
+					<property name="path">ActivateWindow(Programs,"plugin://plugin.program.T2K",return)</property>
+					<property name="list">plugin://plugin.program.T2K</property>
+					<property name="group">b-system-b</property>
+					<property name="isSubmenu">True</property>
+				</item>
+				<item id="2">
+					<property name="id">$NUMBER[2]</property>
+					<property name="mainmenuid">9</property>
+					<label>[COLOR darkorange][B]Aptoide[/COLOR] for Kodi[/B]</label>
+					<label2>Program</label2>
+					<icon>DefaultShortcut.png</icon>
+					<thumb>image://E%3a%5cPortableApps%5cKodi17.6Portable%5cApp%5cKodi%5cportable_data%5caddons%5cplugin.program.aptoide%5cicon.png/</thumb>
+					<property name="labelID">plugin.program.aptoide</property>
+					<property name="defaultID">plugin.program.aptoide</property>
+					<property name="translatedPath">ActivateWindow(Programs,"plugin://plugin.program.aptoide",return)</property>
+					<onclick>ActivateWindow(Programs,"plugin://plugin.program.aptoide",return)</onclick>
+					<property name="path">ActivateWindow(Programs,"plugin://plugin.program.aptoide",return)</property>
+					<property name="list">plugin://plugin.program.aptoide</property>
+					<property name="group">b-system-b</property>
+					<property name="isSubmenu">True</property>
+				</item>
+				<item id="3">
+					<property name="id">$NUMBER[3]</property>
+					<property name="mainmenuid">9</property>
+					<label>[B]Skin[/B]</label>
+					<label2>Common menu item</label2>
+					<icon>DefaultFolder.png</icon>
+					<thumb />
+					<property name="labelID">b-skin-b</property>
+					<property name="defaultID">166</property>
+					<onclick>ActivateWindow(SkinSettings)</onclick>
+					<property name="path">ActivateWindow(SkinSettings)</property>
+					<property name="list">SkinSettings</property>
+					<property name="group">b-system-b</property>
+					<property name="isSubmenu">True</property>
+				</item>
+				<item id="4">
+					<property name="id">$NUMBER[4]</property>
+					<property name="mainmenuid">9</property>
+					<label>[B]File manager[/B]</label>
+					<label2>Common menu item</label2>
+					<icon>DefaultFolder.png</icon>
+					<thumb />
+					<property name="labelID">b-filemanager-b</property>
+					<property name="defaultID">7</property>
+					<onclick>ActivateWindow(FileManager)</onclick>
+					<property name="path">ActivateWindow(FileManager)</property>
+					<property name="list">FileManager</property>
+					<property name="group">b-system-b</property>
+					<property name="isSubmenu">True</property>
+				</item>
+				<item id="5">
+					<property name="id">$NUMBER[5]</property>
+					<property name="mainmenuid">9</property>
+					<label>[B]Favourites[/B]</label>
+					<label2>Common menu item</label2>
+					<icon>DefaultShortcut.png</icon>
+					<thumb />
+					<property name="labelID">b-favourites-b</property>
+					<property name="defaultID">1036</property>
+					<property name="translatedPath">ActivateWindow(Favourites)</property>
+					<onclick>ActivateWindow(Favourites)</onclick>
+					<property name="path">ActivateWindow(Favourites)</property>
+					<property name="list">Favourites</property>
+					<property name="group">b-system-b</property>
+					<property name="isSubmenu">True</property>
+				</item>
+				<item id="6">
+					<property name="id">$NUMBER[6]</property>
+					<property name="mainmenuid">9</property>
+					<label>[B]Profiles[/B]</label>
+					<label2>Common menu item</label2>
+					<icon>DefaultShortcut.png</icon>
+					<thumb />
+					<property name="labelID">b-profiles-b</property>
+					<property name="defaultID">13200</property>
+					<onclick>ActivateWindow(Profiles)</onclick>
+					<property name="path">ActivateWindow(Profiles)</property>
+					<property name="list">Profiles</property>
+					<property name="group">b-system-b</property>
+					<property name="isSubmenu">True</property>
+				</item>
+				<item id="7">
+					<property name="id">$NUMBER[7]</property>
+					<property name="mainmenuid">9</property>
+					<label>[B]System info[/B]</label>
+					<label2>Common menu item</label2>
+					<icon>DefaultShortcut.png</icon>
+					<thumb />
+					<property name="labelID">b-systeminfo-b</property>
+					<property name="defaultID">130</property>
+					<onclick>ActivateWindow(SystemInfo)</onclick>
+					<property name="path">ActivateWindow(SystemInfo)</property>
+					<property name="list">SystemInfo</property>
+					<property name="group">b-system-b</property>
+					<property name="isSubmenu">True</property>
+				</item>
+				<item id="8">
+					<property name="id">$NUMBER[8]</property>
+					<property name="mainmenuid">9</property>
+					<label>[B]Events[/B]</label>
+					<label2>Common menu item</label2>
+					<icon>DefaultShortcut.png</icon>
+					<thumb />
+					<property name="labelID">b-events-b</property>
+					<property name="defaultID">14111</property>
+					<visible>[system.getbool(eventlog.enabled)] + [system.getbool(eventlog.enabled)]</visible>
+					<onclick>ActivateWindow(EventLog,events://,return)</onclick>
+					<property name="path">ActivateWindow(EventLog,events://,return)</property>
+					<property name="list">events://</property>
+					<property name="group">b-system-b</property>
+					<property name="isSubmenu">True</property>
+				</item>
+			</content>
+		</control>
+		<control type="group">
+			<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),b-system-b)</visible>
+			<animation delay="250" effect="slide" end="0,0" start="0,-97" time="200" tween="quadratic">Visible</animation>
+			<animation easing="out" effect="slide" end="0,-97" start="0,0" time="200" tween="quadratic">Hidden</animation>
+			<include>HomeSubMenuArrows</include>
+		</control>
+	</include>
+</includes>
