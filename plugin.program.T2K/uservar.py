@@ -7,19 +7,19 @@ ADDON_ID       = xbmcaddon.Addon().getAddonInfo('id')
 ADDONTITLE     = 'T2K'
 EXCLUDES       = [ADDON_ID]
 # Text File with build info in it.
-BUILDFILE      = 'https://t2k-cloud.co.uk/Kodi%20Stuff/t2k/T2Kautobuilds.txt'
+BUILDFILE      = 'http://www.t2k-cloud.co.uk/Kodi/t2k/T2Kautobuilds.txt'
 # How often you would list it to check for build updates in days
 # 0 being every startup of kodi
 UPDATECHECK    = 0
 # Text File with apk info in it.
-APKFILE        = 'https://t2k-cloud.co.uk/Kodi%20Stuff/mainapk.txt'
+APKFILE        = 'http://www.t2k-cloud.co.uk/Kodi/mainapk.txt'
 # Text File with Youtube Videos urls.  Leave as 'http://' to ignore
 YOUTUBETITLE   = 'T2K Youtube Tutorials'
-YOUTUBEFILE    = 'https://t2k-cloud.co.uk/Kodi%20Stuff/youtube.txt'
+YOUTUBEFILE    = 'http://www.t2k-cloud.co.uk/Kodi/youtube.txt'
 # Text File for addon installer.  Leave as 'http://' to ignore
-ADDONFILE      = 'https://t2k-cloud.co.uk/Kodi%20Stuff/addons2.txt'
+ADDONFILE      = 'http://www.t2k-cloud.co.uk/Kodi/addons2.txt'
 # Text File for advanced settings.  Leave as 'http://' to ignore
-ADVANCEDFILE   = 'https://t2k-cloud.co.uk/Kodi%20Stuff/advanced.txt'
+ADVANCEDFILE   = 'http://www.t2k-cloud.co.uk/Kodi/advanced.txt'
 
 # Dont need to edit just here for icons stored locally
 PATH           = xbmcaddon.Addon().getAddonInfo('path')
@@ -35,16 +35,16 @@ ART            = os.path.join(PATH, 'resources', 'art')
 #           ICONSETTINGS  = 'http://aftermathwizard.net/repo/wizard/settings.png'
 # Leave as http:// for default icon
 ICONBUILDS     = 'icon256x256.png'
-ICONMAINT      = 'https://t2k-cloud.co.uk/Kodi%20Stuff/icons/SEO_Maintenance-512.png'
-ICONAPK        = 'https://t2k-cloud.co.uk/Kodi%20Stuff/icons/71620be831143de5b84ce55e00046028_icon.png'
-ICONADDONS     = 'https://t2k-cloud.co.uk/Kodi%20Stuff/icons/addoninstaller.png'
-ICONYOUTUBE    = 'https://t2k-cloud.co.uk/Kodi%20Stuff/icons/logo-941916_960_720.png'
-ICONSAVE       = 'https://t2k-cloud.co.uk/Kodi%20Stuff/icons/538720-disk_512x512.png'
-ICONTRAKT      = 'https://t2k-cloud.co.uk/Kodi%20Stuff/icons/RvHrUFj.png'
-ICONREAL       = 'https://t2k-cloud.co.uk/Kodi%20Stuff/icons/realdebridlogo-e1418577058209.png'
-ICONLOGIN      = 'https://t2k-cloud.co.uk/Kodi%20Stuff/icons/login-system-icon-13.png'
-ICONCONTACT    = 'https://t2k-cloud.co.uk/Kodi%20Stuff/icons/Contacts-icon.png'
-ICONSETTINGS   = 'https://t2k-cloud.co.uk/Kodi%20Stuff/icons/iconlicious-misc-settings.png'
+ICONMAINT      = 'http://www.t2k-cloud.co.uk/Kodi/icons/SEO_Maintenance-512.png'
+ICONAPK        = 'http://www.t2k-cloud.co.uk/Kodi/icons/71620be831143de5b84ce55e00046028_icon.png'
+ICONADDONS     = 'http://www.t2k-cloud.co.uk/Kodi/icons/addoninstaller.png'
+ICONYOUTUBE    = 'http://www.t2k-cloud.co.uk/Kodi/icons/logo-941916_960_720.png'
+ICONSAVE       = 'http://www.t2k-cloud.co.uk/Kodi/icons/538720-disk_512x512.png'
+ICONTRAKT      = 'http://www.t2k-cloud.co.uk/Kodi/icons/RvHrUFj.png'
+ICONREAL       = 'http://www.t2k-cloud.co.uk/Kodi/icons/realdebridlogo-e1418577058209.png'
+ICONLOGIN      = 'http://www.t2k-cloud.co.uk/Kodi/icons/login-system-icon-13.png'
+ICONCONTACT    = 'http://www.t2k-cloud.co.uk/Kodi/icons/Contacts-icon.png'
+ICONSETTINGS   = 'http://www.t2k-cloud.co.uk/Kodi/icons/iconlicious-misc-settings.png'
 # Hide the ====== seperators 'Yes' or 'No'
 HIDESPACERS    = 'No'
 # Character used in seperator
@@ -71,7 +71,7 @@ HIDECONTACT    = 'No'
 # You can add \n to do line breaks
 CONTACT        = 'Thank you for choosing T2K.\r\n\r\nContact us on facebook at https://www.facebook.com/groups/T.2.K.Support/'
 #Images used for the contact window.  http:// for default icon and fanart
-CONTACTICON    = 'https://t2k-cloud.co.uk/Kodi%20Stuff/icons/192x192.png'
+CONTACTICON    = 'http://www.t2k-cloud.co.uk/Kodi/icons/192x192.png'
 CONTACTFANART  = 'http://'
 #########################################################
 
@@ -103,7 +103,7 @@ REPOZIPURL     = 'https://github.com/djwayne1985/repository.T2K/tree/master/zips
 # Enable Notification screen Yes or No
 ENABLE         = 'Yes'
 # Url to notification file
-NOTIFICATION   = 'https://t2k-cloud.co.uk/Kodi%20Stuff/notify.txt'
+NOTIFICATION   = 'http://www.t2k-cloud.co.uk/Kodi/notify.txt'
 # Use either 'Text' or 'Image'
 HEADERTYPE     = 'Text'
 HEADERMESSAGE  = 'T2K'
