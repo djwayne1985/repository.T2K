@@ -7,19 +7,19 @@ ADDON_ID       = xbmcaddon.Addon().getAddonInfo('id')
 ADDONTITLE     = 'T2K'
 EXCLUDES       = [ADDON_ID]
 # Text File with build info in it.
-BUILDFILE      = 'http://www.t2k-cloud.co.uk/Kodi/t2k/T2Kautobuilds.txt'
+BUILDFILE      = 'http://t2k.dynu.net:3280/Kodi/t2k/T2Kautobuilds.txt'
 # How often you would list it to check for build updates in days
 # 0 being every startup of kodi
 UPDATECHECK    = 0
 # Text File with apk info in it.
-APKFILE        = 'http://www.t2k-cloud.co.uk/Kodi/mainapk.txt'
+APKFILE        = 'http://t2k.dynu.net:3280/Kodi/mainapk.txt'
 # Text File with Youtube Videos urls.  Leave as 'http://' to ignore
 YOUTUBETITLE   = 'T2K Youtube Tutorials'
-YOUTUBEFILE    = 'http://www.t2k-cloud.co.uk/Kodi/youtube.txt'
+YOUTUBEFILE    = 'http://t2k.dynu.net:3280/Kodi/youtube.txt'
 # Text File for addon installer.  Leave as 'http://' to ignore
-ADDONFILE      = 'http://www.t2k-cloud.co.uk/Kodi/addons2.txt'
+ADDONFILE      = 'http://t2k.dynu.net:3280/Kodi/addons2.txt'
 # Text File for advanced settings.  Leave as 'http://' to ignore
-ADVANCEDFILE   = 'http://www.t2k-cloud.co.uk/Kodi/advanced.txt'
+ADVANCEDFILE   = 'http://t2k.dynu.net:3280/Kodi/advanced.txt'
 
 # Dont need to edit just here for icons stored locally
 PATH           = xbmcaddon.Addon().getAddonInfo('path')
@@ -35,16 +35,16 @@ ART            = os.path.join(PATH, 'resources', 'art')
 #           ICONSETTINGS  = 'http://aftermathwizard.net/repo/wizard/settings.png'
 # Leave as http:// for default icon
 ICONBUILDS     = 'icon256x256.png'
-ICONMAINT      = 'http://www.t2k-cloud.co.uk/Kodi/icons/SEO_Maintenance-512.png'
-ICONAPK        = 'http://www.t2k-cloud.co.uk/Kodi/icons/71620be831143de5b84ce55e00046028_icon.png'
-ICONADDONS     = 'http://www.t2k-cloud.co.uk/Kodi/icons/addoninstaller.png'
-ICONYOUTUBE    = 'http://www.t2k-cloud.co.uk/Kodi/icons/logo-941916_960_720.png'
-ICONSAVE       = 'http://www.t2k-cloud.co.uk/Kodi/icons/538720-disk_512x512.png'
-ICONTRAKT      = 'http://www.t2k-cloud.co.uk/Kodi/icons/RvHrUFj.png'
-ICONREAL       = 'http://www.t2k-cloud.co.uk/Kodi/icons/realdebridlogo-e1418577058209.png'
-ICONLOGIN      = 'http://www.t2k-cloud.co.uk/Kodi/icons/login-system-icon-13.png'
-ICONCONTACT    = 'http://www.t2k-cloud.co.uk/Kodi/icons/Contacts-icon.png'
-ICONSETTINGS   = 'http://www.t2k-cloud.co.uk/Kodi/icons/iconlicious-misc-settings.png'
+ICONMAINT      = 'http://t2k.dynu.net:3280/Kodi/icons/SEO_Maintenance-512.png'
+ICONAPK        = 'http://t2k.dynu.net:3280/Kodi/icons/71620be831143de5b84ce55e00046028_icon.png'
+ICONADDONS     = 'http://t2k.dynu.net:3280/Kodi/icons/addoninstaller.png'
+ICONYOUTUBE    = 'http://t2k.dynu.net:3280/Kodi/icons/logo-941916_960_720.png'
+ICONSAVE       = 'http://t2k.dynu.net:3280/Kodi/icons/538720-disk_512x512.png'
+ICONTRAKT      = 'http://t2k.dynu.net:3280/Kodi/icons/RvHrUFj.png'
+ICONREAL       = 'http://t2k.dynu.net:3280/Kodi/icons/realdebridlogo-e1418577058209.png'
+ICONLOGIN      = 'http://t2k.dynu.net:3280/Kodi/icons/login-system-icon-13.png'
+ICONCONTACT    = 'http://t2k.dynu.net:3280/Kodi/icons/Contacts-icon.png'
+ICONSETTINGS   = 'http://t2k.dynu.net:3280/Kodi/icons/iconlicious-misc-settings.png'
 # Hide the ====== seperators 'Yes' or 'No'
 HIDESPACERS    = 'No'
 # Character used in seperator
@@ -71,7 +71,7 @@ HIDECONTACT    = 'No'
 # You can add \n to do line breaks
 CONTACT        = 'Thank you for choosing T2K.\r\n\r\nContact us on facebook at https://www.facebook.com/groups/T.2.K.Support/'
 #Images used for the contact window.  http:// for default icon and fanart
-CONTACTICON    = 'http://www.t2k-cloud.co.uk/Kodi/icons/192x192.png'
+CONTACTICON    = 'http://t2k.dynu.net:3280/Kodi/icons/192x192.png'
 CONTACTFANART  = 'http://'
 #########################################################
 
@@ -81,7 +81,7 @@ CONTACTFANART  = 'http://'
 # Enable Auto Update 'Yes' or 'No'
 AUTOUPDATE     = 'Yes'
 # Url to wizard version
-WIZARDFILE     = 'https://www.dropbox.com/s/ymls4kg55z1c9b4/T2Kautobuilds.txt?dl=1'
+WIZARDFILE     = 'http://t2k.dynu.net:3280/Kodi/t2k/T2Kautobuilds.txt'
 #########################################################
 
 #########################################################
@@ -103,7 +103,7 @@ REPOZIPURL     = 'https://github.com/djwayne1985/repository.T2K/tree/master/zips
 # Enable Notification screen Yes or No
 ENABLE         = 'Yes'
 # Url to notification file
-NOTIFICATION   = 'http://www.t2k-cloud.co.uk/Kodi/notify.txt'
+NOTIFICATION   = 'http://t2k.dynu.net:3280/Kodi/notify.txt'
 # Use either 'Text' or 'Image'
 HEADERTYPE     = 'Text'
 HEADERMESSAGE  = 'T2K'
