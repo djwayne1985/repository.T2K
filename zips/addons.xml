@@ -670,7 +670,7 @@ Fix failure to sign in when signed off externally (Issue #110, #117)
 	</extension>
 </addon>
 
-<addon id="skin.aeon.nox.lkmod" version="9.9.0" name="Aeon Nox LKMod" provider-name="BigNoid">
+<addon id="skin.aeon.nox.lkmod" version="9.9.1" name="Aeon Nox LKMod Krypt" provider-name="BigNoid">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 		<import addon="script.grab.fanart" version="0.12.8"/>
