@@ -654,6 +654,20 @@ Fix failure to sign in when signed off externally (Issue #110, #117)
   </extension>
 </addon>
 
+<addon id="script.T2Klogemail" name="T2K Log Emailer" version="0.0.1" provider-name="T2K">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">T2K Log Emailer</summary>
+    <description lang="en">T2K Log Emailer</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="script.video.F4mProxy" name="F4mProxy" version="2.8.7" provider-name="Shani">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
