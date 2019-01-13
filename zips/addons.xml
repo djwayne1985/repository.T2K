@@ -816,11 +816,11 @@ Fix failure to sign in when signed off externally (Issue #110, #117)
 
 <addon
 	id="t2k.skin.unity.mod.18"
-	version="1.0.2"
+	version="1.0.3"
 	name="T2K Leia Unity Mod"
 	provider-name="T2K Team">
 	<requires>
-		<import addon="xbmc.gui" version="5.13.0"/>
+		<import addon="xbmc.gui" version="5.14.0"/>
 		<import addon="script.skinshortcuts" version="1.0.8"/>
 		<import addon="script.skin.helper.service" version="1.0.60"/>
 	</requires>
