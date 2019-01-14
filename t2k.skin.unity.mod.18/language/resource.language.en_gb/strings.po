@@ -1,6 +1,6 @@
-# Addon Name: Unity
-# Addon id: skin.unity
-# Addon Provider: Bumpaneer
+# Addon Name: T2K Leia Unity Mod
+# Addon id: t2k.skin.unity.mod.18
+# Addon Provider: T2K
 msgid ""
 msgstr ""
 "Project-Id-Version: Unity\n"

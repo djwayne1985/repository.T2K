@@ -807,7 +807,7 @@ Fix failure to sign in when signed off externally (Issue #110, #117)
 
 <addon
 	id="skin.unity.mod.krypt"
-	version="1.0.1"
+	version="1.0.2"
 	name="T2K Unity Mod Krypt"
 	provider-name="T2K Team">
 	<requires>
@@ -841,7 +841,7 @@ Fix failure to sign in when signed off externally (Issue #110, #117)
 
 <addon
 	id="t2k.skin.unity.mod.18"
-	version="1.0.3"
+	version="1.0.4"
 	name="T2K Leia Unity Mod"
 	provider-name="T2K Team">
 	<requires>

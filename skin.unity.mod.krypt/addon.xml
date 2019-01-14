@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
 	id="skin.unity.mod.krypt"
-	version="1.0.1"
+	version="1.0.2"
 	name="T2K Unity Mod Krypt"
 	provider-name="T2K Team">
 	<requires>
