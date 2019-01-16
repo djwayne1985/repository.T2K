@@ -387,7 +387,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.T2KIPTV" name="T2K IPTV Kingdom" version="1.0.6" provider-name="T2K">
+<addon id="plugin.video.T2KIPTV" name="T2K IPTV Kingdom" version="1.0.8" provider-name="T2K">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.universalscrapers" version="1.0.0" />
@@ -397,10 +397,12 @@
         <import addon="script.module.addon.common" version="2.0.0" />
         <import addon="script.module.xmltodict" version="0.9.0" />
         <import addon="script.module.dateutil" />
-		<import addon="plugin.video.whiskyone"/>
-        <!--<import addon="script.module.web-pdb" version="1.0"/>-->
+		<!--<import addon="script.module.web-pdb" version="1.0"/>-->
         <import addon="script.module.resolveurl" />
         <!--<import addon="script.module.urlresolver" />-->
+		<!--<import addon="plugin.video.whiskyone"/>-->
+		<import addon="plugin.video.whiskyone" />
+		<!--<import addon="plugin.video.whiskyone" />-->
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
