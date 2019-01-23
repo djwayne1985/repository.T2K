@@ -121,7 +121,7 @@ class AIRTABLE4k(Plugin):
 @route(mode='open_4k_movies')
 def open_movies():
     xml = ""
-    at = Airtable('appJgRUQhuA0xVxIX', '4kmovies', api_key='keyOHaxsTGzHU9EEh')
+    at = Airtable('appJgRUQhuA0xVxIX', '4kmovies2', api_key='keyOHaxsTGzHU9EEh')
     match = at.get_all(maxRecords=700, sort=['channel'])
     results = re.compile("fanart': u'(.+?)'.+?link': u'(.+?)'.+?thumbnail': u'(.+?)'.+?channel': u'(.+?)'.+?summary': u'(.+?)'",re.DOTALL).findall(str(match))
     for fanart,link,thumbnail,channel,summary in results:
