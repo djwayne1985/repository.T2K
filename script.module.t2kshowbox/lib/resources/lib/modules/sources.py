@@ -909,9 +909,9 @@ class sources:
 
 
     def getConstants(self):
-        self.itemProperty = 'plugin.video.showboxarize.container.items'
+        self.itemProperty = 'plugin.video.t2kshowbox.container.items'
 
-        self.metaProperty = 'plugin.video.showboxarize.container.meta'
+        self.metaProperty = 'plugin.video.t2kshowbox.container.meta'
 
         from resources.lib.sources import sources
 

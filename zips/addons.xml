@@ -69,6 +69,21 @@
   </extension>
 </addon>
 
+<addon id="plugin.program.t2kpair" name="T2K Pair" version="1.0.0" provider-name="T2K">
+    <requires>
+        <import addon="xbmc.python" version="2.24.0"/>
+        <import addon="script.module.tulip" version="1.4.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en_GB">T2K Pair</summary>
+        <description lang="en_GB"></description>
+    </extension>
+</addon>
+
 <addon id="plugin.video.t2kthemes" name="T2K + Fanriffic Themes" version="1.0.0" provider-name="T2K">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
@@ -473,6 +488,43 @@
         <video_guide></video_guide>
         <reuselanguageinvoker>false</reuselanguageinvoker>
     </extension>
+</addon>
+
+<addon id="plugin.video.t2kshowbox" version="1.0.0" name="T2K ShowBox" provider-name="T2K">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.module.t2kshowbox" />
+		<import addon="script.t2kshowbox.artwork" />
+		<import addon="script.t2kshowbox.metadata" />
+		<import addon="script.module.urlresolver" version="3.0.0" />
+		<import addon="script.module.metahandler" version="1.0.0" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="t2kshowbox.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Watch Free Movies and TV Shows on [COLOR yellow]Show[/COLOR]Box Ar[COLOR yellow]ize[/COLOR]</summary>
+		<description lang="en"></description>
+		<disclaimer lang="en"></disclaimer>
+		<description lang="de"></description>
+		<disclaimer lang="de"></disclaimer>
+		<description lang="fr"></description>
+		<disclaimer lang="fr"></disclaimer>
+		<platform>all</platform>
+		<forum>https://www.facebook.com/groups/T.2.K.Support/</forum>
+		<website>https://www.t2k-cloud.co.uk</website>
+		<source>https://www.t2k-cloud.co.uk/Repo</source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
+		</assets>
+		<news>- Initial release
+- Free movies
+- Free TV Shows</news>
+	</extension>
 </addon>
 
 <addon id="plugin.video.TBMV2" name="TBMV2" version="5" provider-name="A Broke MALLU">

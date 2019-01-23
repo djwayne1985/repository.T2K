@@ -181,17 +181,17 @@ def get_plugin_url(queries):
 def artPath():
     theme = appearance()
     if theme in ['-', '']: return
-    elif condVisibility('System.HasAddon(script.showboxarize.artwork)'):
-        return os.path.join(xbmcaddon.Addon('script.showboxarize.artwork').getAddonInfo('path'), 'resources', 'media', theme)
+    elif condVisibility('System.HasAddon(script.t2kshowbox.artwork)'):
+        return os.path.join(xbmcaddon.Addon('script.t2kshowbox.artwork').getAddonInfo('path'), 'resources', 'media', theme)
 
 
 def appearance():
-    appearance = setting('appearance.1').lower() if condVisibility('System.HasAddon(script.showboxarize.artwork)') else setting('appearance.alt').lower()
+    appearance = setting('appearance.1').lower() if condVisibility('System.HasAddon(script.t2kshowbox.artwork)') else setting('appearance.alt').lower()
     return appearance
 
 
 def artwork():
-    execute('RunPlugin(plugin://script.showboxarize.artwork)')
+    execute('RunPlugin(plugin://script.t2kshowbox.artwork)')
 
 
 def infoDialog(message, heading=addonInfo('name'), icon='', time=3000, sound=False):
@@ -212,8 +212,8 @@ def selectDialog(list, heading=addonInfo('name')):
 
 
 def metaFile():
-    if condVisibility('System.HasAddon(script.showboxarize.metadata)'):
-        return os.path.join(xbmcaddon.Addon('script.showboxarize.metadata').getAddonInfo('path'), 'resources', 'data', 'meta.db')
+    if condVisibility('System.HasAddon(script.t2kshowbox.metadata)'):
+        return os.path.join(xbmcaddon.Addon('script.t2kshowbox.metadata').getAddonInfo('path'), 'resources', 'data', 'meta.db')
 
 
 def apiLanguage(ret_name=None):
