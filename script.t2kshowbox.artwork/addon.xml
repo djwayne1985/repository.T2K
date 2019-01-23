@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.t2kshowbox.artwork" version="1.0.1" name="t2k showbox Artwork" provider-name="t2k">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Themes for the t2k showbox Addon</summary>
+		<description></description>
+		<platform>all</platform>
+	</extension>
+</addon>
