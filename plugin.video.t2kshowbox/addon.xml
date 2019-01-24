@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.t2kshowbox" version="1.0.0" name="T2K ShowBox" provider-name="T2K">
+<addon id="plugin.video.t2kshowbox" version="1.0.1" name="T2K ShowBox" provider-name="T2K">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
-		<import addon="script.module.t2kshowbox" />
-		<import addon="script.t2kshowbox.artwork" />
-		<import addon="script.t2kshowbox.metadata" />
+		<import addon="script.module.t2kshowbox" version="1.0.0" />
+		<import addon="script.t2kshowbox.artwork" version="1.0.0" />
+		<import addon="script.t2kshowbox.metadata" version="1.0.0" />
 		<import addon="script.module.urlresolver" version="3.0.0" />
 		<import addon="script.module.metahandler" version="1.0.0" />
 	</requires>
