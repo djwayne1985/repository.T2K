@@ -711,7 +711,7 @@ Documentation: https://github.com/tamland/kodi-plugin-routing</description>
     </extension>
 </addon>
 
-<addon id="script.module.t2k-ln" name="T2K LiveNet TV" version="1.0.0" provider-name="T2K">
+<addon id="script.module.t2k-ln" name="T2K LiveNet TV" version="1.0.1" provider-name="T2K">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.pyamf" />
@@ -760,7 +760,7 @@ Documentation: https://github.com/tamland/kodi-plugin-routing</description>
   </extension>
 </addon>
 
-<addon id="script.module.t2k-tv-tap" name="T2K Tv Tap" version="1.0.0" provider-name="T2K">
+<addon id="script.module.t2k-tv-tap" name="T2K Tv Tap" version="1.0.1" provider-name="T2K">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.livestreamer" />
