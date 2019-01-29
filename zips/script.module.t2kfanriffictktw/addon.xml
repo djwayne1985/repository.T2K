@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.program.t2kfanriffictktw" name="[B]Original Fanriffic Krypton Themes[/B]" version="1.0" provider-name="T2K">
+<addon id="script.module.t2kfanriffictktw" name="[B]Original Fanriffic Krypton Themes[/B]" version="1.0.2" provider-name="T2K">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>executable</provides>
+        <provides>all</provides>
   </extension>
   <extension point="xbmc.service" library="startup.py" start="startup" />
   <extension point="xbmc.addon.metadata">

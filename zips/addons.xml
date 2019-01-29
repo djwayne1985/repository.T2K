@@ -39,36 +39,6 @@
   </extension>
 </addon>
 
-<addon id="plugin.program.t2kfanriffictktw" name="[B]Original Fanriffic Krypton Themes[/B]" version="1.0.1" provider-name="T2K">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.service" library="startup.py" start="startup" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en"></summary>
-    <description lang="en">In this wizard you will find the Original Fanriffic Themed  Wizard and Tools. Thanks whufclee at NaN, GUYS at TI, Brackets for the app installer!! RomanVM for the PyXBMCt libs. Fire TV Guru for the PyXBMCt layout  Also a very special Thanks to Surfacingx for the code used in this add-on.</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.program.t2kfanriffictltw" name="[B]Original Fanriffic Leia Themes[/B]" version="1.0.1" provider-name="T2K">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.service" library="startup.py" start="startup" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en"></summary>
-    <description lang="en">In this wizard you will find the original Fanriffic Themed  Wizard and Tools. Thanks whufclee at NaN, GUYS at TI, Brackets for the app installer!! RomanVM for the PyXBMCt libs. Fire TV Guru for the PyXBMCt layout  Also a very special Thanks to Surfacingx for the code used in this add-on.</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
 <addon id="plugin.program.t2kpair" name="T2K Pair" version="1.0.0" provider-name="T2K">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
@@ -84,7 +54,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.t2kthemes" name="T2K + Fanriffic Themes" version="1.0.0" provider-name="T2K">
+<addon id="plugin.video.t2kthemes" name="T2K + Fanriffic Themes" version="1.0.1" provider-name="T2K">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.universalscrapers" version="1.0.0" />
@@ -763,6 +733,36 @@ Documentation: https://github.com/tamland/kodi-plugin-routing</description>
     <website></website>
     <email></email>
     <source></source>
+  </extension>
+</addon>
+
+<addon id="script.module.t2kfanriffictktw" name="[B]Original Fanriffic Krypton Themes[/B]" version="1.0.2" provider-name="T2K">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>all</provides>
+  </extension>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en"></summary>
+    <description lang="en">In this wizard you will find the Original Fanriffic Themed  Wizard and Tools. Thanks whufclee at NaN, GUYS at TI, Brackets for the app installer!! RomanVM for the PyXBMCt libs. Fire TV Guru for the PyXBMCt layout  Also a very special Thanks to Surfacingx for the code used in this add-on.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.module.t2kfanriffictltw" name="[B]Original Fanriffic Leia Themes[/B]" version="1.0.2" provider-name="T2K">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>all</provides>
+  </extension>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en"></summary>
+    <description lang="en">In this wizard you will find the original Fanriffic Themed  Wizard and Tools. Thanks whufclee at NaN, GUYS at TI, Brackets for the app installer!! RomanVM for the PyXBMCt libs. Fire TV Guru for the PyXBMCt layout  Also a very special Thanks to Surfacingx for the code used in this add-on.</description>
+    <platform>all</platform>
   </extension>
 </addon>
 
