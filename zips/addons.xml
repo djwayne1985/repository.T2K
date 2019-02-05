@@ -24,7 +24,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.program.T2K" name="T2K Wizard" version="1.1.6" provider-name="T2K">
+<addon id="plugin.program.T2K" name="T2K Wizard" version="1.1.7" provider-name="T2K">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -69,7 +69,7 @@
         <!--<import addon="script.module.urlresolver" />-->
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>audio video</provides>
+        <provides>executable</provides>
     </extension>
     <extension point="xbmc.service" library="service.py" start="[login|startup]" />
     <extension point="xbmc.addon.metadata">
