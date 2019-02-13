@@ -44,7 +44,7 @@ __builtin__.session_length = ownAddon.getSetting('session_length')
 
 import os
 import sys
-import sqlite3
+
 import koding
 import koding.router as router
 import weblogin,time,traceback
@@ -67,12 +67,6 @@ addon_name = xbmcaddon.Addon().getAddonInfo('name')
 home_folder = xbmc.translatePath('special://home/')
 addon_folder = os.path.join(home_folder, 'addons')
 art_path = os.path.join(addon_folder, addon_id)
-user_data_folder = os.path.join(home_folder, 'userdata')
-addon_data_folder = os.path.join(user_data_folder, 'addon_data')
-addon_id = xbmcaddon.Addon().getAddonInfo('id')
-addon_data_folder = xbmc.translatePath('special://home/userdata/addon_data')
-addon_data = os.path.join(addon_data_folder, addon_id)
-database_loc = os.path.join(addon_data, 'database.db')
 content_type = "files"
 
 @route("main")
@@ -197,7 +191,6 @@ def handle_login():
 @route(mode='get_list_uncached', args=["url"])
 def get_list_uncached(url):
     """display jen list uncached"""
-    pins = url
     global content_type
     jen_list = JenList(url, cached=False)
     if not jen_list:
@@ -208,14 +201,13 @@ def get_list_uncached(url):
         return False
     if content:
         content_type = content
-    display_list(items, content_type, pins)
+    display_list(items, content_type)
     return True
 
 
 @route(mode="get_list", args=["url"])
 def get_list(url):
     """display jen list"""
-    pins = url    
     global content_type
     jen_list = JenList(url)
     if not jen_list:
@@ -226,8 +218,7 @@ def get_list(url):
         return False
     if content:
         content_type = content
-    pins = url
-    display_list(items, content_type, pins)
+    display_list(items, content_type)
     return True
 
 
@@ -236,7 +227,6 @@ def all_episodes(url):
     global content_type
     import pickle
     import xbmcgui
-    pins = url
     season_urls = pickle.loads(url)
     result_items = []
     dialog = xbmcgui.DialogProgress()
@@ -253,7 +243,7 @@ def all_episodes(url):
         jen_list = JenList(season_url)
         result_items.extend(jen_list.get_list(skip_dialog=True))
     content_type = "episodes"
-    display_list(result_items, "episodes", pins)
+    display_list(result_items, "episodes")
 
 
 @route(mode="Settings")
@@ -310,18 +300,6 @@ def clear_cache():
                 xbmc.translatePath(xbmcaddon.Addon().getSetting("cache_folder")),
                 "artcache")
             koding.Delete_Folders(dest_folder)
-        if dialog.yesno(addon_name, _("Clear Main Cache?")):
-            res = koding.Get_All_From_Table("Table_names")
-            for results in res:
-                table_nm = results['name']
-                print table_nm
-                koding.Remove_Table(table_nm)
-        if dialog.yesno(addon_name, _("Clear Plugin Cache?")):
-            res = koding.Get_All_From_Table("Plugin_table_names")
-            for results in res:
-                table_nm = results['name']
-                print table_nm
-                koding.Remove_Table(table_nm)                                        
     else:
         koding.Remove_Table("meta")
         koding.Remove_Table("episode_meta")
@@ -331,22 +309,7 @@ def clear_cache():
             xbmc.translatePath(xbmcaddon.Addon().getSetting("cache_folder")),
             "artcache")
         koding.Delete_Folders(dest_folder)
-        res = koding.Get_All_From_Table("Table_names")
-        for results in res:
-            table_nm = results['name']
-            print table_nm
-            koding.Remove_Table(table_nm)
-        res = koding.Get_All_From_Table("Plugin_table_names")
-        for results in res:
-            table_nm = results['name']
-            print table_nm
-            koding.Remove_Table(table_nm)            
 
-    db = sqlite3.connect('%s' % (database_loc))        
-    cursor = db.cursor()
-    db.execute("vacuum")
-    db.commit()
-    db.close()
     xbmc.log("running hook: clear cache", xbmc.LOGNOTICE)
     run_hook("clear_cache")
     xbmcgui.Dialog().notification('Clear Cache', 'Cache has been cleared',xbmcaddon.Addon().getAddonInfo("icon"), 4000)

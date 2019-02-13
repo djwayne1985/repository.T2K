@@ -1,7 +1,3 @@
-v1.9.2
-    - Added cache for all pages displayed
-    - Added remove main cache to settings
-    - Added remove plugins cache to settings
 v1.9.1
     - Added new readme.html- Rewrote section 4 - Upgrading your Jen - thanks T
     - Added new sources.py for help playing links - thanks B

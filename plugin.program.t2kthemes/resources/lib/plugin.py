@@ -48,7 +48,7 @@ class Plugin():
     def do_search(self, search_term):
         pass
 
-    def display_list(self, items, content_type, pins):
+    def display_list(self, items, content_type):
         pass
 
     def first_run_wizard(self):
