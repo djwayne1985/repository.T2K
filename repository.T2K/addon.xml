@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.T2K" name="T2K Repo" version="1.0.4" provider-name="T2K">
+<addon id="repository.T2K" name="T2K Repo" version="1.0.5" provider-name="T2K">
 	<extension point="xbmc.addon.repository" name="T2K Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
@@ -21,9 +21,11 @@
 			<checksum>https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/</datadir>
 		</dir>
-		<info compressed="false">https://raw.githubusercontent.com/djwayne1985/repository.T2K/master/zips/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/djwayne1985/repository.T2K/master/zips/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/djwayne1985/repository.T2K/master/zips/</datadir>
+		<dir>
+		    <info compressed="false">https://raw.githubusercontent.com/djwayne1985/repository.T2K/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/djwayne1985/repository.T2K/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/djwayne1985/repository.T2K/master/zips/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">T2K</summary>
