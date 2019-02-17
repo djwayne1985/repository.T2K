@@ -29,7 +29,7 @@
     <category label="30718">
         <setting label="30718" type="lsep"/>
         <setting label="30719" type="action" option="close"
-               action="RunPlugin(plugin://plugin.video.jen/?mode=clearCache)"/>
+               action="RunPlugin(plugin://plugin.audio.t2kmusic/?mode=clearCache)"/>
         <setting label="Clear Cache Without Prompts" type="bool" id="quiet_cache" default="true" visible="true"/>
     </category>
 
@@ -54,7 +54,7 @@
     <category label="Scrapers">
         <setting label="30733" type="lsep"/>
         <setting label="30734" type="action" option="close"
-               action="RunPlugin(plugin://plugin.video.jen/?mode=ScraperSettings)"/>
+               action="RunPlugin(plugin://plugin.audio.t2kmusic/?mode=ScraperSettings)"/>
         <setting id="use_link_dialog" label="30744" type="bool" default="true" />
         <setting id="link_fallthrough" label="30745" type="bool"	default="true" visible="eq(-1,true)"/>
     </category>
@@ -63,7 +63,7 @@
     <category label="Resolvers">
         <setting label="30741" type="lsep"/>
         <setting label="30742" type="action" option="close"
-               action="RunPlugin(plugin://plugin.video.jen/?mode=ResolverSettings)"/>
+               action="RunPlugin(plugin://plugin.audio.t2kmusic/?mode=ResolverSettings)"/>
 
         <!-- filtering settings -->
         <setting label="30735" type="lsep"/>
@@ -83,7 +83,7 @@
     <category label="Enter Own API's">
         <setting id="debug" type="bool" label="API's" default="false" visible="true"/>
         <setting id="first_run" label="first run" type="bool" default="false" visible="false"/>
-        <setting label="Cache Location" id="cache_folder" type="folder" default="special://profile/addon_data/plugin.video.jen/" visible="false"/>
+        <setting label="Cache Location" id="cache_folder" type="folder" default="special://profile/addon_data/plugin.audio.t2kmusic/" visible="false"/>
         <setting label="TVDB API Key" type="text" id="tvdb_api_key" option="hidden" default="API KEY GOES HERE" visible="eq(-3,true)"/>
         <setting label="TMDB API Key" type="text" id="tmdb_api_key" option="hidden" default="API KEY GOES HERE" visible="eq(-4,true)"/>
         <setting label="Trakt Client ID" type="text" id="trakt_api_client_id" option="hidden" default="API KEY GOES HERE" visible="eq(-5,true)"/>

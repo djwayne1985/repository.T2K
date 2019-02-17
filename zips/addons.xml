@@ -1,5 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
+<addon id="plugin.audio.t2kmusic" name="T2K Music" version="1.0.1" provider-name="T2K">
+    <requires>
+        <import addon="xbmc.python" version="2.19.0" />
+        <import addon="script.module.universalscrapers" version="1.0.0" />
+        <import addon="script.module.python.koding.aio" version="0.9.6.6" />
+        <import addon="script.module.beautifulsoup" version="3.2.1" />
+        <import addon="script.module.requests" version="2.9.1" />
+        <import addon="script.module.addon.common" version="2.0.0" />
+        <import addon="script.module.xmltodict" version="0.9.0" />
+        <import addon="script.module.dateutil" />
+        <!--<import addon="script.module.web-pdb" version="1.0"/>-->
+        <import addon="script.module.resolveurl" />
+        <!--<import addon="script.module.urlresolver" />-->
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>audio</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="[login|startup]" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en"></summary>
+        <description lang="en"></description>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+        <platform>all</platform>
+        <website/>
+        <video_guide></video_guide>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+    </extension>
+</addon>
+
+<addon id="plugin.audio.tuneinradio" name="TuneIn Radio" version="3.0.0" provider-name="brianhornsby">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.simplejson" version="2.0.10"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>audio</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="bg">Радио TuneIn</summary>
+		<summary lang="en">TuneIn Radio</summary>
+		<summary lang="es">TuneIn Radio</summary>
+		<description lang="bg">Радио TuneIn е безплатна услуга, която ви позволява да слушате всичко, независимо къде се намирате. Каквото желаете - музика, спорт или новини. Радио TuneIn предлага над 50 000 станции от които да избирате. Можете да намерите местните станции или да откриете нови станции от целия свят. Радио TuneIn ви отвежда точно където желаете да сте.</description>
+		<description lang="en">TuneIn Radio is a free service that lets you listen to anything in the world from wherever you are. Whether you want to hear music, sports, news or current events. TuneIn Radio offers over 50,000 stations for you to choose from. From finding local stations to discovering new stations from around the world, TuneIn Radio brings you to where you want to be.</description>
+		<description lang="es">TuneIn Radio es un servicio gratuito que te permite escuchar cualquier cosa del mundo desde donde te encuentres. Si deseas escuchar música, deportes, noticias o eventos actuales. TuneIn Radio ofrece más de 50,000 estaciones radiales para escoger, desde estaciones locales hasta descubrir nuevas estaciones alrededor del mundo, TuneIn Radio te lleva a donde tu quieras estar.</description>
+		<language></language>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<forum>http://forum.kodi.tv/showthread.php?tid=119315</forum>
+		<website>http://brianhornsby.com/kodi_addons/tuneinradio</website>
+		<source>https://github.com/brianhornsby/plugin.audio.tuneinradio</source>
+	</extension>
+</addon>
+
 <addon id="plugin.program.aptoide" version="2018.01.08" name="[COLOR darkorange]Aptoide[/COLOR] for Kodi" provider-name="aenemapy">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
@@ -57,7 +110,7 @@
 <addon id="plugin.program.t2kthemes" name="T2K + Fanriffic Themes" version="1.0.2" provider-name="T2K">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
-        <import addon="script.module.universalscrapers" />
+        <import addon="script.module.universalscrapers" version="1.0.0" />
         <import addon="script.module.python.koding.aio" />
         <import addon="script.module.beautifulsoup" />
         <import addon="script.module.requests" />
@@ -536,8 +589,14 @@
 	</extension>
 </addon>
 
-<addon id="repository.T2K" name="T2K Repo" version="1.0.3" provider-name="T2K">
+<addon id="repository.T2K" name="T2K Repo" version="1.0.6" provider-name="T2K">
 	<extension point="xbmc.addon.repository" name="T2K Repository">
+		<dir>
+            <info compressed="false">http://ukodi1.com/_repo/addons.xml</info>
+            <checksum>http://ukodi1.com/_repo/addons.xml.md5</checksum>
+            <datadir zip="true">http://ukodi1.com/_repo/</datadir>
+            <hashes>false</hashes>
+        </dir>
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
@@ -558,9 +617,9 @@
 			<checksum>https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/</datadir>
 		</dir>
-		<info compressed="false">https://raw.githubusercontent.com/djwayne1985/repository.T2K/master/zips/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/djwayne1985/repository.T2K/master/zips/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/djwayne1985/repository.T2K/master/zips/</datadir>
+		    <info compressed="false">https://raw.githubusercontent.com/djwayne1985/repository.T2K/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/djwayne1985/repository.T2K/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/djwayne1985/repository.T2K/master/zips/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">T2K</summary>
@@ -637,6 +696,65 @@ Documentation: https://github.com/tamland/kodi-plugin-routing</description>
         <platform>all</platform>
         <source>https://github.com/tamland/kodi-plugin-routing</source>
     </extension>
+</addon>
+
+<addon id="script.module.slproxy" name="SLProxy" version="0.0.5" provider-name="devilsport">
+  <requires>
+    <import addon="xbmc.python" version="2.24.0"/>
+    <import addon="script.module.requests"/>
+	  <import addon="script.module.streamlink.base" version="2018.07.03" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib/"/>
+  <extension point="xbmc.addon.metadata">
+    <summary>StreamLink Proxy DS</summary>
+    <description>Streamlink proxy for Kodi</description>
+    <platform>all</platform>
+    <license>Simplified BSD</license>
+    <source></source>
+    <language>en</language>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+    <news>
+    </news>
+  </extension>
+</addon>
+
+<addon id="script.module.streamlink.base" name="Streamlink Library" version="2018.07.03" provider-name="Streamlink Devs, Twilight0">
+  <requires>
+    <import addon="xbmc.python" version="2.24.0"/>
+    <import addon="script.module.requests" version="2.12.4"/>
+    <import addon="script.module.futures" version="2.2.0"/>
+    <import addon="script.module.streamlink.crypto" version="1.4.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="resources/lib/"/>
+  <extension point="xbmc.addon.metadata">
+    <summary>Streamlink Library</summary>
+    <description>Streamlink Library for Kodi</description>
+    <platform>all</platform>
+    <license>Simplified BSD</license>
+    <source>https://github.com/Twilight0/script.module.streamlink.base/</source>
+    <language>en</language>
+    <!--<assets>-->
+      <!--<icon>resources/icon.png</icon>-->
+    <!--</assets>-->
+    <news>+ 2018.07.03
+- Plugins updates
+- Various other tweaks pulled from upstream</news>
+  </extension>
+</addon>
+
+<addon id="script.module.streamlink.crypto" name="streamlink.crypto" version="1.4.0" provider-name="Streamlink.crypto">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Pure Python implementation of the cryptographic libraries required by Streamlink</summary>
+    <source>https://github.com/Twilight0/script.module.streamlink.crypto</source>
+    <platform>all</platform>
+    <license>MIT</license>
+  </extension>
 </addon>
 
 <addon id="script.module.t2k-ln" name="T2K LiveNet TV" version="1.0.1" provider-name="T2K">
