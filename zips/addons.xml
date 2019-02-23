@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.audio.t2kmusic" name="T2K Music" version="1.0.1" provider-name="T2K">
+<addon id="plugin.audio.t2kmusic" name="T2K Music" version="1.0.2" provider-name="T2K">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.universalscrapers" version="1.0.0" />
