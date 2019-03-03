@@ -950,7 +950,7 @@ Documentation: https://github.com/tamland/kodi-plugin-routing</description>
   </extension>
 </addon>
 
-<addon id="script.module.t2k-world-tv" name="T2K World Tv" version="1.0.1" provider-name="T2K">
+<addon id="script.module.t2k-world-tv" name="T2K World Tv" version="1.0.0" provider-name="T2K">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.livestreamer" />
@@ -1043,30 +1043,6 @@ Documentation: https://github.com/tamland/kodi-plugin-routing</description>
 		<description lang="en">Sports streams from laola1.tv</description>
 		<license>GNU General Public License, v2</license>
 	</extension>
-</addon>
-
-<addon id="script.module.T2K_Mobdro" name="T2K Mobdro" version="3.0.2" provider-name="T2K">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.livestreamer" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.routing" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>all</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_gb">Mobdro</summary>
-    <description lang="en_gb">Mobdro</description>
-    <disclaimer lang="en_gb"></disclaimer>
-    <language></language>
-    <platform>all</platform>
-    <license></license>
-    <forum></forum>
-    <website></website>
-    <email></email>
-    <source></source>
-  </extension>
 </addon>
 
 <addon id="script.module.tulip" name="Tulip Routine Libraries" version="2.3.0" provider-name="Twilight0">
