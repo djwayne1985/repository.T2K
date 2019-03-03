@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.module.t2k-world-tv" name="T2K World Tv" version="1.0.0" provider-name="T2K">
+<addon id="script.module.t2k-world-tv" name="T2K World Tv" version="1.0.1" provider-name="T2K">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.livestreamer" />
@@ -10,15 +10,11 @@
     <provides>all</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en_gb">World TV</summary>
+    <summary lang="en_gb"></summary>
     <description lang="en_gb">World TV</description>
     <disclaimer lang="en_gb"></disclaimer>
     <language></language>
     <platform>all</platform>
     <license></license>
-    <forum></forum>
-    <website></website>
-    <email></email>
-    <source></source>
   </extension>
 </addon>
