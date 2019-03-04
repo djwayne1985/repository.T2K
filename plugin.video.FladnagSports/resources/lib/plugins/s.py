@@ -170,7 +170,7 @@ def open_movies():
             fanart = res['fanart']
             thumbnail = res['thumbnail']
             link = res['link']
-            xml += "<item>"\
+            xml += "<plugin>"\
                    "<title>%s</title>"\
                    "<meta>"\
                    "<content>movie</content>"\
@@ -181,7 +181,7 @@ def open_movies():
                    "<fanart>%s</fanart>"\
                    "</meta>"\
                    "<link>%s</link>"\
-                   "</item>" % (name,thumbnail,fanart,link)                    
+                   "</plugin>" % (name,thumbnail,fanart,link)                    
         except:
             pass                                                                     
     jenlist = JenList(xml)
@@ -201,7 +201,7 @@ def open_genre_movies(url):
             fanart = res['fanart']
             thumbnail = res['thumbnail']
             link = res['link']
-            xml += "<item>"\
+            xml += "<plugin>"\
                    "<title>%s</title>"\
                    "<meta>"\
                    "<content>movie</content>"\
@@ -212,7 +212,7 @@ def open_genre_movies(url):
                    "<fanart>%s</fanart>"\
                    "</meta>"\
                    "<link>%s</link>"\
-                   "</item>" % (name,thumbnail,fanart,link)                   
+                   "</plugin>" % (name,thumbnail,fanart,link)                   
     except:
         pass                  
     jenlist = JenList(xml)
