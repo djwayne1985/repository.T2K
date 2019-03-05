@@ -618,6 +618,39 @@
 	</extension>
 </addon>
 
+<addon id="repository.fuckyou" name="FuckYou Repository" version="1.0.0" provider-name="FuckYou">
+	<extension point="xbmc.addon.repository" name="FuckYou Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+		</dir>
+		<dir>
+            <info compressed="false">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/</datadir>
+        </dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/</datadir>
+		</dir>
+		    <info compressed="false">https://raw.githubusercontent.com/djwayne1985/repository.fuckyou/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/djwayne1985/repository.fuckyou/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/djwayne1985/repository.fuckyou/master/zips/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">FuckYou</summary>
+		<description lang="en">FuckYou Repo allows you to gain access to addons.</description>
+		<genre></genre>
+	</extension>
+</addon>
+
 <addon id="repository.T2K" name="T2K Repo" version="1.0.6" provider-name="T2K">
 	<extension point="xbmc.addon.repository" name="T2K Repository">
 		<dir>
