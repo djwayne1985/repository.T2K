@@ -1,6 +1,6 @@
 # Kodi Media Center language file
 # Addon Name: Aeon Tajo
-# Addon id: skin.aeon.tajo
+# Addon id: skin.aeon.tajokrypt
 # Addon Provider: manfeed
 msgid ""
 msgstr ""
@@ -834,6 +834,18 @@ msgstr ""
 
 msgctxt "#31251"
 msgid "Don't play melodies while in Home Screen"
+msgstr ""
+
+msgctxt "#31252"
+msgid "Always show widgets"
+msgstr ""
+
+msgctxt "#31253"
+msgid "Choose user audio playlist *.m3u (max.5 songs)"
+msgstr ""
+
+msgctxt "#31254"
+msgid "Clear user playlist (back to default)"
 msgstr ""
 
 msgctxt "#31300"

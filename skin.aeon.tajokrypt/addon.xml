@@ -1,6 +1,6 @@
-<addon id="skin.aeon.tajokrypt" name="Aeon Tajo T2K Krypton Mod" provider-name="manfeed" version="1.2.0">
+<addon id="skin.aeon.tajokrypt" name="Aeon Tajo T2K Krypton Mod" provider-name="manfeed" version="1.2.5">
 	<requires>
-		<import addon="xbmc.gui" version="5.12.0" />
+		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="script.grab.fanart" version="0.12.8" />
 		<import addon="script.skinshortcuts" version="0.4.5" />
 		<import addon="service.library.data.provider" version="0.0.7" />
@@ -29,9 +29,9 @@
 		<platform>all</platform>
 		<license>CC BY-NC-SA 4.0</license>
 		<forum />
-		<website>https://github.com/manfeed/skin.aeon.tajo</website>
+		<website>https://github.com/manfeed/skin.aeon.tajokryptkrypt</website>
 		<email />
-		<source>https://github.com/manfeed/skin.aeon.tajo</source>
+		<source>https://github.com/manfeed/skin.aeon.tajokryptkrypt</source>
 		<news>Updated for Kodi v18 Leia and v17.6 Krypton</news>
 		<assets>
 			<icon>resources/icon.png</icon>

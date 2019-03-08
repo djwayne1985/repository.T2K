@@ -1,6 +1,6 @@
 # Kodi Media Center language file
 # Addon Name: Aeon Tajo
-# Addon id: skin.aeon.tajo
+# Addon id: skin.aeon.tajokrypt
 # Addon Provider: manfeed
 msgid ""
 msgstr ""
