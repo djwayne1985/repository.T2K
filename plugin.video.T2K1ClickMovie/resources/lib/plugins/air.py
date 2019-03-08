@@ -28,6 +28,26 @@
     <Movies>all</Movies>
     </dir>
 
+    ---------------------
+
+    Returns the Template Movie Classification-
+
+    <dir>
+    <title>Movie Classification</title>
+    <Movies>U</Movies>
+    </dir>
+
+    Possible Classification's are:
+    U
+    PG
+    12A & 12
+	PG-13
+    15
+    18
+    R18
+    R 
+        
+    -----------------------
 
     ---------------------
 
@@ -139,7 +159,7 @@ class Template_Movie_List(Plugin):
                     'label': item["title"],
                     'icon': item.get("thumbnail", addon_icon),
                     'fanart': item.get("fanart", addon_fanart),
-                    'mode': "open_Movies_genre_movies",
+                    'mode': "open_Movies_genre1_movies",
                     'url': item.get("Movies", ""),
                     'folder': True,
                     'imdb': "0",
@@ -154,14 +174,36 @@ class Template_Movie_List(Plugin):
                     'fanart_image': result_item["fanart"]
                 }
                 result_item['fanart_small'] = result_item["fanart"]
-                return result_item 
+                return result_item
+
+            elif "genre1" in item.get("Movies", ""):    
+                result_item = {
+                    'label': item["title2"],
+                    'icon': item.get("thumbnail", addon_icon),
+                    'fanart': item.get("fanart", addon_fanart),
+                    'mode': "open_Movies_genre1_movies",
+                    'url': item.get("Movies", ""),
+                    'folder': True,
+                    'imdb': "0",
+                    'season': "0",
+                    'episode': "0",
+                    'info': {},
+                    'year': "0",
+                    'context': get_context_items(item),
+                    "summary": item.get("summary", None)
+                }
+                result_item["properties"] = {
+                    'fanart_image': result_item["fanart"]
+                }
+                result_item['fanart_small'] = result_item["fanart"]
+                return result_item
 
 
 @route(mode='open_Movies_movies')
 def open_movies():
     xml = ""
     at = Airtable(table_id, table_name, api_key=workspace_api_key)
-    match = at.get_all(maxRecords=700, sort=['name'])  
+    match = at.get_all(maxRecords=1200, sort=['name'])  
     for field in match:
         try:
             res = field['fields']   
@@ -204,6 +246,47 @@ def open_genre_movies(url):
     at = Airtable(table_id, table_name, api_key=workspace_api_key)
     try:
         match = at.search('type', genre)
+        for field in match:
+            res = field['fields']   
+            name = res['name']
+            name = remove_non_ascii(name)
+            summary = res['summary']
+            summary = remove_non_ascii(summary)
+            fanart = res['fanart']
+            thumbnail = res['thumbnail']
+            link1 = res['link1']
+            link2 = res['link2']
+            link3 = res['link3']
+            xml += "<item>"\
+                   "<title>%s</title>"\
+                   "<meta>"\
+                   "<content>movie</content>"\
+                   "<imdb></imdb>"\
+                   "<title></title>"\
+                   "<year></year>"\
+                   "<thumbnail>%s</thumbnail>"\
+                   "<fanart>%s</fanart>"\
+                   "<summary>%s</summary>"\
+                   "</meta>"\
+                   "<link>"\
+                   "<sublink>%s(Link 1)</sublink>"\
+                   "<sublink>%s(Link 2)</sublink>"\
+                   "<sublink>%s(Link 3)</sublink>"\
+                   "<sublink>(Trailer)</sublink>"\
+                   "</link>"\
+                   "</item>" % (name,thumbnail,fanart,summary,link1,link2,link3)                   
+    except:
+        pass                  
+    jenlist = JenList(xml)
+    display_list(jenlist.get_list(), jenlist.get_content_type())
+
+@route(mode='open_Movies_genre1_movies',args=["url"])
+def open_genre_movies(url):
+    xml = ""
+    genre = url.split("/")[-1]
+    at = Airtable(table_id, table_name, api_key=workspace_api_key)
+    try:
+        match = at.search('type1', genre)
         for field in match:
             res = field['fields']   
             name = res['name']
