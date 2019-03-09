@@ -28,9 +28,9 @@
 			<datadir zip="true">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/</datadir>
 		</dir>
 		<dir>
-			<info compressed="false">https://github.com/whoami022019/repository.fuckyou/blob/master/zips/addons.xml</info>
-			<checksum>https://github.com/whoami022019/repository.fuckyou/blob/master/zips/addons.xml.md5</checksum>
-			<datadir zip="true">https://github.com/whoami022019/repository.fuckyou/tree/master/zips</datadir>
+			<info compressed="false">https://raw.githubusercontent.com/whoami022019/repository.fuckyou/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/whoami022019/repository.fuckyou/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/whoami022019/repository.fuckyou/master/zips/</datadir>
 		</dir>
 		    <info compressed="false">https://raw.githubusercontent.com/djwayne1985/repository.T2K/master/zips/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/djwayne1985/repository.T2K/master/zips/addons.xml.md5</checksum>
