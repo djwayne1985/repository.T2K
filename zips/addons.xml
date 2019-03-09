@@ -618,7 +618,7 @@
 	</extension>
 </addon>
 
-<addon id="repository.T2K" name="T2K Repo" version="1.0.6" provider-name="T2K">
+<addon id="repository.T2K" name="T2K Repo" version="1.0.7" provider-name="T2K">
 	<extension point="xbmc.addon.repository" name="T2K Repository">
 		<dir>
             <info compressed="false">http://ukodi1.com/_repo/addons.xml</info>
@@ -645,6 +645,11 @@
 			<info compressed="false">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">https://github.com/whoami022019/repository.fuckyou/blob/master/zips/addons.xml</info>
+			<checksum>https://github.com/whoami022019/repository.fuckyou/blob/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/whoami022019/repository.fuckyou/tree/master/zips</datadir>
 		</dir>
 		    <info compressed="false">https://raw.githubusercontent.com/djwayne1985/repository.T2K/master/zips/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/djwayne1985/repository.T2K/master/zips/addons.xml.md5</checksum>
@@ -848,99 +853,6 @@ Documentation: https://github.com/tamland/kodi-plugin-routing</description>
   </extension>
 </addon>
 
-<addon id="script.module.t2k-ln" name="T2K LiveNet TV" version="1.0.1" provider-name="T2K">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.pyamf" />
-    <import addon="script.module.livestreamer" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.routing" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>all</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_gb">LiveNet TV</summary>
-    <description lang="en_gb">LiveNet TV</description>
-    <disclaimer lang="en_gb"></disclaimer>
-    <language></language>
-    <platform>all</platform>
-    <license></license>
-    <forum></forum>
-    <website></website>
-    <email></email>
-    <source></source>
-  </extension>
-</addon>
-
-<addon id="script.module.t2k-ss" name="T2K SwiftStreamz" version="1.0.0" provider-name="T2K">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.livestreamer" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.routing" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>all</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_gb">Swift Streamz</summary>
-    <description lang="en_gb">Swift Streamz</description>
-    <disclaimer lang="en_gb"></disclaimer>
-    <language></language>
-    <platform>all</platform>
-    <license></license>
-    <forum></forum>
-    <website></website>
-    <email></email>
-    <source></source>
-  </extension>
-</addon>
-
-<addon id="script.module.t2k-tv-tap" name="T2K Tv Tap" version="1.0.1" provider-name="T2K">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.livestreamer" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.routing" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>all</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_gb">TvTap</summary>
-    <description lang="en_gb">TvTap</description>
-    <disclaimer lang="en_gb"></disclaimer>
-    <language></language>
-    <platform>all</platform>
-    <license></license>
-    <forum></forum>
-    <website></website>
-    <email></email>
-    <source></source>
-  </extension>
-</addon>
-
-<addon id="script.module.t2k-world-tv" name="T2K World Tv" version="1.0.0" provider-name="T2K">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.livestreamer" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.routing" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>all</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_gb"></summary>
-    <description lang="en_gb">World TV</description>
-    <disclaimer lang="en_gb"></disclaimer>
-    <language></language>
-    <platform>all</platform>
-    <license></license>
-  </extension>
-</addon>
-
 <addon id="script.module.t2kfanriffictktw" name="[B]Original Fanriffic Krypton Themes[/B]" version="1.0.2" provider-name="T2K">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -998,22 +910,6 @@ Documentation: https://github.com/tamland/kodi-plugin-routing</description>
         <video_guide></video_guide>
         <reuselanguageinvoker>false</reuselanguageinvoker>
     </extension>
-</addon>
-
-<addon id="script.module.t2ks" name="Sports TV" version="1.0.0" provider-name="T2K">
-	<requires>
-		<import addon="xbmc.python" version="2.14.0"/>
-		<import addon="script.module.beautifulsoup4" version="4.3.2"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>all</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en"></summary>
-		<description lang="en">Sports streams from laola1.tv</description>
-		<license>GNU General Public License, v2</license>
-	</extension>
 </addon>
 
 <addon id="script.module.tulip" name="Tulip Routine Libraries" version="2.3.0" provider-name="Twilight0">
