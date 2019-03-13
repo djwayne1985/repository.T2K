@@ -1363,7 +1363,7 @@ Fix failure to sign in when signed off externally (Issue #110, #117)
 	</extension>
 </addon>
 
-<addon id="skin.aeon.tajokrypt" name="Aeon Tajo T2K Krypton Mod" provider-name="manfeed" version="1.2.5">
+<addon id="skin.aeon.tajokrypt" name="Aeon Tajo T2K Krypton Mod" provider-name="manfeed" version="1.3.5">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0" />
 		<import addon="script.grab.fanart" version="0.12.8" />
@@ -1377,16 +1377,16 @@ Fix failure to sign in when signed off externally (Issue #110, #117)
 		<res aspect="16:9" default="true" folder="1080i" height="1080" width="1920" />
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en_GB">Aeon Tajo T2K Krypton Mod</summary>
-		<summary lang="en_AU">Aeon Tajo T2K Krypton Mod</summary>
-		<summary lang="en_NZ">Aeon Tajo T2K Krypton Mod</summary>
-		<summary lang="en_US">Aeon Tajo T2K Krypton Mod</summary>
-		<summary lang="es_ES">Aeon Tajo T2K Krypton Mod</summary>
-		<description lang="en_GB">Aeon Tajo T2K Krypton Mod: Changes everything so that nothing changes. Inspired on Aeon Nox 5 (thanks to BigNoid).</description>
-		<description lang="en_AU">Aeon Tajo T2K Krypton Mod: Changes everything so that nothing changes. Inspired on Aeon Nox 5 (thanks to BigNoid).</description>
-		<description lang="en_NZ">Aeon Tajo T2K Krypton Mod: Changes everything so that nothing changes. Inspired on Aeon Nox 5 (thanks to BigNoid).</description>
-		<description lang="en_US">Aeon Tajo T2K Krypton Mod: Changes everything so that nothing changes. Inspired on Aeon Nox 5 (thanks to BigNoid).</description>
-		<description lang="es_ES">Aeon Tajo T2K Krypton Mod: Cambia todo para que nada cambie. Inspirado en Aeon Nox 5 (gracias a BigNoid).</description>
+		<summary lang="en_GB">Aeon Tajo</summary>
+		<summary lang="en_AU">Aeon Tajo</summary>
+		<summary lang="en_NZ">Aeon Tajo</summary>
+		<summary lang="en_US">Aeon Tajo</summary>
+		<summary lang="es_ES">Aeon Tajo</summary>
+		<description lang="en_GB">Aeon Tajo: Changes everything so that nothing changes. Inspired on Aeon Nox 5 (thanks to BigNoid).</description>
+		<description lang="en_AU">Aeon Tajo: Changes everything so that nothing changes. Inspired on Aeon Nox 5 (thanks to BigNoid).</description>
+		<description lang="en_NZ">Aeon Tajo: Changes everything so that nothing changes. Inspired on Aeon Nox 5 (thanks to BigNoid).</description>
+		<description lang="en_US">Aeon Tajo: Changes everything so that nothing changes. Inspired on Aeon Nox 5 (thanks to BigNoid).</description>
+		<description lang="es_ES">Aeon Tajo: Cambia todo para que nada cambie. Inspirado en Aeon Nox 5 (gracias a BigNoid).</description>
 		<disclaimer lang="en_GB">Mouse control is supported, althoug not recommended. It may not work correctly in all cases.</disclaimer>
 		<disclaimer lang="en_AU">Mouse control is supported, althoug not recommended. It may not work correctly in all cases.</disclaimer>
 		<disclaimer lang="en_NZ">Mouse control is supported, althoug not recommended. It may not work correctly in all cases.</disclaimer>
@@ -1394,10 +1394,10 @@ Fix failure to sign in when signed off externally (Issue #110, #117)
 		<platform>all</platform>
 		<license>CC BY-NC-SA 4.0</license>
 		<forum />
-		<website>https://github.com/manfeed/skin.aeon.tajokryptkrypt</website>
+		<website>https://github.com/manfeed/skin.aeon.tajokrypt</website>
 		<email />
-		<source>https://github.com/manfeed/skin.aeon.tajokryptkrypt</source>
-		<news>Updated for Kodi v18 Leia and v17.6 Krypton</news>
+		<source>https://github.com/manfeed/skin.aeon.tajokrypt</source>
+		<news>Updated for Kodi v18 Leia</news>
 		<assets>
 			<icon>resources/icon.png</icon>
 			<fanart>resources/fanart.jpg</fanart>
@@ -1410,6 +1410,39 @@ Fix failure to sign in when signed off externally (Issue #110, #117)
 			<screenshot>resources/screenshot-07.jpg</screenshot>
 			<screenshot>resources/screenshot-08.jpg</screenshot>
 			<screenshot>resources/screenshot-09.jpg</screenshot>
+		</assets>
+	</extension>
+</addon>
+
+	<addon id="skin.aeonmq8t2kmodt2kmod" version="2.8.0" name="Aeon MQ 8 T2K Mod" provider-name="MarcosQui">
+	<requires>
+		<import addon="xbmc.gui" version="5.12.0"/>
+	</requires>
+	<extension point="xbmc.gui.skin" debugging="false">
+		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Aeon MQ 8, improved, more light and more powerful than ever.</summary>
+		<summary lang="en_US">Aeon MQ 8, improved, more light and more powerful than ever.</summary>
+		<summary lang="pt_BR">Aeon MQ 8, melhorada, mais leve e mais poderosa do que nunca.</summary>
+		<description lang="en_GB">The traditional Aeon MQ reaches its eighth edition.[CR]Reformulated, very simple to use, with a new code that provides a lightweight and powerful skin.[CR]The Aeon MQ 8 incorporates new features such as FLEXIBLE WIDGETS 2ND GENERATION which takes the main menu's level of customization to something never seen before.[CR]Aeon MQ 8, you've never seen a skin like this.</description>
+		<description lang="en_US">The traditional Aeon MQ reaches its eighth edition.[CR]Reformulated, very simple to use, with a new code that provides a lightweight and powerful skin.[CR]The Aeon MQ 8 incorporates new features such as FLEXIBLE WIDGETS 2ND GENERATION which takes the main menu's level of customization to something never seen before.[CR]Aeon MQ 8, you've never seen a skin like this.</description>
+		<description lang="pt_BR">A tradicional Aeon MQ chega a sua oitava edição.[CR]Aeon MQ 8 conta com todos os recursos presentes na versão anterior, no entanto, esses recursos foram otimizados afim de proporcionar uma experiência ainda melhor ao usuário.[CR]Aeon MQ 8 incorpora um novo recurso chamado WIDGES FLEXÍVEIS SEGUNDA GERAÇÃO que eleva o nível de customização como você nunca viu antes.[CR]Aeon MQ 8, você nunca viu uma skin assim.</description>
+		<disclaimer lang="en_GB">Aeon MQ 8, improved, more light and more powerful than ever.</disclaimer>
+		<disclaimer lang="en_US">Aeon MQ 8, improved, more light and more powerful than ever.</disclaimer>
+		<disclaimer lang="pt_BR">Aeon MQ 8, melhorada, mais leve e mais poderosa do que nunca.</disclaimer>
+	<platform>all</platform>
+	<license>CC BY-SA 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license>
+	<forum>https://forum.kodi.tv/</forum>
+	<source>https://drive.google.com/drive/folders/0BxZQqz5XxlaDZXVEcHhVTHdtSk0?usp=sharing</source>
+	<assets>
+		<icon>resources/icon.png</icon>
+		<fanart>resources/fanart.jpg</fanart>
+		<screenshot>resources/screenshot-01.jpg</screenshot>
+		<screenshot>resources/screenshot-02.jpg</screenshot>
+		<screenshot>resources/screenshot-03.jpg</screenshot>
+		<screenshot>resources/screenshot-04.jpg</screenshot>
+		<screenshot>resources/screenshot-05.jpg</screenshot>
 		</assets>
 	</extension>
 </addon>
