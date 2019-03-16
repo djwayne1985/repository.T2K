@@ -12,7 +12,7 @@ ADDONTITLE     = '[B]Original Fanriffic Leia Themes[/B]'
 BUILDERNAME    = 'T2K'
 #########################Make sure to change the repo to yours!!!!
 EXCLUDES       = [ADDON_ID, 'repository.T2K', 'roms', 'My_Builds', 'backupdir']
-BUILDFILE      = 'https://fanriffic.com/wizwiz/leiaaftermath.txt'
+BUILDFILE      = 'https://www.t2k-cloud.co.uk/Kodi/theme-xml-files/leiatheme.txt'
 UPDATECHECK    = 0
 APKFILE        = 'http://www.t2k-cloud.co.uk/Kodi/T2K-Apps.txt'
 YOUTUBETITLE   = '' 

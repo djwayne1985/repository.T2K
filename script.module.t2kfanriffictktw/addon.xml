@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.module.t2kfanriffictktw" name="[B]Original Fanriffic Krypton Themes[/B]" version="1.0.3" provider-name="T2K">
+<addon id="script.module.t2kfanriffictktw" name="[B]Original Fanriffic Krypton Themes[/B]" version="1.0.4" provider-name="T2K">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
