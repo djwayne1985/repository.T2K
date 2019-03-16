@@ -11,15 +11,18 @@ BUILDFILE      = 'https://www.t2k-cloud.co.uk/Kodi/t2k/T2Kautobuilds.txt'
 # How often you would list it to check for build updates in days
 # 0 being every startup of kodi
 UPDATECHECK    = 0
-# Text File with apk info in it.
+# Text File with apk info in it.  Leave as 'http://' to ignore
 APKFILE        = 'https://www.t2k-cloud.co.uk/Kodi/mainapk.txt'
 # Text File with Youtube Videos urls.  Leave as 'http://' to ignore
-YOUTUBETITLE   = 'T2K Youtube Tutorials'
-YOUTUBEFILE    = 'https://www.t2k-cloud.co.uk/Kodi/youtube.txt'
+YOUTUBETITLE   = 'YouTube Help Videos'
+YOUTUBEFILE    = 'http://'
 # Text File for addon installer.  Leave as 'http://' to ignore
 ADDONFILE      = 'https://www.t2k-cloud.co.uk/Kodi/addons2.txt'
 # Text File for advanced settings.  Leave as 'http://' to ignore
-ADVANCEDFILE   = 'https://www.t2k-cloud.co.uk/Kodi/advanced.txt'
+ADVANCEDFILE   = 'http://'
+# Text file for roms and emus
+ROMPACK        = 'https://www.t2k-cloud.co.uk/Kodi/t2k/emulators.txt'
+EMUAPKS        = 'https://www.t2k-cloud.co.uk/Kodi/t2k/rom-sets.txt'
 
 # Dont need to edit just here for icons stored locally
 PATH           = xbmcaddon.Addon().getAddonInfo('path')
@@ -34,9 +37,11 @@ ART            = os.path.join(PATH, 'resources', 'art')
 # Example:  ICONMAINT     = os.path.join(ART, 'mainticon.png')
 #           ICONSETTINGS  = 'http://aftermathwizard.net/repo/wizard/settings.png'
 # Leave as http:// for default icon
-ICONBUILDS     = 'icon256x256.png'
+ICONBUILDS     = 'https://www.t2k-cloud.co.uk/Kodi/icons/builds.png'
 ICONMAINT      = 'https://www.t2k-cloud.co.uk/Kodi/icons/SEO_Maintenance-512.png'
+ICONSPEED      = 'https://www.t2k-cloud.co.uk/Kodi/icons/speedtest.png'
 ICONAPK        = 'https://www.t2k-cloud.co.uk/Kodi/icons/71620be831143de5b84ce55e00046028_icon.png'
+ICONRETRO      = 'https://www.t2k-cloud.co.uk/Kodi/icons/17bb3b544a5fea0ba7825ce9dbeca6b6_icon.png'
 ICONADDONS     = 'https://www.t2k-cloud.co.uk/Kodi/icons/addoninstaller.png'
 ICONYOUTUBE    = 'https://www.t2k-cloud.co.uk/Kodi/icons/logo-941916_960_720.png'
 ICONSAVE       = 'https://www.t2k-cloud.co.uk/Kodi/icons/538720-disk_512x512.png'
@@ -61,9 +66,9 @@ THEME2         = '[COLOR '+COLOR2+']%s[/COLOR]'
 # Alternate items      / %s is the menu item and is required
 THEME3         = '[COLOR '+COLOR1+']%s[/COLOR]'
 # Current Build Header / %s is the menu item and is required
-THEME4         = '[COLOR '+COLOR1+']Current Build:[/COLOR] [COLOR '+COLOR2+']%s[/COLOR]'
+THEME4         = '[COLOR '+COLOR1+'][B]Current Build:[/B][/COLOR] [COLOR '+COLOR2+']%s[/COLOR]'
 # Current Theme Header / %s is the menu item and is required
-THEME5         = '[COLOR '+COLOR1+']Current Theme:[/COLOR] [COLOR '+COLOR2+']%s[/COLOR]'
+THEME5         = '[COLOR '+COLOR1+'][B]Current Theme:[/B][/COLOR] [COLOR '+COLOR2+']%s[/COLOR]'
 
 # Message for Contact Page
 # Enable 'Contact' menu item 'Yes' hide or 'No' dont hide

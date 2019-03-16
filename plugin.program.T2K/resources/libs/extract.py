@@ -17,8 +17,13 @@
 #  http://www.gnu.org/copyleft/gpl.html                                        #
 ################################################################################
 
-import zipfile, xbmcaddon, xbmc, uservar, sys, os, time
+import xbmcaddon, xbmc, uservar, sys, os, time
 import wizard as wiz
+KODIV          = float(xbmc.getInfoLabel("System.BuildVersion")[:4])
+if KODIV > 17:
+	import zfile as zipfile #FTG mod for Kodi 18
+else:
+	import zipfile
 
 ADDON_ID       = uservar.ADDON_ID
 ADDONTITLE     = uservar.ADDONTITLE
@@ -36,10 +41,6 @@ KEEPSUPER      = wiz.getS('keepsuper')
 KEEPREPOS      = wiz.getS('keeprepos')
 KEEPWHITELIST  = wiz.getS('keepwhitelist')
 KODIV          = float(xbmc.getInfoLabel("System.BuildVersion")[:4])
-if KODIV > 17:
-	from resources.libs import zfile as zipfile
-else:
-	import zipfile
 LOGFILES       = ['xbmc.log', 'xbmc.old.log', 'kodi.log', 'kodi.old.log', 'spmc.log', 'spmc.old.log', 'tvmc.log', 'tvmc.old.log', 'Thumbs.db', '.gitignore', '.DS_Store']
 bad_files      = ['onechannelcache.db', 'saltscache.db', 'saltscache.db-shm', 'saltscache.db-wal', 'saltshd.lite.db', 'saltshd.lite.db-shm', 'saltshd.lite.db-wal', 'queue.db', 'commoncache.db', 'access.log', 'trakt.db', 'video_cache.db']
 
