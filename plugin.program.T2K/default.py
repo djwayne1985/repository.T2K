@@ -121,6 +121,10 @@ TODAY            = date.today()
 TOMORROW         = TODAY + timedelta(days=1)
 THREEDAYS        = TODAY + timedelta(days=3)
 KODIV            = float(xbmc.getInfoLabel("System.BuildVersion")[:4])
+if KODIV > 17:
+	from resources.libs import zfile as zipfile
+else:
+	import zipfile
 KODIVERSION      = xbmc.getInfoLabel("System.BuildVersion")
 MCNAME           = wiz.mediaCenter()
 EXCLUDES         = uservar.EXCLUDES
