@@ -21,8 +21,8 @@ ADDONFILE      = 'https://www.t2k-cloud.co.uk/Kodi/addons2.txt'
 # Text File for advanced settings.  Leave as 'http://' to ignore
 ADVANCEDFILE   = 'http://'
 # Text file for roms and emus
-ROMPACK        = 'https://www.t2k-cloud.co.uk/Kodi/t2k/emulators.txt'
-EMUAPKS        = 'https://www.t2k-cloud.co.uk/Kodi/t2k/rom-sets.txt'
+ROMPACK        = 'https://www.t2k-cloud.co.uk/Kodi/t2k/rom-sets.txt'
+EMUAPKS        = 'https://www.t2k-cloud.co.uk/Kodi/t2k/emulators.txt'
 
 # Dont need to edit just here for icons stored locally
 PATH           = xbmcaddon.Addon().getAddonInfo('path')
