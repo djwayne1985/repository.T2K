@@ -14,12 +14,12 @@ UPDATECHECK    = 0
 # Text File with apk info in it.  Leave as 'http://' to ignore
 APKFILE        = 'https://www.t2k-cloud.co.uk/Kodi/mainapk.txt'
 # Text File with Youtube Videos urls.  Leave as 'http://' to ignore
-YOUTUBETITLE   = 'YouTube Help Videos'
-YOUTUBEFILE    = 'http://'
+YOUTUBETITLE   = '[COLORaqua]YouTube Help & Build Videos[/COLOR]'
+YOUTUBEFILE    = 'https://www.t2k-cloud.co.uk/Kodi/youtube.txt'
 # Text File for addon installer.  Leave as 'http://' to ignore
 ADDONFILE      = 'https://www.t2k-cloud.co.uk/Kodi/addons2.txt'
 # Text File for advanced settings.  Leave as 'http://' to ignore
-ADVANCEDFILE   = 'http://'
+ADVANCEDFILE   = 'https://www.t2k-cloud.co.uk/Kodi/advanced.txt'
 # Text file for roms and emus
 ROMPACK        = 'https://www.t2k-cloud.co.uk/Kodi/t2k/rom-sets.txt'
 EMUAPKS        = 'https://www.t2k-cloud.co.uk/Kodi/t2k/emulators.txt'
