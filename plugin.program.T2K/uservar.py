@@ -61,6 +61,7 @@ COLOR1         = 'dodgerblue'
 COLOR2         = 'white'
 COLOR3         = 'snow'
 COLOR4         = 'orange'
+COLOR5         = 'purple'
 # Primary menu items   / %s is the menu item and is required
 THEME1         = '[COLOR '+COLOR1+'][B][I]([COLOR '+COLOR2+']T2K[/COLOR])[/B][/COLOR] [COLOR '+COLOR2+']%s[/COLOR][/I]'
 # Build Names          / %s is the menu item and is required
