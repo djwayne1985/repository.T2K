@@ -69,6 +69,8 @@ THEME4         = uservar.THEME4
 THEME5         = uservar.THEME5
 COLOR1         = uservar.COLOR1
 COLOR2         = uservar.COLOR2
+COLOR3         = uservar.COLOR3
+COLOR4         = uservar.COLOR4
 CONTACTICON    = uservar.CONTACTICON if not uservar.CONTACTICON == 'http://' else ICON 
 CONTACTFANART  = uservar.CONTACTFANART if not uservar.CONTACTFANART == 'http://' else FANART
 
@@ -114,7 +116,7 @@ def autoConfig(msg='', TxtColor='0xFFFFFFFF', Font='font12', BorderWidth=10):
 			secondrow = firstrow+275+(BorderWidth/2)
 			currentwidth = ((W/2)-(BorderWidth*4))/2
 			
-			header = '[COLOR %s]Advanced Settings Configurator[/COLOR]' % (COLOR2)
+			header = '[COLOR %s][B]Advanced Settings Configurator[/COLOR][/B]' % (COLOR3)
 			self.Header=xbmcgui.ControlLabel(L, top, W, 30, header, font='font13', textColor=TxtColor, alignment=0x00000002)
 			self.addControl(self.Header)
 			top += 30+BorderWidth
@@ -127,12 +129,12 @@ def autoConfig(msg='', TxtColor='0xFFFFFFFF', Font='font12', BorderWidth=10):
 			self.bgarea4 = xbmcgui.ControlImage(rightside+BorderWidth+BorderWidth, secondrow, rightside-L, 275, boxbg, aspectRatio=0, colorDiffuse='0x5FFFFFFF')
 			self.addControl(self.bgarea4)
 			
-			header = '[COLOR %s]Video Cache Size[/COLOR]' % (COLOR2)
+			header = '[COLOR %s][B]Video Cache Size[/COLOR][/B]' % (COLOR3)
 			self.Header2=xbmcgui.ControlLabel(leftside+BorderWidth, firstrow+5, (W/2)-(BorderWidth*2), 20, header, font='font13', textColor=TxtColor, alignment=0x00000002)
 			self.addControl(self.Header2)
 			freeMemory = int(float(wiz.getInfo('System.Memory(free)')[:-2])*.33)
 			recMemory = int(float(wiz.getInfo('System.Memory(free)')[:-2])*.23)
-			msg3 = "[COLOR %s]Number of bytes used for buffering streams in memory.  When set to [COLOR %s]0[/COLOR] the cache will be written to disk instead of RAM.  Note: For the memory size set here, Kodi will require 3x the amount of RAM to be free. Setting this too high might cause Kodi to crash if it can't get enough RAM(1/3 of Free Memory: [COLOR %s]%s[/COLOR])[/COLOR]" % (COLOR2, COLOR1, COLOR1, freeMemory)
+			msg3 = "[COLOR %s][B]Number of bytes used for buffering streams in memory.  When set to [COLOR %s]0[/COLOR] the cache will be written to disk instead of RAM.  Note: For the memory size set here, Kodi will require 3x the amount of RAM to be free. Setting this too high might cause Kodi to crash if it can't get enough RAM(1/3 of Free Memory: [COLOR %s]%s[/COLOR])[/COLOR][/B]" % (COLOR3, COLOR3, COLOR3, freeMemory)
 			self.Support3=xbmcgui.ControlTextBox(leftside+int(BorderWidth*1.5), firstrow+30+BorderWidth, (W/2)-(BorderWidth*4), 150, font='font12', textColor=TxtColor)
 			self.addControl(self.Support3)
 			self.Support3.setText(msg3)
@@ -143,8 +145,8 @@ def autoConfig(msg='', TxtColor='0xFFFFFFFF', Font='font12', BorderWidth=10):
 			self.recommendedVideo = recMemory if recMemory < 500 else 500; self.currentVideo = self.recommendedVideo
 			videopos = wiz.percentage(self.currentVideo, self.videomax)
 			self.videoCacheSize.setPercent(videopos)
-			current1 = '[COLOR %s]Current:[/COLOR] [COLOR %s]%s MB[/COLOR]' % (COLOR1, COLOR2, self.currentVideo)
-			recommended1 = '[COLOR %s]Recommended:[/COLOR] [COLOR %s]%s MB[/COLOR]' % (COLOR1, COLOR2, self.recommendedVideo)
+			current1 = '[COLOR %s][B]Current:[/COLOR][/B] [COLOR %s][B]%s MB[/COLOR][/B]' % (COLOR3, COLOR3, self.currentVideo)
+			recommended1 = '[COLOR %s][B]Recommended:[/COLOR][/B] [COLOR %s][B]%s MB[/COLOR][/B]' % (COLOR3, COLOR3, self.recommendedVideo)
 			self.currentVideo1=xbmcgui.ControlTextBox(leftside+BorderWidth,firstrow+235,currentwidth,20,font=Font,textColor=TxtColor)
 			self.addControl(self.currentVideo1)
 			self.currentVideo1.setText(current1)
@@ -152,10 +154,10 @@ def autoConfig(msg='', TxtColor='0xFFFFFFFF', Font='font12', BorderWidth=10):
 			self.addControl(self.recommendedVideo1)
 			self.recommendedVideo1.setText(recommended1)
 			
-			header = '[COLOR %s]CURL Timeout/CURL Low Speed[/COLOR]' % (COLOR2)
+			header = '[COLOR %s][B]CURL Timeout/CURL Low Speed[/COLOR][/B]' % (COLOR3)
 			self.Header3=xbmcgui.ControlLabel(rightside+BorderWidth, firstrow+5, (W/2)-(BorderWidth*2), 20, header, font='font13', textColor=TxtColor, alignment=0x00000002)
 			self.addControl(self.Header3)
-			msg3 = "[COLOR %s][B]curlclienttimeout[/B] is the time in seconds for how long it takes for libcurl connection will timeout and [B]curllowspeedtime[/B] is the time in seconds for libcurl to consider a connection lowspeed.  For slower connections set it to 20.[/COLOR]" % COLOR2
+			msg3 = "[COLOR %s][B]curlclienttimeout is the time in seconds for how long it takes for libcurl connection will timeout and curllowspeedtime is the time in seconds for libcurl to consider a connection lowspeed.  For slower connections set it to 20.[/COLOR][/B]" % COLOR3
 			self.Support3=xbmcgui.ControlTextBox(rightside+int(BorderWidth*3.5), firstrow+30+BorderWidth, (W/2)-(BorderWidth*4), 150, font='font12', textColor=TxtColor)
 			self.addControl(self.Support3)
 			self.Support3.setText(msg3)
@@ -166,8 +168,8 @@ def autoConfig(msg='', TxtColor='0xFFFFFFFF', Font='font12', BorderWidth=10):
 			self.recommendedCurl = 10; self.currentCurl = self.recommendedCurl
 			curlpos = wiz.percentage(self.currentCurl, self.curlmax)
 			self.CURLTimeout.setPercent(curlpos)
-			current2 = '[COLOR %s]Current:[/COLOR] [COLOR %s]%ss[/COLOR]' % (COLOR1, COLOR2, self.currentCurl)
-			recommended2 = '[COLOR %s]Recommended:[/COLOR] [COLOR %s]%ss[/COLOR]' % (COLOR1, COLOR2, self.recommendedCurl)
+			current2 = '[COLOR %s][B]Current:[/COLOR][/B] [COLOR %s]%ss[/COLOR]' % (COLOR3, COLOR3, self.currentCurl)
+			recommended2 = '[COLOR %s][B]Recommended:[/COLOR][/B] [COLOR %s]%ss[/COLOR]' % (COLOR3, COLOR3, self.recommendedCurl)
 			self.currentCurl2=xbmcgui.ControlTextBox(rightside+(BorderWidth*3),firstrow+235,currentwidth,20,font=Font,textColor=TxtColor)
 			self.addControl(self.currentCurl2)
 			self.currentCurl2.setText(current2)
@@ -175,10 +177,10 @@ def autoConfig(msg='', TxtColor='0xFFFFFFFF', Font='font12', BorderWidth=10):
 			self.addControl(self.recommendedCurl2)
 			self.recommendedCurl2.setText(recommended2)
 			
-			header = '[COLOR %s]Read Buffer Factor[/COLOR]' % (COLOR2)
+			header = '[COLOR %s][B]Read Buffer Factor[/COLOR][/B]' % (COLOR3)
 			self.Header4=xbmcgui.ControlLabel(leftside, secondrow+5, (W/2)-(BorderWidth*2), 20, header, font='font13', textColor=TxtColor, alignment=0x00000002)
 			self.addControl(self.Header4)
-			msg3 = "[COLOR %s]The value of this setting is a multiplier of the default limit. If Kodi is loading a typical bluray raw file at 36 Mbit/s, then a value of 2 will need at least 72 Mbit/s of network bandwidth. However, unlike with the RAM setting, you can safely increase this value however high you want, and Kodi won't crash.[/COLOR]" % COLOR2
+			msg3 = "[COLOR %s][B]The value of this setting is a multiplier of the default limit. If Kodi is loading a typical bluray raw file at 36 Mbit/s, then a value of 2 will need at least 72 Mbit/s of network bandwidth. However, unlike with the RAM setting, you can safely increase this value however high you want, and Kodi won't crash.[/COLOR][/B]" % COLOR3
 			self.Support3=xbmcgui.ControlTextBox(leftside+int(BorderWidth*1.5), secondrow+30+BorderWidth, (W/2)-(BorderWidth*4), 150, font='font12', textColor=TxtColor)
 			self.addControl(self.Support3)
 			self.Support3.setText(msg3)
@@ -189,8 +191,8 @@ def autoConfig(msg='', TxtColor='0xFFFFFFFF', Font='font12', BorderWidth=10):
 			self.recommendedRead = 5; self.currentRead = self.recommendedRead
 			readpos = wiz.percentage(self.currentRead, self.readmax)
 			self.readBufferFactor.setPercent(readpos)
-			current3 = '[COLOR %s]Current:[/COLOR] [COLOR %s]%s[/COLOR]' % (COLOR1, COLOR2, self.currentRead)
-			recommended3 = '[COLOR %s]Recommended:[/COLOR] [COLOR %s]%s[/COLOR]' % (COLOR1, COLOR2, self.recommendedRead)
+			current3 = '[COLOR %s][B]Current:[/COLOR][/B] [COLOR %s]%s[/COLOR]' % (COLOR3, COLOR3, self.currentRead)
+			recommended3 = '[COLOR %s][B]Recommended:[/COLOR][/B] [COLOR %s]%s[/COLOR]' % (COLOR3, COLOR3, self.recommendedRead)
 			self.currentRead3=xbmcgui.ControlTextBox(leftside+BorderWidth,secondrow+235,currentwidth,20,font=Font,textColor=TxtColor)
 			self.addControl(self.currentRead3)
 			self.currentRead3.setText(current3)
@@ -198,18 +200,18 @@ def autoConfig(msg='', TxtColor='0xFFFFFFFF', Font='font12', BorderWidth=10):
 			self.addControl(self.recommendedRead3)
 			self.recommendedRead3.setText(recommended3)
 			
-			header = '[COLOR %s]Buffer Mode[/COLOR]' % (COLOR2)
+			header = '[COLOR %s][B]Buffer Mode[/COLOR][/B]' % (COLOR3)
 			self.Header4=xbmcgui.ControlLabel(rightside+BorderWidth, secondrow+5, (W/2)-(BorderWidth*2), 20, header, font='font13', textColor=TxtColor, alignment=0x00000002)
 			self.addControl(self.Header4)
-			msg4 = "[COLOR %s]This setting will force Kodi to use a cache for all video files, including local network, internet, and even the local hard drive. Default value is 0 and will only cache videos that use internet file paths/sources.[/COLOR]" % COLOR2
+			msg4 = "[COLOR %s][B]This setting will force Kodi to use a cache for all video files, including local network, internet, and even the local hard drive. Default value is 0 and will only cache videos that use internet file paths/sources.[/COLOR][/B]" % COLOR3
 			self.Support4=xbmcgui.ControlTextBox(rightside+int(BorderWidth*3.5), secondrow+30+BorderWidth, (W/2)-(BorderWidth*4), 110, font='font12', textColor=TxtColor)
 			self.addControl(self.Support4)
 			self.Support4.setText(msg4)
 			B1 = secondrow+130+BorderWidth; B2 = B1+30; B3 = B2+30; B4 = B3+30;
-			self.Button0 = xbmcgui.ControlRadioButton(rightside+(BorderWidth*3), B1, (W/2)-(BorderWidth*4), 30, '0: Buffer all internet filesystems', font='font12', focusTexture=radiobgfocus, noFocusTexture=radiobgnofocus, focusOnTexture=radiofocus, noFocusOnTexture=radiofocus, focusOffTexture=radionofocus, noFocusOffTexture=radionofocus)
-			self.Button1 = xbmcgui.ControlRadioButton(rightside+(BorderWidth*3), B2, (W/2)-(BorderWidth*4), 30, '1: Buffer all filesystems', font='font12', focusTexture=radiobgfocus, noFocusTexture=radiobgnofocus, focusOnTexture=radiofocus, noFocusOnTexture=radiofocus, focusOffTexture=radionofocus, noFocusOffTexture=radionofocus)
-			self.Button2 = xbmcgui.ControlRadioButton(rightside+(BorderWidth*3), B3, (W/2)-(BorderWidth*4), 30, '2: Only buffer true internet filesystems', font='font12', focusTexture=radiobgfocus, noFocusTexture=radiobgnofocus, focusOnTexture=radiofocus, noFocusOnTexture=radiofocus, focusOffTexture=radionofocus, noFocusOffTexture=radionofocus)
-			self.Button3 = xbmcgui.ControlRadioButton(rightside+(BorderWidth*3), B4, (W/2)-(BorderWidth*4), 30, '3: No Buffer', font='font12', focusTexture=radiobgfocus, noFocusTexture=radiobgnofocus, focusOnTexture=radiofocus, noFocusOnTexture=radiofocus, focusOffTexture=radionofocus, noFocusOffTexture=radionofocus)
+			self.Button0 = xbmcgui.ControlRadioButton(rightside+(BorderWidth*3), B1, (W/2)-(BorderWidth*4), 30, '0: [COLOR %s][B]Buffer all internet filesystems[/COLOR][/B]' % COLOR3, font='font12', focusTexture=radiobgfocus, noFocusTexture=radiobgnofocus, focusOnTexture=radiofocus, noFocusOnTexture=radiofocus, focusOffTexture=radionofocus, noFocusOffTexture=radionofocus)
+			self.Button1 = xbmcgui.ControlRadioButton(rightside+(BorderWidth*3), B2, (W/2)-(BorderWidth*4), 30, '1: [COLOR %s][B]Buffer all filesystems[/COLOR][/B]' % COLOR3, font='font12', focusTexture=radiobgfocus, noFocusTexture=radiobgnofocus, focusOnTexture=radiofocus, noFocusOnTexture=radiofocus, focusOffTexture=radionofocus, noFocusOffTexture=radionofocus)
+			self.Button2 = xbmcgui.ControlRadioButton(rightside+(BorderWidth*3), B3, (W/2)-(BorderWidth*4), 30, '2: [COLOR %s][B]Only buffer true internet filesystems[/COLOR][/B]' % COLOR3, font='font12', focusTexture=radiobgfocus, noFocusTexture=radiobgnofocus, focusOnTexture=radiofocus, noFocusOnTexture=radiofocus, focusOffTexture=radionofocus, noFocusOffTexture=radionofocus)
+			self.Button3 = xbmcgui.ControlRadioButton(rightside+(BorderWidth*3), B4, (W/2)-(BorderWidth*4), 30, '3: [COLOR %s][B]No Buffer[/COLOR][/B]' % COLOR3, font='font12', focusTexture=radiobgfocus, noFocusTexture=radiobgnofocus, focusOnTexture=radiofocus, noFocusOnTexture=radiofocus, focusOffTexture=radionofocus, noFocusOffTexture=radionofocus)
 			self.addControl(self.Button0)
 			self.addControl(self.Button1)
 			self.addControl(self.Button2)
@@ -240,17 +242,17 @@ def autoConfig(msg='', TxtColor='0xFFFFFFFF', Font='font12', BorderWidth=10):
 		def updateCurrent(self, control):
 			if control == self.videoCacheSize:
 				self.currentVideo = (self.videomax)*self.videoCacheSize.getPercent()/100
-				current = '[COLOR %s]Current:[/COLOR] [COLOR %s]%s MB[/COLOR]' % (COLOR1, COLOR2, int(self.currentVideo))
+				current = '[COLOR %s]Current:[/COLOR] [COLOR %s]%s MB[/COLOR]' % (COLOR1, COLOR3, int(self.currentVideo))
 				self.currentVideo1.setText(current)
 				
 			elif control == self.CURLTimeout:
 				self.currentCurl = (self.curlmax)*self.CURLTimeout.getPercent()/100
-				current = '[COLOR %s]Current:[/COLOR] [COLOR %s]%ss[/COLOR]' % (COLOR1, COLOR2, int(self.currentCurl))
+				current = '[COLOR %s]Current:[/COLOR] [COLOR %s]%ss[/COLOR]' % (COLOR1, COLOR3, int(self.currentCurl))
 				self.currentCurl2.setText(current)
 				
 			elif control == self.readBufferFactor:
 				self.currentRead = (self.readmax)*self.readBufferFactor.getPercent()/100
-				current = '[COLOR %s]Current:[/COLOR] [COLOR %s]%s[/COLOR]' % (COLOR1, COLOR2, int(self.currentRead))
+				current = '[COLOR %s]Current:[/COLOR] [COLOR %s]%s[/COLOR]' % (COLOR1, COLOR3, int(self.currentRead))
 				self.currentRead3.setText(current)
 				
 			elif control in [self.Button0, self.Button1, self.Button2, self.Button3]:
@@ -269,7 +271,7 @@ def autoConfig(msg='', TxtColor='0xFFFFFFFF', Font='font12', BorderWidth=10):
 			elif self.Button2.isSelected(): buffermode = 2
 			elif self.Button3.isSelected(): buffermode = 3
 			if os.path.exists(ADVANCED):
-				choice = DIALOG.yesno(ADDONTITLE, "[COLOR %s]There is currently an active [COLOR %s]AdvancedSettings.xml[/COLOR], would you like to remove it and continue?[/COLOR]" % (COLOR2, COLOR1), yeslabel="[B][COLOR springgreen]Remove Settings[/COLOR][/B]", nolabel="[B][COLOR red]Cancel Write[/COLOR][/B]")
+				choice = DIALOG.yesno(ADDONTITLE, "[COLOR %s]There is currently an active [COLOR %s]AdvancedSettings.xml[/COLOR], would you like to remove it and continue?[/COLOR]" % (COLOR3, COLOR1), yeslabel="[B][COLOR springgreen]Remove Settings[/COLOR][/B]", nolabel="[B][COLOR red]Cancel Write[/COLOR][/B]")
 				if choice == 0: return
 				try: os.remove(ADVANCED)
 				except: f = open(ADVANCED, 'w'); f.close()
@@ -332,7 +334,7 @@ def QautoConfig(msg='', TxtColor='0xFFFFFFFF', Font='font10', BorderWidth=10):
 			top = T+BorderWidth
 			leftside = L+BorderWidth
 			rightside = L+(W/2)-(BorderWidth*2)		
-			header = '[COLOR %s]Quick Advanced Settings Configurator[/COLOR]' % (COLOR2)
+			header = '[COLOR %s][B]Quick[/COLOR][/B] [COLOR %s][B]Advanced[/COLOR][/B] [COLOR %s][B]Settings[/COLOR][/B] [COLOR %s][B]Configurator[/COLOR][/B]' % (COLOR4, COLOR3, COLOR4, COLOR3)
 			self.Header=xbmcgui.ControlLabel(L, top, W, 30, header, font='font13', textColor=TxtColor, alignment=0x00000002)
 			self.addControl(self.Header)
 			top += 30+BorderWidth
@@ -340,18 +342,18 @@ def QautoConfig(msg='', TxtColor='0xFFFFFFFF', Font='font10', BorderWidth=10):
 			recMemory = int(float(wiz.getInfo('System.Memory(free)')[:-2])*.23)
 			self.videomin = 0; self.videomax = freeMemory if freeMemory < 2000 else 2000
 			self.recommendedVideo = recMemory if recMemory < 500 else 500; self.currentVideo = self.recommendedVideo
-			current1 = '[COLOR %s]Video Cache Size[/COLOR]=[COLOR %s]%s MB[/COLOR]' % (COLOR1, COLOR2, self.currentVideo)
-			recommended1 = '[COLOR %s]Video Cache Size:[/COLOR] [COLOR %s]%s MB[/COLOR]' % (COLOR1, COLOR2, self.recommendedVideo)
+			current1 = '[COLOR %s][B]Video Cache Size[/COLOR][/B]=[COLOR %s][B]%s MB[/COLOR][/B]' % (COLOR4, COLOR3, self.currentVideo)
+			recommended1 = '[COLOR %s][B]Video Cache Size:[/COLOR][/B] [COLOR %s][B]%s MB[/COLOR][/B]' % (COLOR4, COLOR3, self.recommendedVideo)
 			self.curlmin = 0; self.curlmax = 20
 			self.recommendedCurl = 10; self.currentCurl = self.recommendedCurl
 			curlpos = wiz.percentage(self.currentCurl, self.curlmax)
-			recommended2 = '[COLOR %s]CURL Timeout/CURL Low Speed:[/COLOR] [COLOR %s]%ss[/COLOR]' % (COLOR1, COLOR2, self.recommendedCurl)
+			recommended2 = '[COLOR %s][B]CURL Timeout/CURL Low Speed:[/COLOR][/B] [COLOR %s][B]%ss[/COLOR][/B]' % (COLOR4, COLOR3, self.recommendedCurl)
 			self.readmin = 0; self.readmax = 10
 			self.recommendedRead = 5; self.currentRead = self.recommendedRead
 			readpos = wiz.percentage(self.currentRead, self.readmax)
-			recommended3 = '[COLOR %s]Read Buffer Factor:[/COLOR] [COLOR %s]%s[/COLOR]' % (COLOR1, COLOR2, self.recommendedRead)
-			recommended4 = '[COLOR %s]Buffer Mode:[/COLOR] [COLOR %s]2[/COLOR]' %(COLOR1, COLOR2)
-			msgbox='[COLOR %s]These settings will be written to the advancesettings.xml[/COLOR]\r\n\r\n%s\r\n%s\r\n%s\r\n%s' %(COLOR1, recommended4, recommended1, recommended3, recommended2)
+			recommended3 = '[COLOR %s][B]Read Buffer Factor:[/COLOR][/B] [COLOR %s][B]%s[/COLOR][/B]' % (COLOR4, COLOR3, self.recommendedRead)
+			recommended4 = '[COLOR %s][B]Buffer Mode:[/COLOR][/B] [COLOR %s][B]2[/COLOR][/B]' %(COLOR4, COLOR3)
+			msgbox='[COLOR %s][B]These settings will be written[/COLOR][/B] [COLOR %s][B]to the advancesettings.xml[/COLOR][/B]\r\n\r\n%s\r\n%s\r\n%s\r\n%s' %(COLOR4, COLOR3, recommended4, recommended1, recommended3, recommended2)
 			self.box=xbmcgui.ControlTextBox(L+25,T+50,W,H, font='font14')
 			self.addControl(self.box)
 			self.box.setText(msgbox)
@@ -366,22 +368,22 @@ def QautoConfig(msg='', TxtColor='0xFFFFFFFF', Font='font10', BorderWidth=10):
 		def updateCurrent(self, control):
 			if control == self.videoCacheSize:
 				self.currentVideo = (self.videomax)*self.videoCacheSize.getPercent()/100
-				current = '[COLOR %s]Current:[/COLOR] [COLOR %s]%s MB[/COLOR]' % (COLOR1, COLOR2, int(self.currentVideo))
+				current = '[COLOR %s][B]Current:[/COLOR][/B] [COLOR %s][B]%s MB[/COLOR][/B]' % (COLOR1, COLOR3, int(self.currentVideo))
 				self.currentVideo1.setText(current)
 				
 			elif control == self.CURLTimeout:
 				self.currentCurl = (self.curlmax)*self.CURLTimeout.getPercent()/100
-				current = '[COLOR %s]Current:[/COLOR] [COLOR %s]%ss[/COLOR]' % (COLOR1, COLOR2, int(self.currentCurl))
+				current = '[COLOR %s][B]Current:[/COLOR][/B] [COLOR %s][B]%ss[/COLOR][/B]' % (COLOR1, COLOR3, int(self.currentCurl))
 				self.currentCurl2.setText(current)
 				
 			elif control == self.readBufferFactor:
 				self.currentRead = (self.readmax)*self.readBufferFactor.getPercent()/100
-				current = '[COLOR %s]Current:[/COLOR] [COLOR %s]%s[/COLOR]' % (COLOR1, COLOR2, int(self.currentRead))
+				current = '[COLOR %s][B]Current:[/COLOR][/B] [COLOR %s][B]%s[/COLOR][/B]' % (COLOR1, COLOR3, int(self.currentRead))
 				self.currentRead3.setText(current)
 		def doWrite(self):
 			buffermode = 2
 			if os.path.exists(ADVANCED):
-				choice = DIALOG.yesno(ADDONTITLE, "[COLOR %s]There is currently an active [COLOR %s]AdvancedSettings.xml[/COLOR], would you like to remove it and continue?[/COLOR]" % (COLOR2, COLOR1), yeslabel="[B][COLOR green]Remove Settings[/COLOR][/B]", nolabel="[B][COLOR red]Cancel Write[/COLOR][/B]")
+				choice = DIALOG.yesno(ADDONTITLE, "[COLOR %s][B]There is currently an active [COLOR %s]AdvancedSettings.xml[/COLOR], would you like to remove it and continue?[/COLOR][/B]" % (COLOR3, COLOR1), yeslabel="[B][COLOR green]Remove Settings[/COLOR][/B]", nolabel="[B][COLOR red]Cancel Write[/COLOR][/B]")
 				if choice == 0: return
 				try: os.remove(ADVANCED)
 				except: f = open(ADVANCED, 'w'); f.close()
@@ -411,7 +413,7 @@ def QautoConfig(msg='', TxtColor='0xFFFFFFFF', Font='font10', BorderWidth=10):
 					f.write('	</network>\n')
 					f.write('</advancedsettings>\n')
 				f.close()
-				wiz.LogNotify("[COLOR %s]%s[/COLOR]" % (COLOR1, ADDONTITLE), '[COLOR %s]AdvancedSettings.xml have been written[/COLOR]' % COLOR2)
+				wiz.LogNotify("[COLOR %s]%s[/COLOR]" % (COLOR1, ADDONTITLE), '[COLOR %s]AdvancedSettings.xml have been written[/COLOR]' % COLOR3)
 			self.CloseWindow()			
 		def onControl(self, control):
 			if   control==self.buttonWrite: self.doWrite()

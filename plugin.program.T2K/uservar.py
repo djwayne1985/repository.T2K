@@ -59,6 +59,9 @@ SPACER         = '='
 # THEME's so it grabs the text from the menu item
 COLOR1         = 'dodgerblue'
 COLOR2         = 'white'
+COLOR3         = 'snow'
+COLOR4         = 'orange'
+COLOR5         = 'purple'
 # Primary menu items   / %s is the menu item and is required
 THEME1         = '[COLOR '+COLOR1+'][B][I]([COLOR '+COLOR2+']T2K[/COLOR])[/B][/COLOR] [COLOR '+COLOR2+']%s[/COLOR][/I]'
 # Build Names          / %s is the menu item and is required
@@ -69,6 +72,10 @@ THEME3         = '[COLOR '+COLOR1+']%s[/COLOR]'
 THEME4         = '[COLOR '+COLOR1+'][B]Current Build:[/B][/COLOR] [COLOR '+COLOR2+']%s[/COLOR]'
 # Current Theme Header / %s is the menu item and is required
 THEME5         = '[COLOR '+COLOR1+'][B]Current Theme:[/B][/COLOR] [COLOR '+COLOR2+']%s[/COLOR]'
+# Advanced Settings    / %s is the menu item and is required
+THEME6         = '[COLOR '+COLOR3+'][B]%s[/COLOR][/B]'
+# Advanced Settings    / %s is the menu item and is required
+THEME7         = '[COLOR '+COLOR5+'][B]%s[/COLOR][/B]'
 
 # Message for Contact Page
 # Enable 'Contact' menu item 'Yes' hide or 'No' dont hide

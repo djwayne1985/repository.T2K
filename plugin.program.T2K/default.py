@@ -154,11 +154,16 @@ CONTACTFANART    = uservar.CONTACTFANART if not uservar.CONTACTFANART == 'http:/
 HIDESPACERS      = uservar.HIDESPACERS
 COLOR1           = uservar.COLOR1
 COLOR2           = uservar.COLOR2
+COLOR3           = uservar.COLOR3
+COLOR4           = uservar.COLOR4
+COLOR5           = uservar.COLOR5
 THEME1           = uservar.THEME1
 THEME2           = uservar.THEME2
 THEME3           = uservar.THEME3
 THEME4           = uservar.THEME4
 THEME5           = uservar.THEME5
+THEME6           = uservar.THEME6
+THEME7           = uservar.THEME7
 ICONBUILDS       = uservar.ICONBUILDS if not uservar.ICONBUILDS == 'http://' else ICON
 ICONMAINT        = uservar.ICONMAINT if not uservar.ICONMAINT == 'http://' else ICON
 ICONSPEED        = uservar.ICONSPEED if not uservar.ICONSPEED == 'http://' else ICON
@@ -889,8 +894,8 @@ def advancedWindow(url=None):
 		addFile('Full Configure AdvancedSettings.xml', 'autoadvanced', icon=ICONMAINT, themeit=THEME3)
 		addFile('Quick Configure AdvancedSettings.xml', 'Qautoadvanced', icon=ICONMAINT, themeit=THEME3)
 		if os.path.exists(ADVANCED): 
-			addFile('View Currect AdvancedSettings.xml', 'currentsettings', icon=ICONMAINT, themeit=THEME3)
-			addFile('Remove Currect AdvancedSettings.xml', 'removeadvanced',  icon=ICONMAINT, themeit=THEME3)
+			addFile('View Currect AdvancedSettings.xml', 'currentsettings', icon=ICONMAINT, themeit=THEME6)
+			addFile('Remove Currect AdvancedSettings.xml', 'removeadvanced',  icon=ICONMAINT, themeit=THEME6)
 		if ADVANCEDWORKING == True:
 			if HIDESPACERS == 'No': addFile(wiz.sep(), '', icon=ICONMAINT, themeit=THEME3)
 			link = wiz.openURL(TEMPADVANCEDFILE).replace('\n','').replace('\r','').replace('\t','')
@@ -1023,13 +1028,6 @@ def systemInfo():
 	addFile('[COLOR %s]Provider:[/COLOR] [COLOR %s]%s[/COLOR]' % (COLOR1, COLOR2, provider), '', icon=ICONMAINT, themeit=THEME2)
 	addFile('[COLOR %s]Location:[/COLOR] [COLOR %s]%s[/COLOR]' % (COLOR1, COLOR2, location), '', icon=ICONMAINT, themeit=THEME2)
 	addFile('[COLOR %s]MacAddress:[/COLOR] [COLOR %s]%s[/COLOR]' % (COLOR1, COLOR2, data[5]), '', icon=ICONMAINT, themeit=THEME2)
-	
-	addFile('[B]Network:[/B]', '', icon=ICONSPEED, themeit=THEME2)
-	addFile('[COLOR %s]Local IP:[/COLOR] [COLOR %s]%s[/COLOR]' % (COLOR1, COLOR2, data[4]), '', icon=ICONSPEED, themeit=THEME2)
-	addFile('[COLOR %s]External IP:[/COLOR] [COLOR %s]%s[/COLOR]' % (COLOR1, COLOR2, exter_ip), '', icon=ICONSPEED, themeit=THEME2)
-	addFile('[COLOR %s]Provider:[/COLOR] [COLOR %s]%s[/COLOR]' % (COLOR1, COLOR2, provider), '', icon=ICONSPEED, themeit=THEME2)
-	addFile('[COLOR %s]Location:[/COLOR] [COLOR %s]%s[/COLOR]' % (COLOR1, COLOR2, location), '', icon=ICONSPEED, themeit=THEME2)
-	addFile('[COLOR %s]MacAddress:[/COLOR] [COLOR %s]%s[/COLOR]' % (COLOR1, COLOR2, data[5]), '', icon=ICONSPEED, themeit=THEME2)
 	
 	totalcount = len(picture) + len(music) + len(video) + len(programs) + len(scripts) + len(skins) + len(repos) 
 	addFile('[B]Addons([COLOR %s]%s[/COLOR]):[/B]' % (COLOR1, totalcount), '', icon=ICONMAINT, themeit=THEME2)
