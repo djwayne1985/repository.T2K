@@ -168,8 +168,8 @@ def autoConfig(msg='', TxtColor='0xFFFFFFFF', Font='font12', BorderWidth=10):
 			self.recommendedCurl = 10; self.currentCurl = self.recommendedCurl
 			curlpos = wiz.percentage(self.currentCurl, self.curlmax)
 			self.CURLTimeout.setPercent(curlpos)
-			current2 = '[COLOR %s][B]Current:[/COLOR][/B] [COLOR %s]%ss[/COLOR]' % (COLOR3, COLOR3, self.currentCurl)
-			recommended2 = '[COLOR %s][B]Recommended:[/COLOR][/B] [COLOR %s]%ss[/COLOR]' % (COLOR3, COLOR3, self.recommendedCurl)
+			current2 = '[COLOR %s][B]Current:[/COLOR][/B] [COLOR %s][B]%ss[/COLOR][/B]' % (COLOR3, COLOR3, self.currentCurl)
+			recommended2 = '[COLOR %s][B]Recommended:[/COLOR][/B] [COLOR %s][B]%ss[/COLOR][/B]' % (COLOR3, COLOR3, self.recommendedCurl)
 			self.currentCurl2=xbmcgui.ControlTextBox(rightside+(BorderWidth*3),firstrow+235,currentwidth,20,font=Font,textColor=TxtColor)
 			self.addControl(self.currentCurl2)
 			self.currentCurl2.setText(current2)
@@ -191,8 +191,8 @@ def autoConfig(msg='', TxtColor='0xFFFFFFFF', Font='font12', BorderWidth=10):
 			self.recommendedRead = 5; self.currentRead = self.recommendedRead
 			readpos = wiz.percentage(self.currentRead, self.readmax)
 			self.readBufferFactor.setPercent(readpos)
-			current3 = '[COLOR %s][B]Current:[/COLOR][/B] [COLOR %s]%s[/COLOR]' % (COLOR3, COLOR3, self.currentRead)
-			recommended3 = '[COLOR %s][B]Recommended:[/COLOR][/B] [COLOR %s]%s[/COLOR]' % (COLOR3, COLOR3, self.recommendedRead)
+			current3 = '[COLOR %s][B]Current:[/COLOR][/B] [COLOR %s][B]%s[/COLOR][/B]' % (COLOR3, COLOR3, self.currentRead)
+			recommended3 = '[COLOR %s][B]Recommended:[/COLOR][/B] [COLOR %s][B]%s[/COLOR][/B]' % (COLOR3, COLOR3, self.recommendedRead)
 			self.currentRead3=xbmcgui.ControlTextBox(leftside+BorderWidth,secondrow+235,currentwidth,20,font=Font,textColor=TxtColor)
 			self.addControl(self.currentRead3)
 			self.currentRead3.setText(current3)
@@ -242,17 +242,17 @@ def autoConfig(msg='', TxtColor='0xFFFFFFFF', Font='font12', BorderWidth=10):
 		def updateCurrent(self, control):
 			if control == self.videoCacheSize:
 				self.currentVideo = (self.videomax)*self.videoCacheSize.getPercent()/100
-				current = '[COLOR %s]Current:[/COLOR] [COLOR %s]%s MB[/COLOR]' % (COLOR1, COLOR3, int(self.currentVideo))
+				current = '[COLOR %s][B]Current:[/COLOR][/B] [COLOR %s][B]%s MB[/COLOR][/B]' % (COLOR3, COLOR3, int(self.currentVideo))
 				self.currentVideo1.setText(current)
 				
 			elif control == self.CURLTimeout:
 				self.currentCurl = (self.curlmax)*self.CURLTimeout.getPercent()/100
-				current = '[COLOR %s]Current:[/COLOR] [COLOR %s]%ss[/COLOR]' % (COLOR1, COLOR3, int(self.currentCurl))
+				current = '[COLOR %s][B]Current:[/COLOR][/B] [COLOR %s][B]%ss[/COLOR][/B]' % (COLOR3, COLOR3, int(self.currentCurl))
 				self.currentCurl2.setText(current)
 				
 			elif control == self.readBufferFactor:
 				self.currentRead = (self.readmax)*self.readBufferFactor.getPercent()/100
-				current = '[COLOR %s]Current:[/COLOR] [COLOR %s]%s[/COLOR]' % (COLOR1, COLOR3, int(self.currentRead))
+				current = '[COLOR %s][B]Current:[/COLOR][/B] [COLOR %s][B]%s[/COLOR][/B]' % (COLOR3, COLOR3, int(self.currentRead))
 				self.currentRead3.setText(current)
 				
 			elif control in [self.Button0, self.Button1, self.Button2, self.Button3]:
