@@ -109,7 +109,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.program.T2K" name="T2K Wizard" version="1.2.5" provider-name="T2K">
+<addon id="plugin.program.T2K" name="T2K Wizard" version="1.2.6" provider-name="T2K">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
