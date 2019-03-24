@@ -21,6 +21,11 @@
 			<checksum>https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/</datadir>
 		</dir>
+		<dir>
+			<info compressed="false">https://www.t2k-cloud.co.uk/Kodi/T2K%20Adult%20Zone%20Addon/zips/addons.xml</info>
+			<checksum>https://www.t2k-cloud.co.uk/Kodi/T2K%20Adult%20Zone%20Addon/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://www.t2k-cloud.co.uk/Kodi/T2K%20Adult%20Zone%20Addon/zips/</datadir>
+		</dir>
 		    <info compressed="false">https://raw.githubusercontent.com/djwayne1985/repository.T2K/master/zips/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/djwayne1985/repository.T2K/master/zips/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/djwayne1985/repository.T2K/master/zips/</datadir>
