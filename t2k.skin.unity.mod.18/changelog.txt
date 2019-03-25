@@ -1,2 +1,0 @@
-[B]06/12/2018 - 1.0.2 [/B]
-Made fixes to the file manager so it shows correctly in Leia.

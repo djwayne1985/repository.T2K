@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<window type="dialog" id="1166">
-	<onload>Stop</onload>
-	<onload>ClearProperty(melodiesPlaying,Home)</onload>
-	<visible>!String.IsEmpty(Window(home).Property(melodiesPlaying)) + !Window.IsActive(home)</visible>
-    <controls></controls>
-</window>
-	
