@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.T2K" name="T2K Repo" version="1.1.1" provider-name="T2K">
+<addon id="repository.T2K" name="T2K Repo" version="1.1.3" provider-name="T2K">
 	<extension point="xbmc.addon.repository" name="T2K Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
