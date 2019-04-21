@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="repository.T2K" name="T2K Repo" version="1.1.6" provider-name="T2K">
+	<extension point="xbmc.addon.repository" name="T2K Repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+		</dir>
+		<dir>
+            <info compressed="false">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/</datadir>
+        </dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/</datadir>
+		</dir>
+		<dir>
+            <info compressed="false">http://t2k-repository.ml/T2K-Adult/T2K-Adult-Zone-Addon/zips/addons.xml</info>
+			<checksum>http://t2k-repository.ml/T2K-Adult/T2K-Adult-Zone-Addon/zips/addons.xml.md5</checksum>
+			<datadir zip="true">http://t2k-repository.ml/T2K-Adult/T2K-Adult-Zone-Addon/zips/</datadir>
+		</dir>
+		    <info compressed="false">http://t2k-repository.ml/repository.T2K/zips/addons.xml</info>
+			<checksum>http://t2k-repository.ml/repository.T2K/zips/addons.xml.md5</checksum>
+			<datadir zip="true">http://t2k-repository.ml/repository.T2K/zips/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">T2K</summary>
+		<description lang="en">T2K Wizard allows you to gain access to the latest Fladnag Custom Builds. Credits also goes to Pedro's.last Kindgdom Builds.</description>
+		<genre></genre>
+	</extension>
+</addon>
+</addons>
